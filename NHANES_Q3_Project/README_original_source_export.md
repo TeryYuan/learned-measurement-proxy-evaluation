@@ -1,0 +1,9 @@
+# Historical source-export provenance
+
+The earlier source-only export supplied the NHANES V2 numerical code, protocol, dictionary, configuration and acquisition interfaces. It omitted raw inputs, participant-level records and predictions, fitted models, caches, aggregate result assets and unpublished manuscript integration material. That historical omission does not describe the current full collection, which includes saved aggregates under [reference/](reference/).
+
+Use [README.md](README.md) and the [current script guide](scripts/README.md) for supported interfaces. The [validation record](../VALIDATION.md) and [reproduction scope](../REPRODUCTION_SCOPE.md) distinguish prior executed checks, saved-result reporting and numerical reconstruction. Historical observed dependencies remain in `requirements_observed_historical.txt`; the current compatible environment is specified by `requirements.lock.txt`.
+
+The numerical analysis was implemented under the local V2 plan. The author cancelled the seven-day deadline and then authorized execution before repository upload; both events preceded the first study-model fit. No pre-model remote record or formal preregistration was completed. Event times and null remote fields remain in [DEVIATIONS.md](protocol/DEVIATIONS.md), [PROTOCOL_RECORD.json](protocol/PROTOCOL_RECORD.json) and [EXECUTION_CADENCE_AMENDMENT.json](protocol/EXECUTION_CADENCE_AMENDMENT.json). A later upload cannot be described as pre-model registration.
+
+`scripts/export_code_only.py` still creates the smaller source subset in a fresh destination. Its manifest defines the actual scope; the full collection's references, figure patch, license inventory and validation materials are separate. Scientific rules, source conditions and authorship remain those recorded in the current collection. Publication endpoints remain unset until a real publication occurs.

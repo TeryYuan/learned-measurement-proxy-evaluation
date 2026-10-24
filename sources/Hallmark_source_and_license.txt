@@ -1,0 +1,5 @@
+Source existing msigdbr public data cache: <LOCAL_R_CACHE>/msigdbr/msigdb.2025.1.Hs.rds
+Source DOI https://doi.org/10.5281/zenodo.15800824
+Actual database release: 2025.1.Hs
+Human MSigDB H only; no ortholog conversion; not MIT software license for data
+Hallmark data CC BY 4.0; Broad/MIT/UC attribution and Liberzon2015 required; no website login bypass

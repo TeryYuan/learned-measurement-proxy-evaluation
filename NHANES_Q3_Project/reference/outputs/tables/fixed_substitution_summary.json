@@ -1,0 +1,353 @@
+{
+  "protocol_id": "NHANES_CBC_FIXED_SUBSTITUTION_V2_20261019",
+  "primary_40plus": {
+    "n": 7477,
+    "events_5y": 648,
+    "weighted_event_fraction": 0.06297931240180554,
+    "df": 32,
+    "route_order": [
+      "B",
+      "M",
+      "S",
+      "MEAN",
+      "P"
+    ],
+    "Brier": {
+      "B": {
+        "estimate": 0.04849181172477097,
+        "SE": 0.0022179145301364305,
+        "lower": 0.04397406766539143,
+        "upper": 0.05300955578415051,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "M": {
+        "estimate": 0.04636788416442937,
+        "SE": 0.0021938575930277055,
+        "lower": 0.041899142482388116,
+        "upper": 0.050836625846470626,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "S": {
+        "estimate": 0.04835581413750598,
+        "SE": 0.0022771920852472246,
+        "lower": 0.04371732564960247,
+        "upper": 0.052994302625409495,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "MEAN": {
+        "estimate": 0.04886533928807635,
+        "SE": 0.002359971167658368,
+        "lower": 0.04405823532706855,
+        "upper": 0.05367244324908415,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "P": {
+        "estimate": 0.04858389873920365,
+        "SE": 0.00220781892803902,
+        "lower": 0.04408671874835863,
+        "upper": 0.05308107873004867,
+        "confidence_level": 0.95,
+        "df": 32
+      }
+    },
+    "contrasts": {
+      "G_measured_gain": {
+        "estimate": 0.002123927560341597,
+        "SE": 0.00045282861052189666,
+        "lower": 0.001201545864696838,
+        "upper": 0.0030463092559863563,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "D_substitution_loss": {
+        "estimate": 0.0019879299730766117,
+        "SE": 0.000508851092909961,
+        "lower": 0.000951434215072198,
+        "upper": 0.0030244257310810254,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "H_remaining_gain": {
+        "estimate": 0.00013599758726498545,
+        "SE": 0.0001838406499745791,
+        "lower": -0.00023847356255161218,
+        "upper": 0.0005104687370815831,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "A_proxy_over_mean": {
+        "estimate": 0.0005095251505703655,
+        "SE": 0.0002550617497255103,
+        "lower": -1.0018632086801938e-05,
+        "upper": 0.0010290689332275327,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "G_P_retrained_proxy_gain": {
+        "estimate": -9.208701443268186e-05,
+        "SE": 4.01175125338828e-05,
+        "lower": -0.00017380371336962627,
+        "upper": -1.0370315495737429e-05,
+        "confidence_level": 0.95,
+        "df": 32
+      }
+    },
+    "retention": {
+      "point": 0.06403117969009856,
+      "point_reason": "positive_measured_gain",
+      "guard": 1e-08,
+      "confidence_level": 0.95,
+      "method": "unpenalized_Fieller_using_joint_survey_Taylor_covariance_and_t",
+      "set_type": "bounded",
+      "intervals": [
+        [
+          -0.11320257568605584,
+          0.29379116921124354
+        ]
+      ],
+      "denominator_supported_positive": true,
+      "headline_percentage_allowed": true
+    },
+    "joint_covariance_of_route_losses": [
+      [
+        4.919144862990304e-06,
+        4.763551125484215e-06,
+        5.035475635759916e-06,
+        5.183596408042902e-06,
+        4.895999933592882e-06
+      ],
+      [
+        4.763551125484215e-06,
+        4.8130111384853176e-06,
+        4.8698427484211295e-06,
+        4.997621052028543e-06,
+        4.7436260580775265e-06
+      ],
+      [
+        5.035475635759916e-06,
+        4.8698427484211295e-06,
+        5.185603793112603e-06,
+        5.345005604559182e-06,
+        5.0113554652764755e-06
+      ],
+      [
+        5.183596408042902e-06,
+        4.997621052028543e-06,
+        5.345005604559182e-06,
+        5.5694639121788e-06,
+        5.158372715479125e-06
+      ],
+      [
+        4.895999933592882e-06,
+        4.7436260580775265e-06,
+        5.0113554652764755e-06,
+        5.158372715479125e-06,
+        4.874464419007367e-06
+      ]
+    ],
+    "unweighted_sensitivity": {
+      "route_Brier": {
+        "B": 0.0655807763825362,
+        "M": 0.0633387725473185,
+        "S": 0.06544249358727357,
+        "MEAN": 0.06594987473472569,
+        "P": 0.06571194833816198
+      },
+      "contrasts": {
+        "G_measured_gain": 0.002242003835217707,
+        "D_substitution_loss": 0.00210372103995507,
+        "H_remaining_gain": 0.00013828279526263698,
+        "A_proxy_over_mean": 0.0005073811474521212,
+        "G_P_retrained_proxy_gain": -0.00013117195562577233
+      },
+      "scope": "descriptive_same_predictions_no_refit_no_inferential_interval"
+    },
+    "scope": "pointwise_design_approximate_intervals_conditional_on_fitted_models_and_public_use_labels",
+    "design_counts": {
+      "full_frame_n": 20015,
+      "full_strata": 31,
+      "full_PSUs": 63,
+      "active_domain_strata": 31,
+      "active_domain_PSUs": 63
+    }
+  },
+  "sensitivity_40_79": {
+    "n": 6744,
+    "events_5y": 380,
+    "weighted_event_fraction": 0.041229127396980064,
+    "df": 32,
+    "route_order": [
+      "B",
+      "M",
+      "S",
+      "MEAN",
+      "P"
+    ],
+    "Brier": {
+      "B": {
+        "estimate": 0.03588445622548412,
+        "SE": 0.001855110643482423,
+        "lower": 0.032105719499967045,
+        "upper": 0.039663192951001194,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "M": {
+        "estimate": 0.03449153960554132,
+        "SE": 0.0018618015733166218,
+        "lower": 0.030699173901946215,
+        "upper": 0.038283905309136425,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "S": {
+        "estimate": 0.035510105358944465,
+        "SE": 0.0018757375876005083,
+        "lower": 0.03168935292317958,
+        "upper": 0.03933085779470935,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "MEAN": {
+        "estimate": 0.03542565364253446,
+        "SE": 0.0019004008676581333,
+        "lower": 0.0315546637492611,
+        "upper": 0.039296643535807814,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "P": {
+        "estimate": 0.03601151071641677,
+        "SE": 0.001853806797667385,
+        "lower": 0.03223542983791508,
+        "upper": 0.03978759159491846,
+        "confidence_level": 0.95,
+        "df": 32
+      }
+    },
+    "contrasts": {
+      "G_measured_gain": {
+        "estimate": 0.0013929166199427995,
+        "SE": 0.00043003440835010854,
+        "lower": 0.0005169651947393263,
+        "upper": 0.0022688680451462724,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "D_substitution_loss": {
+        "estimate": 0.0010185657534031445,
+        "SE": 0.00041473822426278483,
+        "lower": 0.00017377163559484474,
+        "upper": 0.0018633598712114443,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "H_remaining_gain": {
+        "estimate": 0.000374350866539655,
+        "SE": 0.0001290895165284078,
+        "lower": 0.0001114041260317972,
+        "upper": 0.0006372976070475127,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "A_proxy_over_mean": {
+        "estimate": -8.445171641000698e-05,
+        "SE": 0.00020622157283764963,
+        "lower": -0.0005045113142638015,
+        "upper": 0.00033560788144378756,
+        "confidence_level": 0.95,
+        "df": 32
+      },
+      "G_P_retrained_proxy_gain": {
+        "estimate": -0.00012705449093265014,
+        "SE": 4.106764753768678e-05,
+        "lower": -0.00021070655153963147,
+        "upper": -4.3402430325668805e-05,
+        "confidence_level": 0.95,
+        "df": 32
+      }
+    },
+    "retention": {
+      "point": 0.26875324852899507,
+      "point_reason": "positive_measured_gain",
+      "guard": 1e-08,
+      "confidence_level": 0.95,
+      "method": "unpenalized_Fieller_using_joint_survey_Taylor_covariance_and_t",
+      "set_type": "bounded",
+      "intervals": [
+        [
+          0.08675519986234065,
+          0.6977141099099657
+        ]
+      ],
+      "denominator_supported_positive": true,
+      "headline_percentage_allowed": true
+    },
+    "joint_covariance_of_route_losses": [
+      [
+        3.44143549956177e-06,
+        3.3614055028004952e-06,
+        3.4715814469108033e-06,
+        3.4912935118678566e-06,
+        3.4381742954826474e-06
+      ],
+      [
+        3.3614055028004952e-06,
+        3.4663050984042484e-06,
+        3.4063444006384875e-06,
+        3.3982078546827956e-06,
+        3.3595521074934806e-06
+      ],
+      [
+        3.4715814469108033e-06,
+        3.4063444006384875e-06,
+        3.5183914975373747e-06,
+        3.543693809114763e-06,
+        3.468514250856142e-06
+      ],
+      [
+        3.4912935118678566e-06,
+        3.3982078546827956e-06,
+        3.543693809114763e-06,
+        3.6115234577957857e-06,
+        3.4868137756181667e-06
+      ],
+      [
+        3.4381742954826474e-06,
+        3.3595521074934806e-06,
+        3.468514250856142e-06,
+        3.4868137756181667e-06,
+        3.4365996430778046e-06
+      ]
+    ],
+    "unweighted_sensitivity": {
+      "route_Brier": {
+        "B": 0.04889774606905625,
+        "M": 0.04752344369837178,
+        "S": 0.04836356635784975,
+        "MEAN": 0.04801167842295341,
+        "P": 0.04906977708481358
+      },
+      "contrasts": {
+        "G_measured_gain": 0.00137430237068447,
+        "D_substitution_loss": 0.000840122659477964,
+        "H_remaining_gain": 0.0005341797112065061,
+        "A_proxy_over_mean": -0.0003518879348963361,
+        "G_P_retrained_proxy_gain": -0.00017203101575732904
+      },
+      "scope": "descriptive_same_predictions_no_refit_no_inferential_interval"
+    },
+    "scope": "pointwise_design_approximate_intervals_conditional_on_fitted_models_and_public_use_labels",
+    "design_counts": {
+      "full_frame_n": 20015,
+      "full_strata": 31,
+      "full_PSUs": 63,
+      "active_domain_strata": 31,
+      "active_domain_PSUs": 63
+    }
+  }
+}

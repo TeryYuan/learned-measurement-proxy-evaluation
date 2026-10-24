@@ -1,0 +1,11 @@
+﻿gamma,sigma_multiplier,metric,mean,MCSE,valid_repeats,undefined_fraction,MC_unit,q_sim,empirical_q_ge_0_05,not_a_real_data_test
+0.0,0.5,weighted_selection,0.5494845360824742,0.06532202719921869,20,0.0,noise repeat after outer weighting,0.45051546391752584,True,True
+0.0,1.0,weighted_selection,0.5670103092783505,0.06442485027265972,20,0.0,noise repeat after outer weighting,0.4329896907216495,True,True
+0.1,0.5,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+0.1,1.0,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+0.25,0.5,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+0.25,1.0,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+0.5,0.5,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+0.5,1.0,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+1.0,0.5,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True
+1.0,1.0,weighted_selection,1.0,0.0,20,0.0,noise repeat after outer weighting,0.0,False,True

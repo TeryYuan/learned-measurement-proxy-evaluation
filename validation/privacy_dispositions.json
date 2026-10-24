@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "entries": 157,
+  "raw_scanner_status": "BLOCKED",
+  "raw_blocked_findings": 6,
+  "raw_review_findings": 66,
+  "resolved_findings": 72,
+  "unresolved_findings": 0,
+  "unknown_binary_files": 0,
+  "limitations": "Bounded content and format checks; unchanged image format/visual evidence carried forward. No raw private matches are included, and no credential verification was sent to a service.",
+  "record_scope": "Historical 157-file stage; only aggregate dispositions are included in this public projection. Detailed author-side inspection notes are not distributed.",
+  "public_projection_note": "Non-scientific author-handoff/debug details omitted for the public copy; original scientific results, scope, chronology and historical status remain unchanged."
+}

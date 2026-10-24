@@ -1,0 +1,63 @@
+{
+  "protocol_id": "NHANES_CBC_FIXED_SUBSTITUTION_V2_20261019",
+  "prepared_utc": "2026-10-19T09:00:41+00:00",
+  "status": "required_analysis_writing_and_visual_checks_complete",
+  "remote_recorded_utc": null,
+  "alternative_registration_url": null,
+  "execution_started_utc": "2026-10-19T09:37:19+00:00",
+  "execution_deadline_utc": null,
+  "first_study_fit_utc": "2026-10-19T09:47:28+00:00",
+  "execution_completed_utc": "2026-10-19T09:54:49+00:00",
+  "timebox_calendar_days": null,
+  "already_inspected": [
+    "official documents and field mappings",
+    "cohort flow, missingness feasibility, role n and event totals",
+    "univariate cycle RDW and hemoglobin distributions",
+    "prespecified public follow-up boundary counts"
+  ],
+  "not_yet_computed": [],
+  "record_note": "Executed under preserved local V2 plan after direct author instruction to experiment before repository upload. No model-preceding remote record or formal preregistration was completed; later upload must retain this actual chronology.",
+  "repository_url": null,
+  "protocol_commit_url": null,
+  "repository_visibility": null,
+  "remote_record_evidence": null,
+  "execution_start_basis": "Observed UTC immediately before merging the five supplied extracted bundles; initial reading preceded this record.",
+  "cadence_amendment_utc": "2026-10-19T09:39:53+00:00",
+  "execution_mode": "continuous_until_required_deliverables_complete",
+  "historical_timebox": {
+    "timebox_calendar_days": 7,
+    "execution_deadline_utc": null
+  },
+  "author_authorized_local_execution": {
+    "recorded_utc": "2026-10-19T09:47:25+00:00",
+    "instruction": "The author directed that the local analysis proceed before repository publication.",
+    "authority": "Author decision recorded on 2026-10-19",
+    "supersedes": "remote protocol record before any study-data model fit",
+    "scope": "execute complete V2 experiment locally now; later upload only to an author-designated repository",
+    "remote_record_completed": false,
+    "first_study_fit_utc_at_change": null
+  },
+  "historical_preparation_record": {
+    "not_yet_computed": [
+      "proxy fits and Q1 errors",
+      "mortality-model fits or candidate performance",
+      "G,D,H,A,G_P,R and prediction intervals",
+      "predictor-outcome screening"
+    ],
+    "record_note": "Local preparation time is not proof of an independently recorded protocol. Complete the author-designated traceable remote version record before any study-data proxy or outcome fit; repository may be public or private. Record actual visibility and evidence only. A GitHub record is not automatically formal preregistration."
+  },
+  "computed_in_this_execution": [
+    "strict nested OOF proxies for train and development",
+    "all 24 validation candidates",
+    "selected g,B,M,P final fits",
+    "fixed M/S/MEAN queries",
+    "Q1 errors and paired mean-reference improvement",
+    "five Brier routes and paired G,D,H,A,G_P with Taylor intervals and Fieller sets",
+    "prespecified unweighted and age40_79 sensitivities",
+    "support metrics and descriptive calibration"
+  ],
+  "not_performed_out_of_scope": [
+    "predictor-outcome screening outside the prespecified program",
+    "additional tasks, measurements, horizons or model searches"
+  ]
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "measurement": "rdw_pct",
+    "unit": "percent",
+    "n": 7477,
+    "MAE": {
+      "estimate": 0.7036049459813373,
+      "SE": 0.014440433786503755,
+      "lower": 0.6741907449075799,
+      "upper": 0.7330191470550946,
+      "confidence_level": 0.95,
+      "df": 32
+    },
+    "RMSE": 1.1877862925464644,
+    "R2": 0.09230580625308715,
+    "R2_denominator": "weighted test-mean variance",
+    "development_mean": 12.844264051079811,
+    "development_mean_MAE": {
+      "estimate": 0.7608099586907888,
+      "SE": 0.016707720898667698,
+      "lower": 0.7267774448990674,
+      "upper": 0.7948424724825103,
+      "confidence_level": 0.95,
+      "df": 32
+    },
+    "MAE_improvement": {
+      "estimate": 0.05720501270945155,
+      "SE": 0.006242722056089559,
+      "lower": 0.044489003999448926,
+      "upper": 0.06992102141945418,
+      "confidence_level": 0.95,
+      "df": 32
+    },
+    "truth_min": 10.7,
+    "truth_max": 37.8,
+    "proxy_min": 12.070870961568836,
+    "proxy_max": 16.593744775937235
+  },
+  {
+    "measurement": "hemoglobin_g_dl",
+    "unit": "g/dL",
+    "n": 7477,
+    "MAE": {
+      "estimate": 0.8958629381791791,
+      "SE": 0.01341108248020535,
+      "lower": 0.8685454571033552,
+      "upper": 0.9231804192550029,
+      "confidence_level": 0.95,
+      "df": 32
+    },
+    "RMSE": 1.1963457517954952,
+    "R2": 0.3546906197158761,
+    "R2_denominator": "weighted test-mean variance",
+    "development_mean": 14.422238382980222,
+    "development_mean_MAE": {
+      "estimate": 1.1743942015170672,
+      "SE": 0.016932868240348235,
+      "lower": 1.1399030775978853,
+      "upper": 1.208885325436249,
+      "confidence_level": 0.95,
+      "df": 32
+    },
+    "MAE_improvement": {
+      "estimate": 0.27853126333788814,
+      "SE": 0.007428155823417401,
+      "lower": 0.2634006050607519,
+      "upper": 0.29366192161502436,
+      "confidence_level": 0.95,
+      "df": 32
+    },
+    "truth_min": 6.1,
+    "truth_max": 19.7,
+    "proxy_min": 10.81165748580944,
+    "proxy_max": 16.809194698574
+  }
+]

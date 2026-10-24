@@ -1,0 +1,4 @@
+﻿outer_fold,n_train_parents,n_query_parents,fC_variance,signal_variance_conditions,fC_signal_correlation,role
+0,64,33,0.02690883803740153,1.0022059205529883,-0.024546039072467347,conditional semisynthetic development-only simulation; not real ALT or new animal validation
+1,65,32,0.021568950151873528,1.0088974511454338,0.12156435715395598,conditional semisynthetic development-only simulation; not real ALT or new animal validation
+2,65,32,0.023952144608291263,1.0242849579839914,-0.09763427941213756,conditional semisynthetic development-only simulation; not real ALT or new animal validation

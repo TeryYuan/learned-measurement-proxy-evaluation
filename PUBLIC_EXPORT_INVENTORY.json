@@ -1,0 +1,1963 @@
+{
+  "schema_version": 3,
+  "construction": "Explicit per-file allowlist; original source checksums verified before construction; no private project tree or Git history copied",
+  "canonical_reader_index": "source_index.tsv",
+  "files": [
+    {
+      "destination": ".gitattributes",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": ".gitignore",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "CITATION.cff",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "DATA_ACCESS_AND_REPLAY.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "DATA_SOURCES.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "FILE_LICENSES.json",
+      "purpose": "current_inventory",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSE",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSES/CC-BY-4.0.NOTICE.txt",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSES/CC-BY-NC-4.0.NOTICE.txt",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSES/CC-BY-SA-2.1-JP.NOTICE.txt",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSES/README.md",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSE_SCOPE.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "LICENSE_STATUS.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/.gitignore",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/README.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "NHANES_Q3_Project/README_original_source_export.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/CBC_INSTRUMENT_AUDIT.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/CHANGES_V2.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/DEVIATIONS.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/EXECUTION_CADENCE_AMENDMENT.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/INTERPRETATION_zh.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/LMF_WEIGHT_AUDIT.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/PREMODEL_ANALYSIS_PLAN.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/PROTOCOL_RECORD.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/PROTOCOL_zh.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/STATISTICS.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/analysis_config.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/protocol/feature_dictionary.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/diagnostics/cbc_distributions_by_cycle.svg",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/figures/Figure6_source_data.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/brier_and_contrasts.csv",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/descriptive_calibration.csv",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/descriptive_calibration.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/fixed_substitution_summary.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/q1_measurement_performance.csv",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/q1_measurement_performance.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/selected_configurations.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/supporting_mortality_metrics.csv",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/supporting_mortality_metrics.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/unweighted_sensitivity.csv",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/validation_candidates.csv",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/reference/outputs/tables/validation_candidates.json",
+      "purpose": "clinical_reference",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/requirements.lock.txt",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/requirements.txt",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/requirements_observed_historical.txt",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/README.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/check_modeling.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/check_statistics.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/evaluate_fixed_predictions.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/export_code_only.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/fetch_inputs.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/initialize_execution.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Documentation/template wording and non-scientific metadata updated; scientific implementation, chronology and license terms retained."
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/make_outputs.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/modeling.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/pre_model_descriptives.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/preflight.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/prepare_cohort.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/record_local_authorization.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Author-decision wording revised in specified source strings only; execution logic and existing protocol records unchanged."
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/render_saved_figures.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/run_benchmark.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/run_module.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/runtime.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/scripts/saved_reports.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/sources/SOURCES.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "NHANES_Q3_Project/sources/source_manifest.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "PUBLIC_EXPORT_INVENTORY.json",
+      "purpose": "current_inventory",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "README.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "RELEASE_NOTES.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "RELEASE_STATUS.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "REPRODUCTION_SCOPE.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "SHA256SUMS",
+      "purpose": "current_inventory",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "THIRD_PARTY_NOTICES.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "VALIDATION.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figures/Figure6_NHANES_Q3.pdf",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figures/Figure6_NHANES_Q3.png",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figures/Figure6_NHANES_Q3.svg",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figures/FigureS12_CBC_distributions.pdf",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figures/FigureS12_CBC_distributions.png",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figures/FigureS12_CBC_distributions.svg",
+      "purpose": "figure_asset",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "naming_map.csv",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/README.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Documentation/template wording and non-scientific metadata updated; scientific implementation, chronology and license terms retained."
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b0/scripts/process_expression.R",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/b1_common.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Author-decision wording revised in specified source strings only; execution logic and existing protocol records unchanged."
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/banded.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/deliver.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json",
+      "current_revision_note": "Documentation/template wording and non-scientific metadata updated; scientific implementation, chronology and license terms retained."
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/diagnostics.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/proxy_cache.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/stages.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/nam_phase4b1/src/train_family.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/targeted_revision_20261013/revision_common.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/targeted_revision_20261013/run_alt.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/extensions/targeted_revision_20261013/run_seeds.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/phase6/p2_simulation.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/phase6/p3_pooled.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/phase6/p3_statistics.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/phase7/chemprop7.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/phase7/replay_phase7B.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/phase7/train7A.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/src/dili_phase1.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/src/dili_phase1p5.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/src/dili_phase2a.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/historical_implementation/src/dili_phase2bc.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/README.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/BSEP_intervals_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/BSEP_predictions.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/C_OOF.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/C_cells_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/E_BSEP_bootstrap_indices.npz",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/E_no_anyA_bootstrap_indices.npz",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/NAM_context.json",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/NAM_indices.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/NAM_intervals_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/NAM_metrics_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/NAM_predictions.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/NAM_single_intervals_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/N_bootstrap_indices.npz",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/N_bootstrap_spec.json",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/N_metrics_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/N_predictions.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/N_primary_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/bridge_association_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/bridge_indices_BSEP.npz",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/bridge_indices_DILI.npz",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/bridge_intervals_expected.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data/bridge_membership.csv",
+      "purpose": "minimal_fixed_replay_input",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/data_dictionary.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/environment.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/field_inventory.csv",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/group_membership.csv",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/provenance.csv",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/replay.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "release_candidate/legacy_fixed_replay/requirements_observed.txt",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "requirements.lock.txt",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "requirements.txt",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/COLUMN_TREATMENT.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/LOCAL_RECOVERY_REQUIREMENTS.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/README.md",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/RECOVERY_RECORD.json",
+      "purpose": "documentation_or_configuration",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/ALT24_vs_dev97_nearest_neighbors.csv",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/BSEP172_vs_train601_nearest_neighbors.csv",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/BSEP172_vs_train601_scaffolds.csv",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/BSEP201_vs_train601_nearest_neighbors.csv",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/BSEP201_vs_train601_scaffolds.csv",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/nearest_neighbor_summary.csv",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/chemical_coverage/similarity_summary.json",
+      "purpose": "saved_chemical_coverage",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/scaffold_stratified/BSEP_scaffold_stratified_inputs.csv",
+      "purpose": "saved_scaffold_analysis",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/scaffold_stratified/BSEP_scaffold_stratified_metrics.csv",
+      "purpose": "saved_scaffold_analysis",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/scaffold_stratified/analysis_metadata.json",
+      "purpose": "saved_scaffold_analysis",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/A_mask.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/A_task_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/BSEP_all_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/BSEP_saved_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/C_Brier_score_identity_checks.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/C_all13_flips_Brier_contributions.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/C_all_four_cells.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/C_all_matched_controls.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/C_version_differences.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_N_all12_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_N_posthoc_probability.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_N_primary_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_N_saved_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_N_supporting_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_O_all_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_O_all_models.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_O_task_ablation.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_auxiliary_validation.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_kernel_correction_amplitude.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_kernel_diagnostics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_kernel_lambda_selection.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_membership.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/DILI_original_timeline.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_B1_all_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_B1_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_DILI_overlap_by_split.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_DILI_overlap_members.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_all_leave_one_parent_out_influence.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_dev_proxy_all50.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_dev_source_repeat_stability.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_final_model_manifest.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_final_selected_parameters.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_holdout_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_model_metric_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_old_DILI_overlap.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_paired_comparison_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_per_parent_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_per_parent_errors.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_saved_identity_checks.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/NAM_stage_result_index.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/N_coverage_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/O_C_difference_source_rows.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S20_N_AP_above_prevalence.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S20_N_interval_margin_relations.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S20_N_score_similarity.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_generator_diagnostics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_oracle_results.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_repeat_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_repeat_conditional_losses.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_selected_parameters.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_sim_results.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S21_sim_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_Nadeau_Bengio_corrected_AP.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_cohort_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_fixed_OOF_group_bootstrap_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_fold_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_group_bootstrap_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_permutation_null.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_pooled_cv_results.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_repeat_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_repeat_metric_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S22_repeat_pooled_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_B1_saved_OOF.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_B1_threshold_adaptation.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_B3_OOF.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_B4_OOF.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_Fig_baselines_absolute_source.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_Fig_baselines_comparison_source.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_Fig_baselines_selection_source.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_Nadeau_Bengio_Holm.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_absolute_metrics_and_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_all_candidate_inner_scores.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_availability_and_gates_final.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_availability_and_gates_step0.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_bootstrap_identity_group_mapping.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_bootstrap_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_comparison_manifest.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_complete_OOF.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_count_fingerprint_audit.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_coverage_table.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_delta_candidate_band_compatibility.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_family_selection_50_contexts.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_family_selection_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_final_selection_by_outer.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_inherited_A_identity_gate.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_inherited_fold_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_members.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_model_and_parameter_index.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_outer_fold_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_paired_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_repeat_comparisons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_repeat_pooled_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_saved_draw_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_software_final_versions.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S23_targeted_source_addendum.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_D_meas_outer_selections.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_curves_and_MCSE.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_definition_source_map.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_finite_variance_identity.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_gamma_crossings.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_gamma_threshold_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_generator_condition_weights.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_per_outer_selection_curves.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_ratio_aggregation_and_NA.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_real_data_anchors.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_real_data_position.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_repeat_gains_ratios_selection.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_repeat_losses.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_saved_prediction_loss_replay.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_scenario_nonretention_curve.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_selection_context_comparison.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S24_variance_decomposition.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_all_OOF.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_contrast_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_fixed_lambda_contrasts.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_metric_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_proxy_boundaries.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_repeat_contrasts.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_repeat_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S25_ALT_selected_parameters.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S26_seed_all_N_predictions.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S26_seed_all_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S26_seed_descriptive_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S26_seed_paired_results.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S40_chemical_coverage.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/S41_BSEP_scaffold_stratified.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/SI004_qualification_flow.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/V2_qualified_not_C_or_N.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/all_routes_absolute_and_increment.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/bridge_association.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/bridge_loss_summary.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/bridge_saved_intervals.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/bridge_score_metrics.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/bridge_support.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/bridge_version_flips.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/model_information_blocks.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/sample_flow.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/sample_flow_V1_group_reasons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/sample_flow_V2_group_reasons.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "scientific_SI/tables/sample_flow_source_rows.csv",
+      "purpose": "saved_scientific_table",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "source_index.tsv",
+      "purpose": "current_inventory",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/DATA_LICENSES.md",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/DILI_SOURCE_REGISTRY.md",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/Hallmark_source_and_license.txt",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/LICENSE_DEJAVU.txt",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/REPLAY_EXCLUDED_FIELDS.csv",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/REPLAY_INPUT_DECISIONS.csv",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/liver_source_downloads.json",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "sources/replay_projection_columns.json",
+      "purpose": "license_or_source_notice",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tests/test_fixed_replay_runner.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tests/test_liver_source_acquisition.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tests/test_nhanes_summary.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tests/test_release_paths.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tools/fetch_liver_sources.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tools/run_fixed_replay.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "tools/verify_nhanes_summary.py",
+      "purpose": "original_source_code",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/handoff_review.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/input_organization.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/ir_preparation.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/isolation_configuration.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/minimal_liver_checks.csv",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/minimal_liver_isolation.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/minimal_liver_replay.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/nhanes_rebuild_comparison.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/nhanes_summary.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/prior_qa_run_status.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/privacy_dispositions.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/private_replay_summary.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/public_nhanes_full.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/public_saved_entries.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/publication_preparation.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/release_preparation.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/release_review.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "validation/run_status.json",
+      "purpose": "scoped_validation_record",
+      "rights_scope_reference": "FILE_LICENSES.json"
+    },
+    {
+      "destination": "figure_patch/assets/ATTRIBUTION.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/ATTRIBUTION.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/icons/adult_group.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/icons/blood_sample_tube.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/icons/cell_culture_dish.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/icons/liver.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/icons/questionnaire.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/icons/rat.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/LICENSE_TABLER.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/assets/REVISION_USAGE.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/FILE_LIST.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig1_three_questions.pdf",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig1_three_questions.png",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig1_three_questions.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig2_BSEP_endpoint.pdf",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig2_BSEP_endpoint.png",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig2_BSEP_endpoint.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig3_DILI_N.pdf",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig3_DILI_N.png",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig3_DILI_N.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig4_NAM_case.pdf",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig4_NAM_case.png",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig4_NAM_case.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig5_sensitivity_positive_control.pdf",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig5_sensitivity_positive_control.png",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/main_figures/Fig5_sensitivity_positive_control.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/main_figures/Figure6_NHANES_Q3.pdf",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Figure6_NHANES_Q3.png",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/main_figures/Figure6_NHANES_Q3.svg",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/PUBLICATION_FILES.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/README.md",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/CC-BY-4.0.NOTICE.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/CC-BY-NC-4.0.NOTICE.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/CC-BY-SA-2.1-JP.NOTICE.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/EXTRA_DATA_LICENSES.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/LICENSE_CODE.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/LICENSE_SCOPE.md",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/rights/OPEN_TGGATES_ADDITIONAL_LICENSE.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/check_arial.py",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/data_status.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/display_references.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/source/data/Fig3_BSEP_bridge_BSEP_intervals.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/Figure6_source_data.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/FIGURE_INPUT_PROVENANCE.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/source/data/input_sha256.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/source/data/original_drawing_ledger.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/plotted_saved_values.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/N_primary_expected.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/NAM_final_selected_parameters.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/NAM_saved_identity_checks.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/S24_curves_and_MCSE.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/S24_definition_source_map.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/S24_ratio_aggregation_and_NA.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/S24_repeat_gains_ratios_selection.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/S24_repeat_losses.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/data/source_tables/S26_seed_paired_results.csv",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/render_common.py",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/render_figures.py",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Submission presentation v2; no scientific recomputation"
+    },
+    {
+      "destination": "figure_patch/source/requirements-render.txt",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/runtime_versions.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/source/SOURCE_TO_OUTPUT.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/spec/MODEL_LABEL_MAP.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    },
+    {
+      "destination": "figure_patch/spec/STYLE_PATCH_SPEC.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md",
+      "current_revision_note": "Documentation/template wording and non-scientific metadata updated; scientific implementation, chronology and license terms retained."
+    },
+    {
+      "destination": "figure_patch/spec/SYMBOL_MAP.json",
+      "purpose": "current_figure_patch",
+      "rights_scope_reference": "FILE_LICENSES.json and figure_patch/rights/LICENSE_SCOPE.md"
+    }
+  ]
+}

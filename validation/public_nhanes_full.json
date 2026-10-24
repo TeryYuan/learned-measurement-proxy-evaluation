@@ -1,0 +1,35 @@
+{
+  "scope": "NHANES_raw_cohort_and_full_training",
+  "capabilities_dropped": true,
+  "no_new_privileges": true,
+  "original_paths_unreadable": true,
+  "host_home_absent": true,
+  "host_mounts_absent": true,
+  "pid_namespace_proc_only": true,
+  "candidate_read_only": true,
+  "network_unreachable": true,
+  "syntax_files": 43,
+  "private_replay_inputs_absent": true,
+  "official_inputs_read_only": true,
+  "pip_check": {
+    "return_code": 0,
+    "elapsed_seconds": 9.842
+  },
+  "official_inputs_reuse": {
+    "return_code": 0,
+    "elapsed_seconds": 4.743
+  },
+  "raw_cohort_rebuild": {
+    "return_code": 0,
+    "elapsed_seconds": 22.381
+  },
+  "full_numerical_entry": {
+    "return_code": 0,
+    "elapsed_seconds": 229.703
+  },
+  "rebuilt_summary_check": {
+    "return_code": 0,
+    "elapsed_seconds": 14.196
+  },
+  "status": "PASS"
+}

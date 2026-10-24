@@ -1,0 +1,7 @@
+﻿route_model,lambdaC,lambdaX,lambdaZ,selection_MAE,n_candidates,n_tied,actual_X_retained,actual_Z_retained
+D_cond,0.01,DROP,DROP,0.21551396531797073,1,1,False,False
+D_struct,0.01,DROP,DROP,0.21551396531797073,4,1,False,False
+D_meas_only,0.01,DROP,DROP,0.21551396531797073,4,1,False,False
+D_pred,0.01,DROP,0.1,0.21499056110805934,16,1,False,True
+D_meas,0.01,DROP,DROP,0.21551396531797073,16,1,False,False
+D_perm,0.01,DROP,10.0,0.2154811985287336,16,1,False,True

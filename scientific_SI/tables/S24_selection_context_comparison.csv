@@ -1,0 +1,8 @@
+﻿context,outer_fold,n_train,n_query,inner_folds,noise_repeats,generator_scope,source_file,lambdaX,lambdaZ,actual_Z_retained,query_values_read
+simulation_outer_refit,0.0,64,33.0,3,20,outer-training locked; no simulation_full97_selection,phase6/simulation/cache/generator_outer0.npz,,,,
+simulation_outer_refit,1.0,65,32.0,3,20,outer-training locked; no simulation_full97_selection,phase6/simulation/cache/generator_outer1.npz,,,,
+simulation_outer_refit,2.0,65,32.0,3,20,outer-training locked; no simulation_full97_selection,phase6/simulation/cache/generator_outer2.npz,,,,
+actual_block_outer_refit,0.0,64,33.0,3,1,,extensions/nam_phase4b1/figures/source_data/fig6_selected_penalties_selections.csv,DROP,DROP,False,
+actual_block_outer_refit,1.0,65,32.0,3,1,,extensions/nam_phase4b1/figures/source_data/fig6_selected_penalties_selections.csv,0.1,10.0,True,
+actual_block_outer_refit,2.0,65,32.0,3,1,,extensions/nam_phase4b1/figures/source_data/fig6_selected_penalties_selections.csv,DROP,10.0,True,
+actual_full97_selection,,97,,3,1,,extensions/nam_phase4c/figures/source_data/fig4_final_parameters_selection.csv,DROP,DROP,False,False

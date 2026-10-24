@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "scope": "Visual encoding only; does not change route definitions, fitted objects, statistical comparisons or numerical values.",
+  "principles": [
+    "Reserve x exclusively for permutation-supervision controls.",
+    "Use the same zero, mean and median reference markers across matching reference types.",
+    "Shared markers do not mean that a measurement-mean comparator and a fixed-model mean-input query are the same operation. Retain explicit labels.",
+    "Route estimates and paired contrast estimates use separate stated namespaces. Figure5A leaf-size groups are a separate descriptive encoding.",
+    "Color never carries the distinction alone; retain shape/fill/line style and direct row labels."
+  ],
+  "palette": {
+    "measured": "#216B8C",
+    "proxy": "#C97A26",
+    "reference": "#68727B",
+    "remaining_gain": "#27867A"
+  },
+  "route_roles": {
+    "baseline_without_measurement": {
+      "marker": "s",
+      "filled": true,
+      "color": "reference",
+      "examples": [
+        "M0",
+        "B",
+        "No-Z",
+        "collapsed condition-only route point"
+      ]
+    },
+    "measured_input": {
+      "marker": "o",
+      "filled": true,
+      "color": "measured",
+      "examples": [
+        "M",
+        "Forced-Z",
+        "fixed lambda_Z active-input sensitivity"
+      ]
+    },
+    "learned_measurement_proxy": {
+      "marker": "o",
+      "filled": true,
+      "color": "proxy",
+      "examples": [
+        "BSEP real-supervision forest endpoint",
+        "NHANES measurement prediction in Figure6B"
+      ]
+    },
+    "separately_fitted_proxy_input": {
+      "marker": "D",
+      "filled": true,
+      "color": "proxy",
+      "examples": [
+        "M1",
+        "independent predicted-input ALT model",
+        "P"
+      ]
+    },
+    "residual_proxy": {
+      "marker": "p",
+      "filled": true,
+      "color": "proxy",
+      "examples": [
+        "R_gate"
+      ]
+    },
+    "fixed_proxy_substitution": {
+      "marker": "s",
+      "filled": false,
+      "color": "proxy",
+      "examples": [
+        "S"
+      ]
+    },
+    "permutation_supervision": {
+      "marker": "x",
+      "filled": false,
+      "color": "reference",
+      "examples": [
+        "Mperm",
+        "R_gate_perm",
+        "permutation-trained BSEP/ALT input"
+      ]
+    },
+    "structural_kernel": {
+      "marker": "h",
+      "filled": false,
+      "color": "reference",
+      "examples": [
+        "R_gate_struct"
+      ]
+    },
+    "zero_response": {
+      "marker": "v",
+      "filled": true,
+      "color": "reference",
+      "examples": [
+        "Figure4C zero response",
+        "Figure5B zero response"
+      ]
+    },
+    "mean_reference": {
+      "marker": "^",
+      "filled": false,
+      "color": "reference",
+      "examples": [
+        "Figure4C training compound mean",
+        "Figure6B development-mean measurement comparator",
+        "Figure6C MEAN fixed-model query"
+      ]
+    },
+    "weighted_median_reference": {
+      "marker": "<",
+      "filled": false,
+      "color": "reference",
+      "examples": [
+        "Figure4C training weighted median"
+      ]
+    }
+  },
+  "contrast_roles": {
+    "measured_gain_or_measured_difference": {
+      "marker": "o",
+      "filled": true,
+      "color": "measured"
+    },
+    "proxy_vs_baseline_difference": {
+      "marker": "D",
+      "filled": true,
+      "color": "proxy"
+    },
+    "residual_vs_baseline_difference": {
+      "marker": "p",
+      "filled": true,
+      "color": "proxy"
+    },
+    "substitution_loss": {
+      "marker": "s",
+      "filled": false,
+      "color": "proxy",
+      "line_style": "-- where curves; solid whiskers for intervals"
+    },
+    "remaining_gain": {
+      "marker": "D",
+      "filled": true,
+      "color": "remaining_gain"
+    }
+  },
+  "bindings": {
+    "Figure2A": {
+      "real": "learned_measurement_proxy",
+      "permuted": "permutation_supervision"
+    },
+    "Figure2B": {
+      "real_minus_permuted": "Keep orange circles; these are supervision differences, not a new model route."
+    },
+    "Figure3A": {
+      "M1_minus_M0": "proxy_vs_baseline_difference",
+      "R_gate_minus_M0": "residual_vs_baseline_difference"
+    },
+    "Figure3B_C": {
+      "M0": "baseline_without_measurement",
+      "M1": "separately_fitted_proxy_input",
+      "R_gate": "residual_proxy",
+      "Mperm": "permutation_supervision",
+      "R_gate_perm": "permutation_supervision",
+      "R_gate_struct": "structural_kernel"
+    },
+    "Figure4B": {
+      "M1_measured": "measured_gain_or_measured_difference",
+      "M2_predicted": "proxy_vs_baseline_difference",
+      "M3_substitution": "substitution_loss"
+    },
+    "Figure4C": {
+      "condition_only_collapsed": "baseline_without_measurement",
+      "independent_predicted_input": "separately_fitted_proxy_input",
+      "permutation_trained_input": "permutation_supervision",
+      "zero_response": "zero_response",
+      "training_compound_mean": "mean_reference",
+      "training_weighted_median": "weighted_median_reference"
+    },
+    "Figure5A": {
+      "namespace": "descriptive leaf-size category",
+      "leaf_1": "o",
+      "leaf_3": "D",
+      "color": "proxy",
+      "original_fixed_fit_reference": "Original fixed fit is not among the 30 refits. Add a separately labelled line; do not mark one seed or change n=30/mean."
+    },
+    "Figure5B": {
+      "zero_response": "zero_response",
+      "no_Z": "baseline_without_measurement",
+      "forced_Z_and_fixed_lambda_Z": "measured_input"
+    },
+    "Figure5C": {
+      "G": "measured_gain_or_measured_difference",
+      "D": "substitution_loss",
+      "unshifted_gamma": true,
+      "R_inset": "Existing mean repeat-wise ratio ± MCSE; teal circles/line, gamma0 NA, percent units."
+    },
+    "Figure6B": {
+      "proxy": "learned_measurement_proxy",
+      "development_mean": "mean_reference"
+    },
+    "Figure6C": {
+      "B": "baseline_without_measurement",
+      "M": "measured_input",
+      "S": "fixed_proxy_substitution",
+      "MEAN": "mean_reference",
+      "P": "separately_fitted_proxy_input"
+    },
+    "Figure6D": {
+      "G": "measured_gain_or_measured_difference",
+      "D": "substitution_loss",
+      "H": "remaining_gain"
+    }
+  },
+  "implementation": "Adapt symbols using actual stored route IDs; do not rename JSON keys or infer route identities from display strings. Update legend descriptions where shapes change."
+}

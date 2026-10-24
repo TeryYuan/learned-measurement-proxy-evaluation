@@ -1,0 +1,406 @@
+{
+  "retrieved_utc": "2026-10-19",
+  "source": "NCHS public-use downloads",
+  "data_files": [
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "DEMO_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/DEMO_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/DEMO_C.htm",
+      "bytes": 3569840,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DEMO_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "BMX_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BMX_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BMX_C.htm",
+      "bytes": 2551120,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BMX_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "BPX_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BPX_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BPX_C.htm",
+      "bytes": 2319280,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPX_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "SMQ_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/SMQ_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/SMQ_C.htm",
+      "bytes": 1932320,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/SMQ_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "DIQ_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/DIQ_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/DIQ_C.htm",
+      "bytes": 1314880,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DIQ_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "MCQ_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/MCQ_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/MCQ_C.htm",
+      "bytes": 11904960,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/MCQ_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "BPQ_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BPQ_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/BPQ_C.htm",
+      "bytes": 1795120,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPQ_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "HUQ_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/HUQ_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/HUQ_C.htm",
+      "bytes": 1298640,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/HUQ_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "L25_C.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/L25_C.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/L25_C.htm",
+      "bytes": 1545760,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/L25_C.xpt"
+    },
+    {
+      "cycle": "2003-2004",
+      "role": "development",
+      "file": "NHANES_2003_2004_MORT_2019_PUBLIC.dat",
+      "data_url": "https://ftp.cdc.gov/pub/health_statistics/nchs/datalinkage/linked_mortality/NHANES_2003_2004_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "bytes": 495722,
+      "verification": "downloaded_fixed_width_text",
+      "local_path": "input/raw/NHANES_2003_2004_MORT_2019_PUBLIC.dat"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "DEMO_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/DEMO_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/DEMO_D.htm",
+      "bytes": 3566560,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DEMO_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "BMX_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BMX_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BMX_D.htm",
+      "bytes": 2153760,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BMX_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "BPX_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BPX_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BPX_D.htm",
+      "bytes": 2233440,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPX_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "SMQ_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/SMQ_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/SMQ_D.htm",
+      "bytes": 2578880,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/SMQ_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "DIQ_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/DIQ_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/DIQ_D.htm",
+      "bytes": 2834560,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DIQ_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "MCQ_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/MCQ_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/MCQ_D.htm",
+      "bytes": 7006480,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/MCQ_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "BPQ_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BPQ_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/BPQ_D.htm",
+      "bytes": 788800,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPQ_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "HUQ_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/HUQ_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/HUQ_D.htm",
+      "bytes": 830000,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/HUQ_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "CBC_D.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/CBC_D.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2005/DataFiles/CBC_D.htm",
+      "bytes": 1589600,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/CBC_D.xpt"
+    },
+    {
+      "cycle": "2005-2006",
+      "role": "development",
+      "file": "NHANES_2005_2006_MORT_2019_PUBLIC.dat",
+      "data_url": "https://ftp.cdc.gov/pub/health_statistics/nchs/datalinkage/linked_mortality/NHANES_2005_2006_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "bytes": 506774,
+      "verification": "downloaded_fixed_width_text",
+      "local_path": "input/raw/NHANES_2005_2006_MORT_2019_PUBLIC.dat"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "DEMO_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DEMO_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DEMO_E.htm",
+      "bytes": 3498080,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DEMO_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "BMX_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BMX_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BMX_E.htm",
+      "bytes": 1800240,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BMX_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "BPX_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BPX_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BPX_E.htm",
+      "bytes": 2113200,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPX_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "SMQ_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/SMQ_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/SMQ_E.htm",
+      "bytes": 2449520,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/SMQ_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "DIQ_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DIQ_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/DIQ_E.htm",
+      "bytes": 2789600,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DIQ_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "MCQ_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/MCQ_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/MCQ_E.htm",
+      "bytes": 7127840,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/MCQ_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "BPQ_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BPQ_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/BPQ_E.htm",
+      "bytes": 998480,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPQ_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "HUQ_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/HUQ_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/HUQ_E.htm",
+      "bytes": 814080,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/HUQ_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "CBC_E.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/CBC_E.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2007/DataFiles/CBC_E.htm",
+      "bytes": 1567280,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/CBC_E.xpt"
+    },
+    {
+      "cycle": "2007-2008",
+      "role": "temporal_evaluation",
+      "file": "NHANES_2007_2008_MORT_2019_PUBLIC.dat",
+      "data_url": "https://ftp.cdc.gov/pub/health_statistics/nchs/datalinkage/linked_mortality/NHANES_2007_2008_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "bytes": 498376,
+      "verification": "downloaded_fixed_width_text",
+      "local_path": "input/raw/NHANES_2007_2008_MORT_2019_PUBLIC.dat"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "DEMO_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/DEMO_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/DEMO_F.htm",
+      "bytes": 3631600,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DEMO_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "BMX_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BMX_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BMX_F.htm",
+      "bytes": 1890560,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BMX_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "BPX_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BPX_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BPX_F.htm",
+      "bytes": 2219280,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPX_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "SMQ_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/SMQ_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/SMQ_F.htm",
+      "bytes": 2580560,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/SMQ_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "DIQ_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/DIQ_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/DIQ_F.htm",
+      "bytes": 1620960,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/DIQ_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "MCQ_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/MCQ_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/MCQ_F.htm",
+      "bytes": 6562720,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/MCQ_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "BPQ_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BPQ_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/BPQ_F.htm",
+      "bytes": 1161040,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/BPQ_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "HUQ_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/HUQ_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/HUQ_F.htm",
+      "bytes": 845120,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/HUQ_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "CBC_F.xpt",
+      "data_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/CBC_F.xpt",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/CBC_F.htm",
+      "bytes": 1656000,
+      "verification": "downloaded_and_parsed_as_SAS_XPORT",
+      "local_path": "input/raw/CBC_F.xpt"
+    },
+    {
+      "cycle": "2009-2010",
+      "role": "temporal_evaluation",
+      "file": "NHANES_2009_2010_MORT_2019_PUBLIC.dat",
+      "data_url": "https://ftp.cdc.gov/pub/health_statistics/nchs/datalinkage/linked_mortality/NHANES_2009_2010_MORT_2019_PUBLIC.dat",
+      "documentation_url": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+      "bytes": 517751,
+      "verification": "downloaded_fixed_width_text",
+      "local_path": "input/raw/NHANES_2009_2010_MORT_2019_PUBLIC.dat"
+    }
+  ]
+}

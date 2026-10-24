@@ -1,0 +1,5 @@
+﻿gamma_lower,gamma_upper,real_variance_share,status,reason
+,,,NOT_IDENTIFIABLE_FROM_EXISTING_DESIGN,outer64/65 selection differs from final97 event
+,,,NOT_IDENTIFIABLE_FROM_EXISTING_DESIGN,real ALT is not established to follow fC+gamma*PC1; residual can absorb any coefficient change
+,,,NOT_IDENTIFIABLE_FROM_EXISTING_DESIGN,"sigma0 is sampling SE calibration, not known regression residual SD; heteroscedastic and shared-control real errors"
+,,,NOT_IDENTIFIABLE_FROM_EXISTING_DESIGN,20 correlated-context noise repeats cannot give precise 5% real-data inversion

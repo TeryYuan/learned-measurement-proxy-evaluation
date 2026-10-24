@@ -1,0 +1,16 @@
+{
+  "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "libraries": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "rdkit": "2026.3.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "psutil": "7.2.2",
+    "matplotlib": "3.11.2",
+    "pytest": "9.1.1"
+  },
+  "cpu_policy": "CPU; serial grid; forest n_jobs=4; BLAS/OpenMP threads=1"
+}

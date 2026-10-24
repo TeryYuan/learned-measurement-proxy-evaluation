@@ -1,0 +1,49 @@
+{
+  "Figure1": {
+    "data": "conceptual; current manuscript definitions",
+    "icons": [
+      "liver",
+      "cell_culture_dish",
+      "adult_group",
+      "blood_sample_tube"
+    ]
+  },
+  "Figure2": {
+    "data": "source/data/Fig3_BSEP_bridge_BSEP_intervals.csv",
+    "icons": [],
+    "display_references": "source/data/display_references.json"
+  },
+  "Figure3": {
+    "data": "source/data/plotted_saved_values.json#Figure3",
+    "icons": []
+  },
+  "Figure4": {
+    "data": "source/data/plotted_saved_values.json#Figure4",
+    "icons": [
+      "cell_culture_dish",
+      "rat"
+    ],
+    "panel_map": {
+      "A": "new schematic",
+      "B": "baseline A",
+      "C": "baseline B"
+    },
+    "identity_evidence": "source/data/source_tables/NAM_saved_identity_checks.csv"
+  },
+  "Figure5": {
+    "data": "source/data/plotted_saved_values.json#Figure5",
+    "icons": [],
+    "added_saved_sources": [
+      "source/data/source_tables/N_primary_expected.csv",
+      "source/data/source_tables/S24_curves_and_MCSE.csv"
+    ]
+  },
+  "Figure6": {
+    "data": "source/data/Figure6_source_data.json",
+    "icons": [
+      "adult_group",
+      "questionnaire",
+      "blood_sample_tube"
+    ]
+  }
+}

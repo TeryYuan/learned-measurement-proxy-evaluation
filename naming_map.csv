@@ -1,0 +1,36 @@
+﻿legacy_id,display_name,candidate_inputs,final_historical_inputs,new_P2_P3_rule
+M0,Structural baseline,structure2056,structure2056,consult per-context selected parameters; historical final blocks are not assumed
+B_star,Structural backbone alias,structure2056,same realized predictions as M0,consult per-context selected parameters; historical final blocks are not assumed
+M1,Real-assay concatenation,structure + three observed-assay proxies,all candidate inputs,consult per-context selected parameters; historical final blocks are not assumed
+Mperm,Permuted-assay concatenation,structure + three original single-permutation proxies,all candidate inputs,consult per-context selected parameters; historical final blocks are not assumed
+Mchem,Chemical-target concatenation,structure + three chemical-target proxies,all candidate inputs,consult per-context selected parameters; historical final blocks are not assumed
+L2LR,L2 logistic structural reference,structure2056,structure2056,consult per-context selected parameters; historical final blocks are not assumed
+R_score,Auxiliary-score residual,backbone offset + score kernel,"selected residual, including no correction option",consult per-context selected parameters; historical final blocks are not assumed
+R_leaf,Auxiliary-leaf residual,backbone offset + forest leaf kernel,selected residual,consult per-context selected parameters; historical final blocks are not assumed
+R_gate,Coverage-gated leaf residual,offset + coverage-gated real forest kernel,designated extension; not best-control renaming,consult per-context selected parameters; historical final blocks are not assumed
+R_gate_perm,Permuted coverage-gated control,offset + permuted forest kernel,matched control,consult per-context selected parameters; historical final blocks are not assumed
+R_gate_chem,Chemical coverage-gated control,offset + chemical forest kernel,matched control,consult per-context selected parameters; historical final blocks are not assumed
+R_gate_struct,Gated structural-kernel control,offset + Tanimoto kernel,matched control,consult per-context selected parameters; historical final blocks are not assumed
+D_cond,Condition route,C,C,consult per-context selected parameters; historical final blocks are not assumed
+D_struct,Candidate structural route,C/X,C after DROP-X,consult per-context selected parameters; historical final blocks are not assumed
+D_meas_only,Candidate measured-only augmentation,C/Z,C after DROP-Z,consult per-context selected parameters; historical final blocks are not assumed
+D_pred,Predicted-PHH route,C/X/predictedZ,C/predictedZ; indirect structure through g,consult per-context selected parameters; historical final blocks are not assumed
+D_meas,Candidate measured-PHH route,C/X/Z,C after DROP-X and DROP-Z,consult per-context selected parameters; historical final blocks are not assumed
+D_perm,Permuted-PHH control,C/X/permutedZ,C/Z trained on permuted vectors,consult per-context selected parameters; historical final blocks are not assumed
+D_swap,Fixed measured-model proxy substitution,same D_meas object,C; exact equality under DROP-Z,consult per-context selected parameters; historical final blocks are not assumed
+D_meanZ,Fixed measured-model mean substitution,same D_meas object,C; exact equality under DROP-Z,consult per-context selected parameters; historical final blocks are not assumed
+zero_response,Zero-response reference,none,constant zero,consult per-context selected parameters; historical final blocks are not assumed
+training_compound_mean,Parent-weighted training mean,training outcomes,constant,consult per-context selected parameters; historical final blocks are not assumed
+training_weighted_median,Parent-weighted training median,training outcomes,constant,consult per-context selected parameters; historical final blocks are not assumed
+B1_base,Saved structural RF / base,binary Morgan2048 + original8; no auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B1_real,Saved structural RF / real,binary Morgan2048 + original8; three fixed real auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B1_legacy_perm,Saved structural RF / legacy_perm,binary Morgan2048 + original8; three original single-permutation auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B3_base,Count-fingerprint LightGBM / base,count Morgan2048 + original8; no auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B3_real,Count-fingerprint LightGBM / real,count Morgan2048 + original8; three fixed real auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B3_legacy_perm,Count-fingerprint LightGBM / legacy_perm,count Morgan2048 + original8; three original single-permutation auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B4_base,Small directed bond MPNN / base,molecular graph + original8 after mean aggregation; no auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B4_real,Small directed bond MPNN / real,molecular graph + original8 after mean aggregation; three fixed real auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+B4_legacy_perm,Small directed bond MPNN / legacy_perm,molecular graph + original8 after mean aggregation; three original single-permutation auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+S_all_base,Training-internal family-selection procedure / base,selected B3 or B4; same family for all branches; no auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+S_all_real,Training-internal family-selection procedure / real,selected B3 or B4; same family for all branches; three fixed real auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model
+S_all_legacy_perm,Training-internal family-selection procedure / legacy_perm,selected B3 or B4; same family for all branches; three original single-permutation auxiliary scores,per-T selected configuration; no full750 production model,post-hoc7A; no ensemble or newly randomized auxiliary model

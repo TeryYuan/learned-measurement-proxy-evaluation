@@ -1,0 +1,23 @@
+{
+  "amended_utc": "2026-10-19T09:39:53+00:00",
+  "authority": "user message in current session on 2026-10-19",
+  "historical_timebox": {
+    "calendar_days": 7,
+    "starts": "actual execution start, recorded in UTC",
+    "includes": "analysis and manuscript drafting",
+    "outcome_independent": true,
+    "on_timeout": "stop new fitting, preserve completed and partial work, mark incomplete module; no claim that completed negative results were absent"
+  },
+  "current_timebox": {
+    "calendar_days": null,
+    "starts": "recorded actual execution start",
+    "includes": "analysis and manuscript drafting",
+    "outcome_independent": true,
+    "on_timeout": null,
+    "mode": "continuous_until_required_deliverables_complete",
+    "amended_utc": "2026-10-19T09:39:53+00:00"
+  },
+  "scientific_parameters_changed": false,
+  "first_study_fit_utc_at_amendment": null,
+  "prior_study_models_found": false
+}

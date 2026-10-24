@@ -1,0 +1,41 @@
+{
+  "liver": {
+    "figures": [
+      1
+    ],
+    "adaptation": "Scaled only; geometry and source colors unchanged."
+  },
+  "rat": {
+    "figures": [
+      4
+    ],
+    "adaptation": "Scaled to 47 × 29 pt; composition-only darker gray fills and outlines; nonwhite existing stroke widths multiplied by 1.65. Source SVG geometry and original file unchanged. See render_common.py recolor map."
+  },
+  "cell_culture_dish": {
+    "figures": [
+      1,
+      4
+    ],
+    "adaptation": "Scaled; two medium colors desaturated in the composed figures; geometry unchanged."
+  },
+  "blood_sample_tube": {
+    "figures": [
+      1,
+      6
+    ],
+    "adaptation": "Scaled; tube and cap colors desaturated in the composed figures; geometry unchanged."
+  },
+  "adult_group": {
+    "figures": [
+      1,
+      6
+    ],
+    "adaptation": "Scaled; currentColor resolved to #68727B; neutral group symbol, no sex-composition encoding."
+  },
+  "questionnaire": {
+    "figures": [
+      6
+    ],
+    "adaptation": "Scaled; currentColor resolved to #68727B."
+  }
+}

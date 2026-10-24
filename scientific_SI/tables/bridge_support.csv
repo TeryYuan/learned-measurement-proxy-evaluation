@@ -1,0 +1,4 @@
+﻿population,n,BSEP_positive,BSEP_negative,DILI_V1_positive,DILI_V1_negative,DILI_V2_positive,DILI_V2_negative,C_n,O_n,N_n,registry_overlap_n,fully_available_bridge_n,structure_groups
+E_BSEP,201,37,164,125,11,125,11,136,137,1,156,136,162
+S_bridge,136,26,110,125,11,125,11,136,136,0,136,136,114
+S_bridge_intersection_E_no_anyA,136,26,110,125,11,125,11,136,136,0,136,136,114

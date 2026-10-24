@@ -1,0 +1,16 @@
+Open TG-GATEs — Standard and Additional License notice
+Source: https://dbarchive.biosciencedbc.jp/en/open-tggates/lic.html
+Source page last updated: 2012/05/24; checked 2026-10-23.
+Standard License: Creative Commons Attribution-Share Alike 2.1 Japan
+https://creativecommons.org/licenses/by-sa/2.1/jp/legalcode
+Required attribution: Toxicogenomics Project and Toxicogenomics Informatics Project under CC Attribution-Share Alike 2.1 Japan
+
+Additional License
+
+1. You must display this Additional License along with the Standard License when distributing any derivative work based on part of whole of the data from this database.
+
+2. When you conduct research by using this database, and describe the research results in an article or paper, you always need to cite this database, and specify the name and URL of this database in the article or paper.
+
+3.You need to contact the Licensor shown below to request a license for use of this database or any part thereof not licensed under the Standard License and the above Additional License.
+
+Licensor: National Institute of Biomedical Innovation. Contact details are on the source license page.

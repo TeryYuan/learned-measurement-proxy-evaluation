@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "state": "PREPARED_FOR_PUBLICATION_NO_REMOTE_ACTION",
+  "copyright_holder": "Yuan Cao",
+  "copyright_year": 2026,
+  "affiliation": "Independent Researcher",
+  "ownership_confirmed": true,
+  "file_level_license_plan_applied": true,
+  "license_map": "FILE_LICENSES.json",
+  "file_inventory": "PUBLIC_EXPORT_INVENTORY.json",
+  "github_repository_url": null,
+  "release_url": null,
+  "release_tag": null,
+  "git_commit": null,
+  "zenodo_record_url": null,
+  "zenodo_version_doi": null,
+  "zenodo_concept_doi": null,
+  "publication_date": null,
+  "remote_action_performed_in_this_preparation": false,
+  "historical_records": "Historical validation and protocol records retain the status and chronology of their own stages."
+}

@@ -1,0 +1,250 @@
+[
+  {
+    "file": "assets/ATTRIBUTION.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "assets/ATTRIBUTION.txt",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "assets/icons/adult_group.svg",
+    "scope": "MIT"
+  },
+  {
+    "file": "assets/icons/blood_sample_tube.svg",
+    "scope": "CC0-1.0"
+  },
+  {
+    "file": "assets/icons/cell_culture_dish.svg",
+    "scope": "CC0-1.0"
+  },
+  {
+    "file": "assets/icons/liver.svg",
+    "scope": "CC0-1.0"
+  },
+  {
+    "file": "assets/icons/questionnaire.svg",
+    "scope": "MIT"
+  },
+  {
+    "file": "assets/icons/rat.svg",
+    "scope": "CC-BY-3.0"
+  },
+  {
+    "file": "assets/LICENSE_TABLER.txt",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "assets/REVISION_USAGE.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig1_three_questions.pdf",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig1_three_questions.png",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig1_three_questions.svg",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig2_BSEP_endpoint.pdf",
+    "scope": "CC BY-NC 4.0 BSEP-related material; source conditions retained"
+  },
+  {
+    "file": "main_figures/Fig2_BSEP_endpoint.png",
+    "scope": "CC BY-NC 4.0 BSEP-related material; source conditions retained"
+  },
+  {
+    "file": "main_figures/Fig2_BSEP_endpoint.svg",
+    "scope": "CC BY-NC 4.0 BSEP-related material; source conditions retained"
+  },
+  {
+    "file": "main_figures/Fig3_DILI_N.pdf",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig3_DILI_N.png",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig3_DILI_N.svg",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Fig4_NAM_case.pdf",
+    "scope": "CC BY-SA 2.1 Japan + TG-GATEs Additional License; rat CC BY 3.0"
+  },
+  {
+    "file": "main_figures/Fig4_NAM_case.png",
+    "scope": "CC BY-SA 2.1 Japan + TG-GATEs Additional License; rat CC BY 3.0"
+  },
+  {
+    "file": "main_figures/Fig4_NAM_case.svg",
+    "scope": "CC BY-SA 2.1 Japan + TG-GATEs Additional License; rat CC BY 3.0"
+  },
+  {
+    "file": "main_figures/Fig5_sensitivity_positive_control.pdf",
+    "scope": "Section-specific mixed terms; see rights/LICENSE_SCOPE.md"
+  },
+  {
+    "file": "main_figures/Fig5_sensitivity_positive_control.png",
+    "scope": "Section-specific mixed terms; see rights/LICENSE_SCOPE.md"
+  },
+  {
+    "file": "main_figures/Fig5_sensitivity_positive_control.svg",
+    "scope": "Section-specific mixed terms; see rights/LICENSE_SCOPE.md"
+  },
+  {
+    "file": "main_figures/Figure6_NHANES_Q3.pdf",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Figure6_NHANES_Q3.png",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "main_figures/Figure6_NHANES_Q3.svg",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "README.md",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "rights/CC-BY-4.0.NOTICE.txt",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "rights/CC-BY-NC-4.0.NOTICE.txt",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "rights/CC-BY-SA-2.1-JP.NOTICE.txt",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "rights/EXTRA_DATA_LICENSES.json",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "rights/LICENSE_CODE.txt",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "rights/LICENSE_SCOPE.md",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "rights/OPEN_TGGATES_ADDITIONAL_LICENSE.txt",
+    "scope": "Retained original notice / per-file grant; no blanket relicensing"
+  },
+  {
+    "file": "source/check_arial.py",
+    "scope": "MIT original code; rights/LICENSE_CODE.txt"
+  },
+  {
+    "file": "source/data/data_status.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "source/data/display_references.json",
+    "scope": "CC BY-NC 4.0 BSEP-related material; source conditions retained"
+  },
+  {
+    "file": "source/data/Fig3_BSEP_bridge_BSEP_intervals.csv",
+    "scope": "CC BY-NC 4.0 BSEP-related material; source conditions retained"
+  },
+  {
+    "file": "source/data/Figure6_source_data.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "source/data/FIGURE_INPUT_PROVENANCE.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "source/data/input_sha256.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "source/data/original_drawing_ledger.json",
+    "scope": "Section-specific mixed terms; see rights/LICENSE_SCOPE.md"
+  },
+  {
+    "file": "source/data/plotted_saved_values.json",
+    "scope": "Section-specific mixed terms; see rights/LICENSE_SCOPE.md"
+  },
+  {
+    "file": "source/data/source_tables/N_primary_expected.csv",
+    "scope": "CC-BY-4.0; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/NAM_final_selected_parameters.csv",
+    "scope": "CC-BY-SA-2.1-JP; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/NAM_saved_identity_checks.csv",
+    "scope": "CC-BY-4.0; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/S24_curves_and_MCSE.csv",
+    "scope": "CC-BY-SA-2.1-JP; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/S24_definition_source_map.csv",
+    "scope": "CC-BY-4.0; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/S24_ratio_aggregation_and_NA.csv",
+    "scope": "CC-BY-SA-2.1-JP; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/S24_repeat_gains_ratios_selection.csv",
+    "scope": "CC-BY-SA-2.1-JP; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/S24_repeat_losses.csv",
+    "scope": "CC-BY-SA-2.1-JP; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/data/source_tables/S26_seed_paired_results.csv",
+    "scope": "CC-BY-4.0; upstream conditions in rights/EXTRA_DATA_LICENSES.json"
+  },
+  {
+    "file": "source/render_common.py",
+    "scope": "MIT original code; rights/LICENSE_CODE.txt"
+  },
+  {
+    "file": "source/render_figures.py",
+    "scope": "MIT original code; rights/LICENSE_CODE.txt"
+  },
+  {
+    "file": "source/requirements-render.txt",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "source/runtime_versions.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "source/SOURCE_TO_OUTPUT.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "spec/MODEL_LABEL_MAP.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "spec/STYLE_PATCH_SPEC.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  },
+  {
+    "file": "spec/SYMBOL_MAP.json",
+    "scope": "Original contributions CC BY 4.0; source/icon/font terms retained as applicable"
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "stage": "Scoped licensing, explicit public inventory and privacy minimization",
+  "execution_scope": "Package assembly and content checks only; no new scientific computation",
+  "original_rightsholder": "Yuan Cao",
+  "original_ownership_confirmed_by_author": true,
+  "input_candidate_file_count": 317,
+  "scientific_tables": 140,
+  "chemical_coverage_files": 7,
+  "scaffold_stratified_files": 3,
+  "minimal_replay_inputs": 22,
+  "source_code_files_unchanged": 46,
+  "scientific_data_bytes_policy": "All copied data tables, sampling indices, expected results and numerical references must match the reviewed source bytes; the builder/checker enforce this.",
+  "figure_metadata_validation": {
+    "scope": "Figure creation metadata only; no scientific timeline changes",
+    "files": [
+      {
+        "path": "figures/Figure6_NHANES_Q3.pdf",
+        "change": "Removed non-scientific PDF Info/XMP and document identifier metadata only",
+        "page_count": 1,
+        "rendered_pixels_equal_108_dpi": true,
+        "text_equal": true,
+        "source_sha256": "dd37b4430c0aaf26bef3d08f5eca68ef613229ef31f6cf3cdf3fb789a574bb07",
+        "output_sha256": "8e549dfe9dfd2ed206b90e1f2ab33300284931115a4740b04f83a04d731b8831"
+      },
+      {
+        "path": "figures/FigureS12_CBC_distributions.pdf",
+        "change": "Removed non-scientific PDF Info/XMP and document identifier metadata only",
+        "page_count": 1,
+        "rendered_pixels_equal_108_dpi": true,
+        "text_equal": true,
+        "source_sha256": "469e307ddd31895db00462b41bb5f952b5946276b0e8f0c3828d09558f2e6789",
+        "output_sha256": "e81f1333d3ca1af943c0ce7a6cab263f7b0a4c827ac028f7fba1366ba2567e6f"
+      },
+      {
+        "path": "NHANES_Q3_Project/reference/diagnostics/cbc_distributions_by_cycle.svg",
+        "change": "Removed only the dc:date line; no scientific SVG content changed. Compare source after CRLF-to-LF normalization where applicable.",
+        "removed_elements": 1,
+        "source_sha256": "fd6498afc9cc4ac82846cca160fbcf8b519a2502b094e248ab09c220d33076e0",
+        "output_sha256": "59f42b2c756495f318bde49db98b95368efb758bcde4b39ff20464ce595c19f9",
+        "line_ending_normalization": "None",
+        "all_non_date_SVG_content_equal_after_line_ending_normalization": true
+      },
+      {
+        "path": "figures/Figure6_NHANES_Q3.svg",
+        "change": "Removed only the dc:date line; no scientific SVG content changed. Compare source after CRLF-to-LF normalization where applicable.",
+        "removed_elements": 1,
+        "source_sha256": "63f5af334f4b1cefa642321602a96f4199169925be35a6625c3840da944ffc65",
+        "output_sha256": "9724775c6cf560708a6e65d59de7eac32313b0333f20c5b2bdf3c8a6fc597938",
+        "line_ending_normalization": "CRLF to LF",
+        "all_non_date_SVG_content_equal_after_line_ending_normalization": true
+      },
+      {
+        "path": "figures/FigureS12_CBC_distributions.svg",
+        "change": "Removed only the dc:date line; no scientific SVG content changed. Compare source after CRLF-to-LF normalization where applicable.",
+        "removed_elements": 1,
+        "source_sha256": "37d9eb897cf185e5274db27677b7ec60a8b2b56f35d448bc523667ea72ebec12",
+        "output_sha256": "707f34ead985bc3ef5b5a4defbbb527c54ff48ef0cf8363958eba95375d36ae5",
+        "line_ending_normalization": "CRLF to LF",
+        "all_non_date_SVG_content_equal_after_line_ending_normalization": true
+      }
+    ]
+  },
+  "protocol_record_changes": "Only two descriptive instruction/authority string values in each of two records are paraphrased. Actual chronology, runtime keys, model settings and remote-record nulls remain.",
+  "validation_projection": "Selected summaries omit non-scientific private handoff/debug details; historical scientific evidence and status remain.",
+  "new_models_trained": 0,
+  "new_model_queries": 0,
+  "new_bootstrap_draws": 0,
+  "new_full_pipeline_execution": false,
+  "prior_evidence_rerun_claimed": false,
+  "unresolved_group_table_files": 14,
+  "extended_replay_scope_expanded": false,
+  "inventory_repair": "The prior auxiliary 315-entry inventory is regenerated from the final target set; dated historical counts are preserved.",
+  "remote_action_performed": false,
+  "validation_limits": "Known source bytes, listed text/privacy rules and specified binary checks; no absolute guarantee against arbitrary hidden information.",
+  "check_results_location": "The build/check command produces a separate report outside the public payload.",
+  "local_record_correction": "The two figure SVG overlays also normalize CRLF to LF. Exact comparison after that normalization and date-line removal passes; the reference SVG only loses its date line. This corrects a validation description, not the supplied artwork or scientific results."
+}

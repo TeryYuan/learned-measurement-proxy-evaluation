@@ -1,0 +1,47 @@
+[
+  {
+    "route": "B",
+    "n": 7477,
+    "weighted_log_loss": 0.17398502849326766,
+    "weighted_AUROC": 0.8683525888548188,
+    "weighted_AP": 0.3494631909373765,
+    "weighted_event_fraction": 0.06297931240180554,
+    "weighted_mean_risk": 0.0701227927364969
+  },
+  {
+    "route": "M",
+    "n": 7477,
+    "weighted_log_loss": 0.1677076374320339,
+    "weighted_AUROC": 0.8784034936602063,
+    "weighted_AP": 0.4019588237610726,
+    "weighted_event_fraction": 0.06297931240180554,
+    "weighted_mean_risk": 0.07257595284583952
+  },
+  {
+    "route": "S",
+    "n": 7477,
+    "weighted_log_loss": 0.17334151941952608,
+    "weighted_AUROC": 0.868577244599688,
+    "weighted_AP": 0.3509401937169829,
+    "weighted_event_fraction": 0.06297931240180554,
+    "weighted_mean_risk": 0.06477308032779285
+  },
+  {
+    "route": "MEAN",
+    "n": 7477,
+    "weighted_log_loss": 0.17525958886894422,
+    "weighted_AUROC": 0.8665795259972642,
+    "weighted_AP": 0.34429921466879465,
+    "weighted_event_fraction": 0.06297931240180554,
+    "weighted_mean_risk": 0.057153609866773696
+  },
+  {
+    "route": "P",
+    "n": 7477,
+    "weighted_log_loss": 0.17405690452978728,
+    "weighted_AUROC": 0.8676575434401366,
+    "weighted_AP": 0.34650399370168905,
+    "weighted_event_fraction": 0.06297931240180554,
+    "weighted_mean_risk": 0.07040050373929131
+  }
+]

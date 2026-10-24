@@ -1,0 +1,4 @@
+comparison,status,query_n,reference_n,valid_n,failed_n,source,min,median,q75,q90,max,n_gt_0.7,n_gt_0.8,n_gt_0.9,revision_action
+ALT24_vs_dev97,completed,24,97,24,0,original cached Morgan bits,0.1891891891891892,0.2739583333333333,0.3836945564516129,0.6017857142857143,0.7631578947368421,1,0,0,Reused supplied complete result after membership/SMILES/configuration checks; not recomputed.
+BSEP201_vs_train601,completed,201,601,201,0,Original saved SI004_fixed_A_BSEP_coverage.csv; complete cohort extraction on 2026-10-22,0.16923076923076924,0.3466666666666667,0.4888888888888889,0.6363636363636364,0.8055555555555556,11,1,0,
+BSEP172_vs_train601,completed,172,601,172,0,Original saved SI004_fixed_A_BSEP_coverage.csv; complete cohort extraction on 2026-10-22,0.16923076923076924,0.3511142721669037,0.5,0.6375494071146245,0.8055555555555556,10,1,0,

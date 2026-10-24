@@ -1,0 +1,4 @@
+﻿policy,task,raw_observed_records,raw_positive,raw_negative,missing_in_33533,DILI_overlap_removed_records,structure_review_after_overlap,provenance_review_after_structure,conflicting_identity_groups_removed,multiple_model_structure_groups,structure_variant_groups_held_additional,premerge_qualified_records,dedup_records_removed,unique_identity_groups,positive,negative,fold_groups,analysis,phase1_alias_removed_identity_groups,phase1_alias_removed_records
+2d_proposal,BSEPi,1187,320,867,32346,565,14,2,0,1,0,606,5,601,204,397,437,main_2d,4.0,4.0
+2d_proposal,MTX_MP,5625,807,4818,27908,576,100,6,0,0,0,4943,0,4943,735,4208,2754,main_2d,1.0,1.0
+2d_proposal,ARE,4266,396,3870,29267,457,5,0,0,3,0,3804,37,3767,345,3422,2027,main_2d,0.0,0.0

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23",
+  "stage": "Independent Researcher metadata and saved supplementary evidence delivery",
+  "status": "LOCAL_CANDIDATE_PREPARED_TARGETED_CHECKS_PASSED_DOCUMENT_PDF_EXPORT_UNFINISHED",
+  "executed_this_stage": {
+    "recovery_inputs": 154,
+    "source_byte_copies_verified": 129,
+    "exact_token_projections_verified": 25,
+    "scientific_result_table_files": 140,
+    "new_candidate_evidence_files": 151,
+    "all_original_group_anchors_exact": true,
+    "unresolved_group_table_files": 14,
+    "group_mapping_not_inferred": true,
+    "models_trained": 0,
+    "new_model_queries": 0,
+    "new_bootstrap": 0,
+    "new_scientific_replay": false,
+    "code_files_byte_unchanged": 46,
+    "NHANES_reference_files_byte_unchanged": 14,
+    "existing_figure_assets_byte_unchanged": 6,
+    "manuscript_source_figure_files_byte_unchanged": 18,
+    "native_scientific_tables_math_and_drawing_parts_unchanged": true,
+    "current_ethics_paragraph_exact": true,
+    "CFF_official_1_2_schema": "PASS",
+    "json_and_relative_references": "PASS",
+    "privacy_new_or_modified_files": {
+      "status": "PASS",
+      "scanned_files": 169,
+      "semantically_reviewed_findings": 269,
+      "unresolved_findings": 0,
+      "unknown_binary_files": 0
+    }
+  },
+  "prior_evidence_carried_without_new_execution": {
+    "code_tests": "34 tests from prior QA, plus 7 earlier acquisition utility tests; scopes unchanged",
+    "liver_minimal_fixed_replay": "238/238 at original 2e-12 absolute tolerance; all code, required inputs, indices and expected results byte-unchanged from prior actual candidate replay",
+    "NHANES_saved_summary": "385 checks from prior QA; reference bytes unchanged",
+    "saved_figures_report_only": "Prior Figure 6/S12 and run_module report-only checks; bytes/code unchanged",
+    "NHANES_raw_training": "Prior isolated official-40-input reconstruction; analytic cohort 13236, design frame 39608, candidates 24; selected configurations/folds match; final prediction max difference 8.881784197001252e-16, summary max difference 8.104628079763643e-15",
+    "filesystem_isolation": "Prior namespace/chroot evidence applies to its tested code/inputs only; no new isolation run in this editorial task"
+  },
+  "not_evaluated_this_stage": [
+    "complete historical liver-model training",
+    "extended S24/S25/S26/S40/S41 scientific replay",
+    "chemical reconstruction from molecular structures",
+    "group-dependent extensions using unresolved mappings",
+    "new full clean-environment reconstruction of the expanded collection"
+  ],
+  "publication": "No remote action; rights and real publication identity pending; one mixed-license record is a proposal",
+  "public_projection_note": "Non-scientific author-handoff/debug details omitted for the public copy; original scientific results, scope, chronology and historical status remain unchanged."
+}

@@ -1,0 +1,101 @@
+{
+  "analysis_status": "post-hoc descriptive coverage diagnostic",
+  "fingerprint": {
+    "type": "Morgan bit fingerprint (ECFP4-style)",
+    "radius": 2,
+    "fpSize": 2048,
+    "includeChirality": false,
+    "similarity": "Tanimoto"
+  },
+  "cohort_rule": "Preserve saved qualified identities and original splits; no new deduplication/exclusions",
+  "model_training": "none",
+  "thresholds": "strictly greater than 0.7, 0.8, 0.9; descriptive only",
+  "nearest_neighbor": {
+    "ALT24_vs_dev97": {
+      "status": "completed",
+      "query_n": 24,
+      "reference_n": 97,
+      "valid_n": 24,
+      "failed_n": 0,
+      "source": "original cached Morgan bits",
+      "min": 0.1891891891891892,
+      "median": 0.2739583333333333,
+      "q75": 0.3836945564516129,
+      "q90": 0.6017857142857143,
+      "max": 0.7631578947368421,
+      "n_gt_0.7": 1,
+      "n_gt_0.8": 0,
+      "n_gt_0.9": 0,
+      "revision_action": "Reused supplied complete result after membership/SMILES/configuration checks; not recomputed."
+    },
+    "BSEP201_vs_train601": {
+      "status": "completed",
+      "query_n": 201,
+      "reference_n": 601,
+      "valid_n": 201,
+      "failed_n": 0,
+      "source": "Original saved SI004_fixed_A_BSEP_coverage.csv; complete cohort extraction on 2026-10-22",
+      "min": 0.16923076923076924,
+      "median": 0.3466666666666667,
+      "q75": 0.4888888888888889,
+      "q90": 0.6363636363636364,
+      "max": 0.8055555555555556,
+      "n_gt_0.7": 11,
+      "n_gt_0.8": 1,
+      "n_gt_0.9": 0
+    },
+    "BSEP172_vs_train601": {
+      "status": "completed",
+      "query_n": 172,
+      "reference_n": 601,
+      "valid_n": 172,
+      "failed_n": 0,
+      "source": "Original saved SI004_fixed_A_BSEP_coverage.csv; complete cohort extraction on 2026-10-22",
+      "min": 0.16923076923076924,
+      "median": 0.3511142721669037,
+      "q75": 0.5,
+      "q90": 0.6375494071146245,
+      "max": 0.8055555555555556,
+      "n_gt_0.7": 10,
+      "n_gt_0.8": 1,
+      "n_gt_0.9": 0
+    }
+  },
+  "murcko_overlap": {
+    "BSEP201_vs_train601": {
+      "status": "completed",
+      "source": "original cached fold_group/scaffold; no fresh RDKit computation",
+      "query_n": 201,
+      "query_nonempty_scaffold_n": 190,
+      "query_empty_or_acyclic_n": 11,
+      "query_seen_nonempty_scaffold_n": 62,
+      "reference_unique_nonempty_scaffold_n": 420
+    },
+    "BSEP172_vs_train601": {
+      "status": "completed",
+      "source": "original cached fold_group/scaffold; no fresh RDKit computation",
+      "query_n": 172,
+      "query_nonempty_scaffold_n": 166,
+      "query_empty_or_acyclic_n": 6,
+      "query_seen_nonempty_scaffold_n": 53,
+      "reference_unique_nonempty_scaffold_n": 420
+    },
+    "ALT24_vs_dev97": {
+      "status": "not_requested",
+      "reason": "Outside this targeted revision; no new ALT scaffold calculation performed."
+    }
+  },
+  "cache_validation": {
+    "rdkit_available": false,
+    "settings_verified_in_source": "src/dili_phase1.py: GetMorganGenerator(radius=2, fpSize=2048, includeChirality=False)"
+  },
+  "existing_BSEP_coverage_relative_path": "reports/phase2c_BSEP/SI004_fixed_A_BSEP_coverage.csv",
+  "existing_BSEP_fingerprint_relative_path": "data/phase2c_BSEP/SI004_fixed_Morgan.npz",
+  "original_BSEP_coverage_script": "scripts/phase2bc/infer_si.py",
+  "revision_provenance": {
+    "ALT": "Supplied 24/97 result retained; original membership, standardized SMILES and fingerprint source configuration checked.",
+    "BSEP": "New complete summaries of existing saved coverage; both cohorts use the same actual 601-identity training reference.",
+    "models_predictions_or_fingerprints_recomputed": false,
+    "ALT_Murcko": "Not requested or performed; no new RDKit scaffold calculation."
+  }
+}

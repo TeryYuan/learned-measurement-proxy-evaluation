@@ -1,0 +1,8 @@
+﻿quantity,definition,source_script,input,order
+G_meas,Lstruct-Lmeas,phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats
+G_pred,Lstruct-Lpred,phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats
+D_sub,Lswap-Lmeas,phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats
+ratio_retrained,G_pred/G_meas when G_meas>epsilon,phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats
+ratio_fixed,1-D_sub/G_meas when G_meas>epsilon,phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats
+F_repeat,sum(nQ/97 * actual selected Z),phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats
+variance,population mixture and finite fixed-design formulas in protocols/04,phase6/p2_simulation.py + phase7/replay_phase7B.py,saved generator/predictions/losses/selection objects,condition -> equal parent -> nQ/97 within repeat -> 20 repeats

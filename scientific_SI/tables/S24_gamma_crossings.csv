@@ -1,0 +1,5 @@
+﻿level,monotone,first_grid_ge,upcrossing_brackets,interpolated_gamma,width,status,all_crossings_with_direction,sigma_multiplier,bracket_lower,bracket_upper,endpoint_MCSE_lower,endpoint_MCSE_upper,estimand
+0.5,True,0.0,[],0.0,0.0,LEFT_BOUNDARY_ALREADY_REACHED,[],0.5,0.0,0.0,0.06532202719921869,0.06532202719921869,empirical_selection_crossing; not detection limit or confidence interval
+0.9,True,0.1,"[[0.0, 0.1]]",0.07780320366132723,0.1,INTERPOLATED_DESCRIPTIVE_ONLY,"[{""lower"": 0.0, ""upper"": 0.1, ""direction"": ""up""}]",0.5,0.0,0.1,0.06532202719921869,0.0,empirical_selection_crossing; not detection limit or confidence interval
+0.5,True,0.0,[],0.0,0.0,LEFT_BOUNDARY_ALREADY_REACHED,[],1.0,0.0,0.0,0.06442485027265972,0.06442485027265972,empirical_selection_crossing; not detection limit or confidence interval
+0.9,True,0.1,"[[0.0, 0.1]]",0.0769047619047619,0.1,INTERPOLATED_DESCRIPTIVE_ONLY,"[{""lower"": 0.0, ""upper"": 0.1, ""direction"": ""up""}]",1.0,0.0,0.1,0.06442485027265972,0.0,empirical_selection_crossing; not detection limit or confidence interval

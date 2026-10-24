@@ -1,0 +1,7 @@
+﻿stage,unit,n,positive,negative
+raw_rows,source_row,229,42,187
+in_domain_rows,source_row,227,42,185
+observed_domain_rows,source_row,227,42,185
+consistent_unique_identity,unique_2d_identity,227,42,185
+E_BSEP,unique_2d_identity,201,37,164
+E_no_anyA,unique_2d_identity,172,34,138

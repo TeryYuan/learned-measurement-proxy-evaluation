@@ -1,0 +1,12 @@
+﻿model,lambda,contexts
+R_gate,0.001,6
+R_gate_chem,0.001,6
+R_gate_perm,0.001,5
+R_gate_perm,0.01,1
+R_gate_struct,0.001,6
+R_leaf,0.001,1
+R_leaf,0.01,4
+R_leaf,0.1,1
+R_score,0.001,1
+R_score,10.0,4
+R_score,NO_CORRECTION,1

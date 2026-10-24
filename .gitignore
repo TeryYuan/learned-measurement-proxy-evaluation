@@ -1,0 +1,54 @@
+# Local environments and runtime caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+*.part
+# Local configuration/secrets; never a substitute for content review
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+# Root entry outputs and optional source acquisition
+/summary_check.json
+/saved_figures/
+/saved_report/
+/saved_benchmark_report/
+/liver_replay_results/
+/liver_sources/
+/legally_obtained_sources/
+/validated_sources/
+/author_review/
+/release_preparation/
+/NHANES_Q3_Project/input/
+/NHANES_Q3_Project/data/
+/NHANES_Q3_Project/outputs/
+/NHANES_Q3_Project/cache/
+/NHANES_Q3_Project/models/
+/release_candidate/legacy_fixed_replay/output/
+# Explicitly preserve reviewed references, source, metadata and validation records
+!/NHANES_Q3_Project/reference/
+!/NHANES_Q3_Project/reference/**
+!/validation/
+!/validation/**
+!/sources/
+!/sources/**
+!/release_candidate/legacy_fixed_replay/data/
+!/release_candidate/legacy_fixed_replay/data/**
+!/tools/
+!/tools/**
+!/tests/
+!/tests/**
+# Private font-discovery configuration
+/figure_patch/private/
+arial_fonts.local.json

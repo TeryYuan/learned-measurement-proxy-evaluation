@@ -1,0 +1,41 @@
+{
+  "replicates": 2000,
+  "seed": 4109,
+  "rng": "numpy.Generator(PCG64(4109))",
+  "identity_order": "member_id ascending",
+  "sampling_order": "positive sample then negative sample, repeated sequentially per replicate",
+  "unit": "unique_2d_drug_identity",
+  "quantile_method": "linear",
+  "confidence_levels": [
+    0.95,
+    0.975
+  ],
+  "group_bootstrap": false,
+  "top_q_intervals": false,
+  "shape": [
+    2000,
+    125
+  ],
+  "index_semantics": "zero-based rows in saved ids; first n_pos draws positive, remaining negative",
+  "model_order": [
+    "M0",
+    "M1",
+    "Mperm",
+    "Mchem",
+    "B_star",
+    "L2LR",
+    "R_score",
+    "R_leaf",
+    "R_gate",
+    "R_gate_perm",
+    "R_gate_chem",
+    "R_gate_struct"
+  ],
+  "metric_order": [
+    "AP",
+    "ROC_AUC",
+    "Brier_raw",
+    "Brier_calibrated"
+  ],
+  "fixed_models_no_retraining": true
+}

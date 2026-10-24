@@ -1,0 +1,53 @@
+{
+  "data/analysis_cohort.csv": {
+    "same_shape": true,
+    "same_columns": true,
+    "exact_equal_including_missing": true,
+    "rows": 13236,
+    "columns": 36,
+    "max_absolute_numeric_difference": 0.0
+  },
+  "data/design_frame.csv": {
+    "same_shape": true,
+    "same_columns": true,
+    "exact_equal_including_missing": true,
+    "rows": 39608,
+    "columns": 36,
+    "max_absolute_numeric_difference": 0.0
+  },
+  "outputs/predictions/test_predictions.csv": {
+    "same_shape": true,
+    "same_columns": true,
+    "exact_equal_including_missing": false,
+    "rows": 7477,
+    "columns": 6,
+    "max_absolute_numeric_difference": 8.881784197001252e-16
+  },
+  "outputs/predictions/test_measurement_proxies.csv": {
+    "same_shape": true,
+    "same_columns": true,
+    "exact_equal_including_missing": true,
+    "rows": 7477,
+    "columns": 7,
+    "max_absolute_numeric_difference": 0.0
+  },
+  "outputs/tables/selected_configurations.json": {
+    "exact_equal": true
+  },
+  "outputs/cache/train/outer_group_to_fold.json": {
+    "exact_equal": true
+  },
+  "outputs/cache/development/outer_group_to_fold.json": {
+    "exact_equal": true
+  },
+  "validation_candidates": {
+    "scientific_fields_exact_equal": false,
+    "candidate_count": 24,
+    "max_absolute_Brier_difference": 2.1149748619109232e-14
+  },
+  "summary": {
+    "exact_equal": false,
+    "changed_field_count": 95,
+    "maximum_numeric_difference": 8.104628079763643e-15
+  }
+}

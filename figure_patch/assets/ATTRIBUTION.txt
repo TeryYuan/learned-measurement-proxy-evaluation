@@ -1,0 +1,43 @@
+SCIENTIFIC SVG ASSETS ACTUALLY USED
+
+assets/icons/liver.svg
+healthy_liver — Jan-Clusmann
+License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+Source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg
+Figures: [1]
+Adaptation: Scaled only; geometry and source colors unchanged.
+
+assets/icons/rat.svg
+rat-white — Servier
+License: CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/)
+Source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-white.svg
+Figures: [4]
+Adaptation: Scaled to 47 × 29 pt; composition-only darker gray fills and outlines; nonwhite existing stroke widths multiplied by 1.65. Source SVG geometry and original file unchanged. See render_common.py recolor map.
+
+assets/icons/cell_culture_dish.svg
+CC_dish — Marcel Tisch
+License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+Source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg
+Figures: [1, 4]
+Adaptation: Scaled; two medium colors desaturated in the composed figures; geometry unchanged.
+
+assets/icons/blood_sample_tube.svg
+blood_sample_tube — Marcel Tisch
+License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/)
+Source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg
+Figures: [1, 6]
+Adaptation: Scaled; tube and cap colors desaturated in the composed figures; geometry unchanged.
+
+assets/icons/adult_group.svg
+users-group — Paweł Kuna / Tabler Icons contributors
+License: MIT (https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/LICENSE)
+Source: https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/icons/outline/users-group.svg
+Figures: [1, 6]
+Adaptation: Scaled; currentColor resolved to #68727B; neutral group symbol, no sex-composition encoding.
+
+assets/icons/questionnaire.svg
+clipboard-list — Paweł Kuna / Tabler Icons contributors
+License: MIT (https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/LICENSE)
+Source: https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/icons/outline/clipboard-list.svg
+Figures: [6]
+Adaptation: Scaled; currentColor resolved to #68727B.

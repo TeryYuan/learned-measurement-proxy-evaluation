@@ -1,0 +1,113 @@
+{
+  "PUBLIC_CONTENT_REVIEW": {
+    "status": "PASS",
+    "scope": "All final files scanned plus explicit PDF/PNG and licence-marker review; final extracted-tree verification required before delivery",
+    "unresolved_findings": 0,
+    "unknown_binary_files": 0
+  },
+  "DEPENDENCIES": {
+    "status": "PASS",
+    "scope": "CPython 3.14.3, exact compatible lock, isolated pip check; original observed versions retained separately"
+  },
+  "SYNTAX_RELEVANT_TESTS": {
+    "status": "PASS",
+    "python_files": 43,
+    "linux_tests": 34,
+    "linux_skipped": 0,
+    "windows_tests": 34,
+    "windows_skipped": 1,
+    "windows_skip_reason": "Platform symbolic-link fixture; exercised successfully on Linux",
+    "correctness_lint": "E9,F63,F7,F82 pass"
+  },
+  "FIXED_PREDICTION_REPLAY_PRIVATE": {
+    "status": "PASS",
+    "checks": 238,
+    "passed": 238,
+    "tolerance": 2e-12,
+    "new_random_draws": 0,
+    "new_model_queries": 0,
+    "scope": "Private complete original inputs only, fresh output, original six ALT route equality checks retained"
+  },
+  "FIXED_PREDICTION_REPLAY_PUBLIC": {
+    "status": "PASS_LOCAL_PROPOSED_CANDIDATE",
+    "checks": 238,
+    "passed": 238,
+    "absolute_tolerance": 2e-12,
+    "scope": "New minimal proposed public collection only; original project and author-review inputs inaccessible. Public release authorization still pending."
+  },
+  "NHANES_SUMMARY": {
+    "status": "PASS",
+    "checks": 385,
+    "scope": "Saved-summary algebra, paired covariance, intervals and Fieller; independently rerun on rebuilt summary"
+  },
+  "SAVED_FIGURES_REPORTS": {
+    "status": "PASS",
+    "scope": "Isolated Figure 6/S12 drawing and both report-only wrappers; no fitting or model reads; private visual review complete"
+  },
+  "RAW_DATA_COHORT_NHANES": {
+    "status": "PASS",
+    "official_download_files": 40,
+    "all_new_downloads_byte_equal_to_isolated_staged_inputs": true,
+    "analysis_rows": 13236,
+    "design_frame_rows": 39608,
+    "columns_each": 36,
+    "comparison": "Exactly equal including IDs, order and missing values"
+  },
+  "MODEL_INFERENCE_NHANES_REBUILT": {
+    "status": "PASS",
+    "scope": "Newly rebuilt models produce the same five-route prediction results within floating-point differences",
+    "max_abs_difference": 8.881784197001252e-16
+  },
+  "MODEL_INFERENCE_ORIGINAL_OBJECTS": {
+    "status": "NOT_EVALUATED",
+    "reason": "Original pickle/joblib objects not exported or deserialized; prediction checks use newly fitted objects"
+  },
+  "FULL_TRAINING_NHANES": {
+    "status": "PASS",
+    "scope": "Empty prediction/model/cache workspace, original protocol; original aggregate summary and stale rendering marker intentionally present in new outputs",
+    "candidate_count": 24,
+    "selected_configurations_and_folds": "exactly equal",
+    "max_validation_Brier_difference": 2.1149748619109232e-14,
+    "max_summary_difference": 8.104628079763643e-15,
+    "summary_scalar_checks": 243,
+    "summary_comparison_atol": 1e-12,
+    "summary_comparison_rtol": 1e-10
+  },
+  "RAW_DATA_TRAINING_LIVER_SAFETY": {
+    "status": "NOT_EVALUATED",
+    "scope": "Full historical liver-safety raw-data/training pipeline; fixed-prediction replay is not training evidence"
+  },
+  "FILESYSTEM_ISOLATION": {
+    "status": "PASS",
+    "scope": "Prior public NHANES evidence retained; new minimal liver candidate replay independently isolated this stage",
+    "mechanism": "WSL unprivileged user/mount/network/PID namespaces and chroot; capabilities dropped",
+    "source_project_unreadable": true,
+    "host_home_credentials_and_control_socket_absent": true,
+    "candidate_read_only": true,
+    "fresh_temporary_and_output_directories": true,
+    "network_off_during_science": true,
+    "private_replay_inputs_absent": "No non-candidate input mounts in the new liver run; the 22 reviewed minimal inputs are inside the candidate",
+    "private_replay_isolation_claimed": false,
+    "prior_scope": "Public NHANES saved entries and public NHANES code with separately acquired official raw inputs"
+  },
+  "ARCHIVE_CHECK": {
+    "status": "PASS",
+    "scope": "Standard ZIP, CRC, actual extraction, exact manifest/files/bytes and extracted-tree scan; finalized only after archive script assertions"
+  },
+  "RELEASE_NOTE_CLOSEOUT": {
+    "status": "PASS",
+    "scope": "Completion-message/documentation corrections, AST equivalence except one message constant, existing targeted regression tests, references, privacy and archive checks",
+    "scientific_training_or_recomputation": false,
+    "prior_scientific_execution_evidence": "Preceding code-release QA; not rerun in this closeout",
+    "runtime_behavior_change": false
+  },
+  "PUBLICATION_PREPARATION": {
+    "date": "2026-10-23",
+    "new_source_boundary_tests": 7,
+    "new_minimal_liver_replay": 238,
+    "new_training": false,
+    "prior_NHANES_and_34_tests_rerun": false,
+    "code_license": "PENDING",
+    "remote_actions": 0
+  }
+}

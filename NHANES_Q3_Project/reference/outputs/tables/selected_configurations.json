@@ -1,0 +1,17 @@
+{
+  "B": {
+    "id": "spline_C001",
+    "family": "spline_logistic",
+    "C": 0.01
+  },
+  "M": {
+    "id": "spline_C001",
+    "family": "spline_logistic",
+    "C": 0.01
+  },
+  "P": {
+    "id": "spline_C001",
+    "family": "spline_logistic",
+    "C": 0.01
+  }
+}

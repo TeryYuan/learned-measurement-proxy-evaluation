@@ -1,0 +1,42 @@
+{
+  "scope": "PUBLIC_saved_summary_figures_reports_and_tests_no_private_replay_inputs",
+  "capabilities_dropped": true,
+  "no_new_privileges": true,
+  "original_paths_unreadable": true,
+  "host_home_absent": true,
+  "host_mounts_absent": true,
+  "proc_not_mounted": true,
+  "candidate_read_only": true,
+  "network_unreachable": true,
+  "syntax_files": 43,
+  "private_replay_inputs_absent": true,
+  "pip_check": {
+    "return_code": 0,
+    "elapsed_seconds": 14.854
+  },
+  "tests": {
+    "return_code": 0,
+    "elapsed_seconds": 70.273
+  },
+  "nhanes_summary": {
+    "return_code": 0,
+    "elapsed_seconds": 13.837
+  },
+  "saved_figures": {
+    "return_code": 0,
+    "elapsed_seconds": 53.587
+  },
+  "saved_report": {
+    "return_code": 0,
+    "elapsed_seconds": 36.852
+  },
+  "saved_benchmark_report": {
+    "return_code": 0,
+    "elapsed_seconds": 31.394
+  },
+  "code_export": {
+    "return_code": 0,
+    "elapsed_seconds": 5.391
+  },
+  "status": "PASS"
+}

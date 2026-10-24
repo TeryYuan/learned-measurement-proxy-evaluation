@@ -1,0 +1,246 @@
+{
+  "status": "REVIEW_SCOPE_AND_RESOLVE_GROUPS_BEFORE_EXTENDED_REPLAY_CLAIMS",
+  "hard_missing_requested_saved_files": 0,
+  "grouping_unresolved": [
+    {
+      "source": "scientific_SI/tables/A_mask.csv",
+      "destination": "tables/A_mask.csv",
+      "omitted_columns": [
+        "identity_group"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "group_mapping_unresolved": 6250,
+          "existing_r4_anchor": 29
+        }
+      },
+      "unresolved_group_cells": 6250
+    },
+    {
+      "source": "scientific_SI/tables/DILI_membership.csv",
+      "destination": "tables/DILI_membership.csv",
+      "omitted_columns": [
+        "identity_group",
+        "model_input_smiles",
+        "fold_group",
+        "scaffold"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "group_mapping_unresolved": 341,
+          "existing_r4_anchor": 762
+        },
+        "fold_group": {
+          "group_mapping_unresolved": 362,
+          "existing_r4_anchor": 741
+        },
+        "scaffold": {
+          "group_mapping_unresolved": 351,
+          "existing_r4_anchor": 694,
+          "source_empty": 58
+        }
+      },
+      "unresolved_group_cells": 1054
+    },
+    {
+      "source": "scientific_SI/tables/S23_B1_saved_OOF.csv",
+      "destination": "tables/S23_B1_saved_OOF.csv",
+      "omitted_columns": [
+        "fold_group"
+      ],
+      "group_mapping": {
+        "fold_group": {
+          "existing_r4_anchor": 19380,
+          "group_mapping_unresolved": 3120
+        }
+      },
+      "unresolved_group_cells": 3120
+    },
+    {
+      "source": "scientific_SI/tables/S23_B3_OOF.csv",
+      "destination": "tables/S23_B3_OOF.csv",
+      "omitted_columns": [
+        "fold_group"
+      ],
+      "group_mapping": {
+        "fold_group": {
+          "existing_r4_anchor": 19380,
+          "group_mapping_unresolved": 3120
+        }
+      },
+      "unresolved_group_cells": 3120
+    },
+    {
+      "source": "scientific_SI/tables/S23_B4_OOF.csv",
+      "destination": "tables/S23_B4_OOF.csv",
+      "omitted_columns": [
+        "fold_group"
+      ],
+      "group_mapping": {
+        "fold_group": {
+          "existing_r4_anchor": 19380,
+          "group_mapping_unresolved": 3120
+        }
+      },
+      "unresolved_group_cells": 3120
+    },
+    {
+      "source": "scientific_SI/tables/S23_bootstrap_identity_group_mapping.csv",
+      "destination": "tables/S23_bootstrap_identity_group_mapping.csv",
+      "omitted_columns": [
+        "fold_group"
+      ],
+      "group_mapping": {
+        "fold_group": {
+          "existing_r4_anchor": 646,
+          "group_mapping_unresolved": 104
+        }
+      },
+      "unresolved_group_cells": 104
+    },
+    {
+      "source": "scientific_SI/tables/S23_complete_OOF.csv",
+      "destination": "tables/S23_complete_OOF.csv",
+      "omitted_columns": [
+        "fold_group"
+      ],
+      "group_mapping": {
+        "fold_group": {
+          "existing_r4_anchor": 77520,
+          "group_mapping_unresolved": 12480
+        }
+      },
+      "unresolved_group_cells": 12480
+    },
+    {
+      "source": "scientific_SI/tables/S23_coverage_table.csv",
+      "destination": "tables/S23_coverage_table.csv",
+      "omitted_columns": [
+        "identity_group",
+        "model_input_smiles",
+        "fold_group"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "existing_r4_anchor": 750
+        },
+        "fold_group": {
+          "existing_r4_anchor": 646,
+          "group_mapping_unresolved": 104
+        }
+      },
+      "unresolved_group_cells": 104
+    },
+    {
+      "source": "scientific_SI/tables/S23_members.csv",
+      "destination": "tables/S23_members.csv",
+      "omitted_columns": [
+        "identity_group",
+        "model_input_smiles",
+        "fold_group",
+        "scaffold"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "existing_r4_anchor": 750
+        },
+        "fold_group": {
+          "existing_r4_anchor": 646,
+          "group_mapping_unresolved": 104
+        },
+        "scaffold": {
+          "existing_r4_anchor": 607,
+          "source_empty": 40,
+          "group_mapping_unresolved": 103
+        }
+      },
+      "unresolved_group_cells": 207
+    },
+    {
+      "source": "scientific_SI/tables/V2_qualified_not_C_or_N.csv",
+      "destination": "tables/V2_qualified_not_C_or_N.csv",
+      "omitted_columns": [
+        "identity_group",
+        "model_input_smiles",
+        "fold_group",
+        "scaffold"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "group_mapping_unresolved": 27,
+          "existing_r4_anchor": 1
+        },
+        "fold_group": {
+          "group_mapping_unresolved": 16,
+          "existing_r4_anchor": 12
+        },
+        "scaffold": {
+          "group_mapping_unresolved": 16,
+          "existing_r4_anchor": 11,
+          "source_empty": 1
+        }
+      },
+      "unresolved_group_cells": 59
+    },
+    {
+      "source": "scientific_SI/tables/author_review/NAM_DILI_overlap_members.csv",
+      "destination": "tables/NAM_DILI_overlap_members.csv",
+      "omitted_columns": [
+        "identity_group"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "group_mapping_unresolved": 28,
+          "existing_r4_anchor": 93
+        }
+      },
+      "unresolved_group_cells": 28
+    },
+    {
+      "source": "scientific_SI/tables/sample_flow_V1_group_reasons.csv",
+      "destination": "tables/sample_flow_V1_group_reasons.csv",
+      "omitted_columns": [
+        "identity_group"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "group_mapping_unresolved": 219,
+          "existing_r4_anchor": 636
+        }
+      },
+      "unresolved_group_cells": 219
+    },
+    {
+      "source": "scientific_SI/tables/sample_flow_V2_group_reasons.csv",
+      "destination": "tables/sample_flow_V2_group_reasons.csv",
+      "omitted_columns": [
+        "identity_group"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "group_mapping_unresolved": 341,
+          "existing_r4_anchor": 762
+        }
+      },
+      "unresolved_group_cells": 341
+    },
+    {
+      "source": "scientific_SI/tables/sample_flow_source_rows.csv",
+      "destination": "tables/sample_flow_source_rows.csv",
+      "omitted_columns": [
+        "drug_name",
+        "identity_group"
+      ],
+      "group_mapping": {
+        "identity_group": {
+          "existing_r4_anchor": 1427,
+          "source_empty": 374,
+          "group_mapping_unresolved": 571
+        }
+      },
+      "unresolved_group_cells": 571
+    }
+  ],
+  "interpretation": "Unmatched original grouping strings were not guessed. The 14-table unresolved grouping requirements above are preserved. Extended group-dependent replay requires recovery of the actual original relationships. The unrelated historical project-wide triage inventory is retained privately and is not a list of promised public files.",
+  "historical_triage_entries_not_distributed": 438
+}

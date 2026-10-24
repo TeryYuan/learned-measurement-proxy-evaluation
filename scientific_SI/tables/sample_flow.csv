@@ -1,0 +1,14 @@
+﻿version,step,n,unit_and_rule
+V1,Original source rows,1036,source workbook version sheet
+V1,Binary-labelled source rows,782,Most/Less/No; before structural filters
+V1,Binary-labelled rows with eligible 2D structure,644,intersection; original row grain
+V1,Distinct keys represented by preceding rows,630,not yet all-linked-row qualified
+V1,"All linked rows structurally eligible, binary and consistent",625,identity groups; per-version qualification
+V2,Original source rows,1336,source workbook version sheet
+V2,Binary-labelled source rows,982,Most/Less/No; before structural filters
+V2,Binary-labelled rows with eligible 2D structure,798,intersection; original row grain
+V2,Distinct keys represented by preceding rows,783,not yet all-linked-row qualified
+V2,"All linked rows structurally eligible, binary and consistent",777,identity groups; per-version qualification
+O,Final existing member manifest,625,retained identity groups; no member changes
+N,Final existing member manifest,125,retained identity groups; no member changes
+C,Final existing member manifest,624,retained identity groups; no member changes

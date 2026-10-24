@@ -1,0 +1,25 @@
+# Local working inputs and unpublished context
+/input/
+/data/
+/data_checks/
+/diagnostics/
+/outputs/
+/models/
+/cache/
+/release/
+*.zip
+*.joblib
+*.pkl
+*.pickle
+*.parquet
+*.xpt
+*.XPT
+*.dat
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db

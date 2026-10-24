@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "original_inputs": 22,
+  "unchanged_files": 17,
+  "projected_files": 5,
+  "retained_fields_exact": true,
+  "original_row_order": true,
+  "original_group_relations_preserved": true,
+  "original_indices_unchanged": true,
+  "expected_tables_unchanged": true,
+  "nested_E172_E201": true,
+  "six_ALT_routes_exact": true,
+  "C_original_folds_unchanged": true,
+  "no_new_random_draws": true,
+  "replay_code_unchanged": true,
+  "files": [
+    {
+      "file": "data/N_predictions.csv",
+      "rows": 1500,
+      "kept_columns": 14,
+      "all_retained_field_tokens_exact": true,
+      "round_trip_values_exact": true
+    },
+    {
+      "file": "data/N_bootstrap_indices.npz",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/N_bootstrap_spec.json",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/N_metrics_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/N_primary_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/BSEP_predictions.csv",
+      "rows": 402,
+      "kept_columns": 27,
+      "all_retained_field_tokens_exact": true,
+      "round_trip_values_exact": true
+    },
+    {
+      "file": "data/E_BSEP_bootstrap_indices.npz",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/E_no_anyA_bootstrap_indices.npz",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/BSEP_intervals_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/C_OOF.csv",
+      "rows": 4992,
+      "kept_columns": 25,
+      "all_retained_field_tokens_exact": true,
+      "round_trip_values_exact": true
+    },
+    {
+      "file": "data/C_cells_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/NAM_predictions.csv",
+      "rows": 792,
+      "kept_columns": 15,
+      "all_retained_field_tokens_exact": true,
+      "round_trip_values_exact": true
+    },
+    {
+      "file": "data/NAM_indices.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/NAM_context.json",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/NAM_metrics_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/NAM_intervals_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/NAM_single_intervals_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/bridge_membership.csv",
+      "rows": 136,
+      "kept_columns": 52,
+      "all_retained_field_tokens_exact": true,
+      "round_trip_values_exact": true
+    },
+    {
+      "file": "data/bridge_indices_BSEP.npz",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/bridge_indices_DILI.npz",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/bridge_intervals_expected.csv",
+      "byte_unchanged": true
+    },
+    {
+      "file": "data/bridge_association_expected.csv",
+      "byte_unchanged": true
+    }
+  ]
+}

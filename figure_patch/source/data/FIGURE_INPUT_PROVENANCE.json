@@ -1,0 +1,72 @@
+{
+  "role": "Saved analysis outputs and figure-source lineage; no new scientific analysis",
+  "path_base": "Paths labelled current_path are relative to the package root containing source/ and main_figures/.",
+  "current_renderer": "source/render_figures.py",
+  "historical_renderer": {
+    "description": "Reference renderer supplied in the earlier figure-source collection; historical path, not a current entry point.",
+    "source_relative_path": "tools/render_figures_1_5_reference.py"
+  },
+  "data_files": [
+    {
+      "current_path": "source/data/Fig3_BSEP_bridge_BSEP_intervals.csv",
+      "figures": [
+        "Figure2"
+      ],
+      "historical_source_collection": "Earlier author figure-source delivery",
+      "historical_source_relative_path": "figures/source_data/Fig3_BSEP_bridge_BSEP_intervals.csv",
+      "operation": "unchanged byte copy",
+      "rights_note": "BSEP-derived metrics; preserve existing CC BY-NC 4.0 source-related conditions and author grant."
+    },
+    {
+      "current_path": "source/data/plotted_saved_values.json",
+      "figures": [
+        "Figure3",
+        "Figure4",
+        "Figure5"
+      ],
+      "historical_source_collection": "Earlier author figure-source delivery",
+      "historical_source_relative_path": "figures/source_data/plotted_saved_values.json",
+      "operation": "unchanged byte copy",
+      "rights_note": "Mixed saved numerical sections. Figure3 and Figure5 A contain DILI summaries; Figure4 and Figure5 B/C are ALT/TG-GATEs-related. Preserve section-specific source conditions; do not label the entire file MIT."
+    },
+    {
+      "current_path": "source/data/original_drawing_ledger.json",
+      "figures": [
+        "Figure2",
+        "Figure3",
+        "Figure4",
+        "Figure5"
+      ],
+      "historical_source_collection": "Earlier author figure-source delivery",
+      "historical_source_relative_path": "figures/source_data/visual_drawing_ledger.json",
+      "operation": "Unchanged numerical source bytes; the current ledger filename differs from its historical source filename.",
+      "rights_note": "Saved plotting ledger with mixed scientific provenance; follows the corresponding section source conditions."
+    }
+  ],
+  "historical_renderer_adaptations": {
+    "scope": "Earlier source-delivery stage only; not the current renderer interface.",
+    "changes": [
+      "Two historical source paths replaced with kit-relative data paths",
+      "CLI --output and optional --data-dir added; numerical plotting logic unchanged",
+      "Reject a nonempty output directory instead of overwriting existing output"
+    ]
+  },
+  "historical_reference_check": {
+    "scope": "Earlier source-delivery comparison with the then-current author working manuscript; not journal acceptance and not a claim that current Figure 2/5 files are unchanged.",
+    "result": "Five PNG files were byte-identical in that earlier comparison.",
+    "reference_png_files": [
+      "Fig1_three_questions.png",
+      "Fig2_BSEP_endpoint.png",
+      "Fig3_DILI_N.png",
+      "Fig4_NAM_case.png",
+      "Fig5_sensitivity_positive_control.png"
+    ]
+  },
+  "source_rounding_note": "The BSEP plotting CSV and public BSEP_saved_intervals.csv differ in some final serialization digits at approximately 1e-16. The actual source used for the author-reviewed artwork is retained unchanged. This collection does not recompute or reconcile published scientific estimates.",
+  "historical_key_notes": [
+    "B_star is a historical identifier for the same M0 predictions, not an additional baseline.",
+    "D_cond, D_meas, D_struct, D_pred and D_swap are preserved data keys; display labels must follow current manuscript notation.",
+    "At the designated ALT fixed evaluation, B=M=S=f(c), G=H=D=0 and R=H/G is undefined; do not display 100% retention.",
+    "Figure5A seed grouping is descriptive; Figure5B whiskers are five-repeat ranges, and Figure5C whiskers are Monte Carlo standard errors."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "Display aliases only. Keep machine identifiers and route membership unchanged. Short row labels may omit parenthetical IDs when the figure caption supplies this exact mapping.",
+  "models": [
+    {
+      "machine_key": "M0",
+      "display": "Structure (M₀)",
+      "math_display": "Structure ($M_0$)",
+      "meaning": "Structure-only reference"
+    },
+    {
+      "machine_key": "M1",
+      "display": "Proxy concat. (M₁)",
+      "math_display": "Proxy concat. ($M_1$)",
+      "meaning": "Separately fitted concatenation of real-supervision proxy inputs"
+    },
+    {
+      "machine_key": "R_gate",
+      "display": "Residual (R gate subscript)",
+      "math_display": "Residual ($R_{\\mathrm{gate}}$)",
+      "meaning": "Gated residual proxy correction"
+    },
+    {
+      "machine_key": "Mperm",
+      "display": "Concat. permutation",
+      "math_display": "Concat. permutation ($M_{\\mathrm{perm}}$)",
+      "meaning": "Concatenation with permutation-supervision proxies"
+    },
+    {
+      "machine_key": "R_gate_perm",
+      "display": "Residual permutation",
+      "math_display": "Residual permutation ($R_{\\mathrm{gate,perm}}$)",
+      "meaning": "Gated residual correction with permuted assay supervision"
+    },
+    {
+      "machine_key": "R_gate_struct",
+      "display": "Structural kernel",
+      "math_display": "Structural kernel ($R_{\\mathrm{gate,struct}}$)",
+      "meaning": "Structural-kernel residual comparator; not a permutation control"
+    }
+  ]
+}

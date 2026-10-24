@@ -1,0 +1,13 @@
+﻿comparison,point,coverage,low,high,delta,upper_reaches_positive_delta,lower_reaches_negative_delta,strictly_inside_candidate_band,evidence_role
+M1 - M0,-0.009321459581089597,0.95,-0.04778147631495675,0.02847239787635068,0.02,True,True,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+M1 - M0,-0.009321459581089597,0.95,-0.04778147631495675,0.02847239787635068,0.03,False,True,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+M1 - M0,-0.009321459581089597,0.95,-0.04778147631495675,0.02847239787635068,0.05,False,False,True,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+M1 - M0,-0.009321459581089597,0.975,-0.05361475788648007,0.034153652017110146,0.02,True,True,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+M1 - M0,-0.009321459581089597,0.975,-0.05361475788648007,0.034153652017110146,0.03,True,True,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+M1 - M0,-0.009321459581089597,0.975,-0.05361475788648007,0.034153652017110146,0.05,False,True,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+R_gate - B_star,0.009796513008892338,0.95,-0.012265736510409832,0.038050729227016675,0.02,True,False,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+R_gate - B_star,0.009796513008892338,0.95,-0.012265736510409832,0.038050729227016675,0.03,True,False,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+R_gate - B_star,0.009796513008892338,0.95,-0.012265736510409832,0.038050729227016675,0.05,False,False,True,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+R_gate - B_star,0.009796513008892338,0.975,-0.014434445537248946,0.04224344807852972,0.02,True,False,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+R_gate - B_star,0.009796513008892338,0.975,-0.014434445537248946,0.04224344807852972,0.03,True,False,False,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim
+R_gate - B_star,0.009796513008892338,0.975,-0.014434445537248946,0.04224344807852972,0.05,False,False,True,post-hoc interval compatibility; no equivalence test; historical endpoints verbatim

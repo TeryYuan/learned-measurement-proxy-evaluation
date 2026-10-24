@@ -1,0 +1,12 @@
+﻿comparison,route_a,route_b,role,cohort,Holm_family,frozen_before_outer
+S_all_real-minus-base,S_all_real,S_all_base,primary,P_mixed_full_750,primary_separate,True
+B1_real-minus-base,B1_real,B1_base,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B1_real-minus-legacy_perm,B1_real,B1_legacy_perm,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B3_real-minus-base,B3_real,B3_base,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B3_real-minus-legacy_perm,B3_real,B3_legacy_perm,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B3_base-minus-B1_base,B3_base,B1_base,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B4_real-minus-base,B4_real,B4_base,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B4_real-minus-legacy_perm,B4_real,B4_legacy_perm,secondary,P_mixed_full_750,U_all_secondary_NB,True
+B4_base-minus-B1_base,B4_base,B1_base,secondary,P_mixed_full_750,U_all_secondary_NB,True
+S_all_real-minus-legacy_perm,S_all_real,S_all_legacy_perm,secondary,P_mixed_full_750,U_all_secondary_NB,True
+S_all_base-minus-B1_base,S_all_base,B1_base,secondary,P_mixed_full_750,U_all_secondary_NB,True

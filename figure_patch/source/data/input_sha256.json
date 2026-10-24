@@ -1,0 +1,18 @@
+{
+  "source/data/data_status.json": "460929ce2c1a7d0a88733e9cf49821ebdb40dd63972e19ccadd6b529ee4353ab",
+  "source/data/display_references.json": "7559d49312f3a350f5c2bc712d541639dcbe922f4680d089e14caacb1f8dc442",
+  "source/data/Fig3_BSEP_bridge_BSEP_intervals.csv": "fbdf1300a230f11674fa90f4aff76914336a1d6676517c2a2a552b2ac346e023",
+  "source/data/Figure6_source_data.json": "edda39607daf168546d7c84a8027f6fdddf47179cab3ac0b9645e0ede787edc1",
+  "source/data/FIGURE_INPUT_PROVENANCE.json": "9cfa9136f9d82e239747dfea854694ec7d3f683c774831580fe0c17996bc82cc",
+  "source/data/original_drawing_ledger.json": "31bead01f320424f1f843689adbcc2eee865f4358b9bb4c8156ba9c75872d1ee",
+  "source/data/plotted_saved_values.json": "ff0ec0660e78b6e9c336c8fdbcb924526bb198a6cd5dea794bf734730ee2d8e6",
+  "source/data/source_tables/NAM_final_selected_parameters.csv": "7f479a5b02a34d60441ab9baa717e7c0a34b089165c146a3cd5a7ed296e98130",
+  "source/data/source_tables/NAM_saved_identity_checks.csv": "f72853ffed6580089ee4d7f79f6eb46972189f10bb86650fda242f6601bf1387",
+  "source/data/source_tables/N_primary_expected.csv": "d33c839d4c1da6de09fd707ac292abdc54ef675a41567dd751b3ed5be40b657a",
+  "source/data/source_tables/S24_curves_and_MCSE.csv": "866bbebcbc04dfdbc1d30ed5c2adf3a908d7b41bfa1d028031d66b8d467f7812",
+  "source/data/source_tables/S24_definition_source_map.csv": "b933bab6e40e43990e7b5333678fa0833521bf27fded18e862f0d0f1710b238a",
+  "source/data/source_tables/S24_ratio_aggregation_and_NA.csv": "3737de29bc63b34388c61f9e7288ed685b4372996c16694233f491f5c84d2ffd",
+  "source/data/source_tables/S24_repeat_gains_ratios_selection.csv": "2bfc7ccd008c6cc91f4299c134907188aeff195cdb9896612a9c2f34e9712de0",
+  "source/data/source_tables/S24_repeat_losses.csv": "4835ba4e7e0ad4be6013cd30cff6d2fe57c16a2965b8f15de0c2251190ce994b",
+  "source/data/source_tables/S26_seed_paired_results.csv": "14e0b5a0c9e870d31f00a5c42b15c487b51cc084796e18de109d626b4c3fb8c2"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "entry_execution_pass",
+  "isolation_assessment": "external runner must attest",
+  "entry": "replay.py",
+  "entry_return_code": 0,
+  "checks": 238,
+  "passed": 238,
+  "failed": 0,
+  "new_random_draws": 0,
+  "new_model_queries": 0,
+  "absolute_tolerance": 2e-12,
+  "safe_checks_file": "replay_checks_safe.csv"
+}

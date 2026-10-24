@@ -1,0 +1,242 @@
+[
+  {
+    "route": "B",
+    "candidate": "spline_C001",
+    "weighted_Brier": 0.0502016877394557,
+    "seconds": 0.05528339999727905,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": true
+  },
+  {
+    "route": "B",
+    "candidate": "spline_C01",
+    "weighted_Brier": 0.05127201831724735,
+    "seconds": 0.058009899978060275,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "B",
+    "candidate": "spline_C1",
+    "weighted_Brier": 0.05197462436163253,
+    "seconds": 0.06269619998056442,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "B",
+    "candidate": "spline_C10",
+    "weighted_Brier": 0.05211598600650959,
+    "seconds": 0.06817879999289289,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "B",
+    "candidate": "hgb_L7_R1",
+    "weighted_Brier": 0.05098884438587093,
+    "seconds": 0.2614831000100821,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "B",
+    "candidate": "hgb_L7_R10",
+    "weighted_Brier": 0.05060575121522339,
+    "seconds": 0.26327440002933145,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "B",
+    "candidate": "hgb_L15_R1",
+    "weighted_Brier": 0.0526637122184246,
+    "seconds": 0.3369828999857418,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "B",
+    "candidate": "hgb_L15_R10",
+    "weighted_Brier": 0.051787788173560924,
+    "seconds": 0.34069319994887337,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "spline_C001",
+    "weighted_Brier": 0.04833274136119176,
+    "seconds": 0.06003449996933341,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": true
+  },
+  {
+    "route": "M",
+    "candidate": "spline_C01",
+    "weighted_Brier": 0.049404898139990494,
+    "seconds": 0.06189370003994554,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "spline_C1",
+    "weighted_Brier": 0.050147258673743804,
+    "seconds": 0.06668200000422075,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "spline_C10",
+    "weighted_Brier": 0.050324278355111204,
+    "seconds": 0.06854979996569455,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "hgb_L7_R1",
+    "weighted_Brier": 0.05010213423807104,
+    "seconds": 0.2578783000353724,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "hgb_L7_R10",
+    "weighted_Brier": 0.04903517217998067,
+    "seconds": 0.28011870000045747,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "hgb_L15_R1",
+    "weighted_Brier": 0.05086483343378601,
+    "seconds": 0.3270989000448026,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "M",
+    "candidate": "hgb_L15_R10",
+    "weighted_Brier": 0.049738825277910195,
+    "seconds": 0.34050039999419823,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "spline_C001",
+    "weighted_Brier": 0.05024921999669602,
+    "seconds": 0.059093100018799305,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": true
+  },
+  {
+    "route": "P",
+    "candidate": "spline_C01",
+    "weighted_Brier": 0.05132301860909893,
+    "seconds": 0.062385099998209625,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "spline_C1",
+    "weighted_Brier": 0.052025527081396884,
+    "seconds": 0.06883429997833446,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "spline_C10",
+    "weighted_Brier": 0.05211613342865225,
+    "seconds": 0.07207290001679212,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "hgb_L7_R1",
+    "weighted_Brier": 0.05197610792082661,
+    "seconds": 0.3845454000402242,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "hgb_L7_R10",
+    "weighted_Brier": 0.05124173094053968,
+    "seconds": 0.41463610000209883,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "hgb_L15_R1",
+    "weighted_Brier": 0.05240170665057725,
+    "seconds": 0.4395504000131041,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  },
+  {
+    "route": "P",
+    "candidate": "hgb_L15_R10",
+    "weighted_Brier": 0.0522245296108935,
+    "seconds": 0.4599267999874428,
+    "training_n": 2955,
+    "validation_n": 2804,
+    "convergence_extension": [],
+    "selected": false
+  }
+]

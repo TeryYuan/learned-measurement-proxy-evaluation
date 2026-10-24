@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "saved_summary_algebra_only",
+  "participant_level_reconstruction": false,
+  "survey_covariance_reconstruction": false,
+  "clean_environment_project_acceptance": false,
+  "checks_performed": 385,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "tolerance": {
+    "absolute": 1e-12,
+    "relative": 1e-10,
+    "roundoff_scale_factor": 64
+  }
+}

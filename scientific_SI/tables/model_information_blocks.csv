@@ -1,0 +1,24 @@
+﻿application,model,measured_query_available,actual_selected_inputs,alias_or_same_object,boundary
+DILI,M0,False,Morgan2048 + eight descriptors,,no new N query; final saved full-O context
+DILI,M1,False,Morgan2048 + eight descriptors + three real auxiliary scores,,no new N query; final saved full-O context
+DILI,Mperm,False,Morgan2048 + eight descriptors + three permutation-supervised scores,,no new N query; final saved full-O context
+DILI,Mchem,False,Morgan2048 + eight descriptors + three chemical-target scores,,no new N query; final saved full-O context
+DILI,B_star,False,Morgan2048 + eight descriptors,M0 alias,no new N query; final saved full-O context
+DILI,L2LR,False,Morgan2048 + eight descriptors,,no new N query; final saved full-O context
+DILI,R_score,False,fixed structural backbone offset + training-reference real-score kernel,,no new N query; final saved full-O context
+DILI,R_leaf,False,fixed structural backbone offset + training-reference real leaf kernel,,no new N query; final saved full-O context
+DILI,R_gate,False,fixed structural backbone offset + training-reference coverage-gated real leaf kernel,,no new N query; final saved full-O context
+DILI,R_gate_perm,False,fixed structural backbone offset + training-reference coverage-gated permutation leaf kernel,,no new N query; final saved full-O context
+DILI,R_gate_chem,False,fixed structural backbone offset + training-reference coverage-gated chemical leaf kernel,,no new N query; final saved full-O context
+DILI,R_gate_struct,False,fixed structural backbone offset + training-reference coverage-gated Tanimoto kernel,,no new N query; final saved full-O context
+NAM,D_cond,True,"C: logPHH concentration, lograt dose, route",six identical outputs; X/Z dropped,frozen before H
+NAM,D_struct,True,"C: logPHH concentration, lograt dose, route",six identical outputs; X/Z dropped,frozen before H
+NAM,D_meas_only,True,"C: logPHH concentration, lograt dose, route",six identical outputs; X/Z dropped,frozen before H
+NAM,D_pred,True,C + predicted Z and rat-dose interaction; g uses structure + PHH concentration,,frozen before H
+NAM,D_meas,True,"C: logPHH concentration, lograt dose, route",six identical outputs; X/Z dropped,frozen before H
+NAM,D_swap,True,"C: logPHH concentration, lograt dose, route",six identical outputs; X/Z dropped,D_swap/D_meanZ use same D_meas object
+NAM,D_meanZ,True,"C: logPHH concentration, lograt dose, route",six identical outputs; X/Z dropped,D_swap/D_meanZ use same D_meas object
+NAM,D_perm,True,C + measured Z and interaction; trained using one parent-vector permutation,,frozen before H
+NAM,zero_response,True,constant: zero_response,,frozen before H
+NAM,training_compound_mean,True,constant: training_compound_mean,,frozen before H
+NAM,training_weighted_median,True,constant: training_weighted_median,,frozen before H

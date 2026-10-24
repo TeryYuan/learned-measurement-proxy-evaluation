@@ -1,0 +1,3 @@
+# Selected historical implementation for inspection
+
+The included files retain the scientific implementation and relative locations. They explain the original auxiliary/DILI models, BSEP evaluation, PHH processing, ALT block model, forced-input evaluation, simulations and learner comparison. They are not a standalone pipeline: supporting modules/configurations, raw arrays, fitted objects, proxy caches and some original environments are outside this candidate. Historical absolute paths have not been rewritten into a portability claim. No entry here was executed; some can fit, predict or overwrite scientific outputs. The complete local author-review package retains the larger historical snapshot.

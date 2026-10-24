@@ -1,0 +1,29 @@
+{
+  "analysis_date": "2026-10-22",
+  "analysis_role": "new post-hoc descriptive coverage analysis",
+  "models_refitted": false,
+  "source_predictions": "release_candidate/legacy_fixed_replay/data/BSEP_predictions.csv",
+  "outcome": "source-defined human BSEP vesicle inhibition, IC50 <50 micromolar; positive=1",
+  "scores": "saved uncalibrated auxiliary scores; not validated probabilities",
+  "scaffold_source": "original cached fold_group/scaffold audit; no new RDKit generation",
+  "training_reference": "actual BSEPi training identities, n=601",
+  "cohorts": "E172 is nested within E201; no independent replication claim",
+  "bootstrap": {
+    "repeats": 2000,
+    "seed": 20261022,
+    "unit": "identity",
+    "sampling": "with replacement within each observed outcome class and stratum",
+    "paired": "same draws for real and permutation-trained scores",
+    "interval": "pointwise 95% percentile, NumPy linear quantile",
+    "conditional_on": "fixed fitted predictions, observed class counts, observed scaffold strata",
+    "not_propagated": [
+      "refitting",
+      "measurement/label error",
+      "scaffold-cluster dependence",
+      "uncertainty in unseen types of positive molecule"
+    ],
+    "small_strata": "seen strata contain 6/5 positives; empty strata contain one positive each, making conditional intervals especially limited"
+  },
+  "comparisons": "No between-stratum hypothesis tests or equivalence claims; primary cohort unchanged",
+  "verification": "overall point estimates match original AP/AUC to 1e-12; weighted implementation checked against sklearn for original and three bootstrap draws per route/stratum"
+}

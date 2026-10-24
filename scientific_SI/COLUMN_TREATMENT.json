@@ -1,0 +1,46 @@
+{
+  "rules": {
+    "original_row_order": "preserved",
+    "original_retained_strings": "exact CSV tokens; no numeric conversion",
+    "omitted_fields": "listed separately for every projected file in RECOVERY_RECORD.json",
+    "groups": "only exact original-value matches to existing r4 anchors; no new chemical grouping",
+    "unresolved": "empty anchor plus group_mapping_unresolved; cannot support claims requiring that grouping until restored",
+    "empty_original": "empty anchor plus source_empty; do not conflate with unresolved",
+    "recovery_source_row": "one-based source row address, never a replacement scientific ID",
+    "structures": "structure strings are omitted; this does not reconstruct or independently verify structures"
+  },
+  "default_omitted_annotation_columns": [
+    "canonical_original",
+    "context_path",
+    "drug_name",
+    "lookup_inchikey",
+    "model_2d_parent_smiles",
+    "model_input_smiles",
+    "model_path",
+    "name_v1",
+    "name_v2",
+    "nearest_reference_smiles",
+    "original_removed_fragments",
+    "parent_inchikey",
+    "parent_smiles",
+    "path",
+    "phase0_identity_group",
+    "preferred_inchikeys",
+    "pubchem_inchikey",
+    "query_smiles",
+    "raw_smiles",
+    "refchem_titles",
+    "removed_fragments",
+    "source_CAS",
+    "source_identity_keys",
+    "source_names",
+    "standard_inchi"
+  ],
+  "grouping_column_semantics": {
+    "identity_group": "identity_group",
+    "fold_group": "fold_group",
+    "scaffold": "scaffold",
+    "scaffold_or_fold_group": "fold_group"
+  },
+  "source_specific_conditions": "Retained labels, outcomes and derived values keep their upstream conditions. A projection does not establish redistribution permission."
+}

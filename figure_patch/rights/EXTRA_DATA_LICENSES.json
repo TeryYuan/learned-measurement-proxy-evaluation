@@ -1,0 +1,113 @@
+{
+  "scope": "Unchanged prior file-level grants and conditions for the nine supplied saved tables; bundle paths added for traceability.",
+  "files": [
+    {
+      "category": "minimal_fixed_replay_input",
+      "author_license": "CC-BY-4.0",
+      "upstream_conditions": [
+        "Retain FDA DILIrank attribution, version/source provenance and existing source notices for source labels/facts; the author grant applies only to original contributions."
+      ],
+      "scope_note": "Author saved predictions, sampling metadata or aggregate results with FDA label provenance where present. Source facts are not appropriated by the author grant; SI002 historical training alone is not treated as a universal NC condition on predictions.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "release_candidate/legacy_fixed_replay/data/N_primary_expected.csv",
+      "bundle_path": "inputs/evidence/source_tables/N_primary_expected.csv",
+      "current_path": "source/data/source_tables/N_primary_expected.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-SA-2.1-JP",
+      "upstream_conditions": [
+        "Preserve CC BY-SA 2.1 Japan for covered Open TG-GATEs measurement-derived material and accompany it with sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt, database attribution, name and URL."
+      ],
+      "scope_note": "ALT/TG-derived response, proxy accuracy, error, fitted parameter/selection-loss or comparison result. Preserve applicable measurement-source conditions; use a compatible author grant for original additions, conservatively including result summaries without declaring every number independently copyrightable.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/NAM_final_selected_parameters.csv",
+      "bundle_path": "inputs/evidence/source_tables/NAM_final_selected_parameters.csv",
+      "current_path": "source/data/source_tables/NAM_final_selected_parameters.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-4.0",
+      "upstream_conditions": [
+        "Retain scientific source attribution and the documented column projections. No new grant is made for omitted chemical structures, source archives or third-party content."
+      ],
+      "scope_note": "Original methods, sampling/group membership or descriptive relationship metadata; no retained measured response. Source IDs and dataset names are provenance, not a grant over omitted source records. Do not classify solely by NAM/S24 filename.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/NAM_saved_identity_checks.csv",
+      "bundle_path": "inputs/evidence/source_tables/NAM_saved_identity_checks.csv",
+      "current_path": "source/data/source_tables/NAM_saved_identity_checks.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-SA-2.1-JP",
+      "upstream_conditions": [
+        "Preserve CC BY-SA 2.1 Japan for covered Open TG-GATEs measurement-derived material and accompany it with sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt, database attribution, name and URL."
+      ],
+      "scope_note": "Semisynthetic ALT results or diagnostic aggregates use a compatible BY-SA 2.1 Japan grant by author choice; preserve TG terms for genuinely retained measurement-derived components. This choice is not a legal assertion that every simulated scalar, seed or configuration is necessarily a TG adaptation.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/S24_curves_and_MCSE.csv",
+      "bundle_path": "inputs/evidence/source_tables/S24_curves_and_MCSE.csv",
+      "current_path": "source/data/source_tables/S24_curves_and_MCSE.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-4.0",
+      "upstream_conditions": [
+        "Retain scientific source attribution and the documented column projections. No new grant is made for omitted chemical structures, source archives or third-party content."
+      ],
+      "scope_note": "Original methods, sampling/group membership or descriptive relationship metadata; no retained measured response. Source IDs and dataset names are provenance, not a grant over omitted source records. Do not classify solely by NAM/S24 filename.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/S24_definition_source_map.csv",
+      "bundle_path": "inputs/evidence/source_tables/S24_definition_source_map.csv",
+      "current_path": "source/data/source_tables/S24_definition_source_map.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-SA-2.1-JP",
+      "upstream_conditions": [
+        "Preserve CC BY-SA 2.1 Japan for covered Open TG-GATEs measurement-derived material and accompany it with sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt, database attribution, name and URL."
+      ],
+      "scope_note": "Semisynthetic ALT results or diagnostic aggregates use a compatible BY-SA 2.1 Japan grant by author choice; preserve TG terms for genuinely retained measurement-derived components. This choice is not a legal assertion that every simulated scalar, seed or configuration is necessarily a TG adaptation.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/S24_ratio_aggregation_and_NA.csv",
+      "bundle_path": "inputs/evidence/source_tables/S24_ratio_aggregation_and_NA.csv",
+      "current_path": "source/data/source_tables/S24_ratio_aggregation_and_NA.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-SA-2.1-JP",
+      "upstream_conditions": [
+        "Preserve CC BY-SA 2.1 Japan for covered Open TG-GATEs measurement-derived material and accompany it with sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt, database attribution, name and URL."
+      ],
+      "scope_note": "Semisynthetic ALT results or diagnostic aggregates use a compatible BY-SA 2.1 Japan grant by author choice; preserve TG terms for genuinely retained measurement-derived components. This choice is not a legal assertion that every simulated scalar, seed or configuration is necessarily a TG adaptation.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/S24_repeat_gains_ratios_selection.csv",
+      "bundle_path": "inputs/evidence/source_tables/S24_repeat_gains_ratios_selection.csv",
+      "current_path": "source/data/source_tables/S24_repeat_gains_ratios_selection.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-SA-2.1-JP",
+      "upstream_conditions": [
+        "Preserve CC BY-SA 2.1 Japan for covered Open TG-GATEs measurement-derived material and accompany it with sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt, database attribution, name and URL."
+      ],
+      "scope_note": "Semisynthetic ALT results or diagnostic aggregates use a compatible BY-SA 2.1 Japan grant by author choice; preserve TG terms for genuinely retained measurement-derived components. This choice is not a legal assertion that every simulated scalar, seed or configuration is necessarily a TG adaptation.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/S24_repeat_losses.csv",
+      "bundle_path": "inputs/evidence/source_tables/S24_repeat_losses.csv",
+      "current_path": "source/data/source_tables/S24_repeat_losses.csv"
+    },
+    {
+      "category": "saved_scientific_table",
+      "author_license": "CC-BY-4.0",
+      "upstream_conditions": [
+        "Retain FDA DILIrank attribution, version/source provenance and existing source notices for source labels/facts; the author grant applies only to original contributions."
+      ],
+      "scope_note": "Original DILI result/selection/coverage/flow compilation with FDA-source labels or study provenance where present. CC BY covers author contributions; no automatic NC inheritance merely because an auxiliary model was trained with SI002. Retain documented missing mappings and unchanged numeric data.",
+      "scientific_bytes_must_match_source": true,
+      "original_public_path": "scientific_SI/tables/S26_seed_paired_results.csv",
+      "bundle_path": "inputs/evidence/source_tables/S26_seed_paired_results.csv",
+      "current_path": "source/data/source_tables/S26_seed_paired_results.csv"
+    }
+  ]
+}

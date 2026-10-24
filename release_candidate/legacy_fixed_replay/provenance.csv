@@ -1,0 +1,23 @@
+file,original_project_path,bytes,original_bytes,role,distribution_status
+data/N_predictions.csv,reports/phase2a_N/N_predictions.csv,181705,298398,minimal fixed-replay projection,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/N_bootstrap_indices.npz,data/phase2a_N/N_bootstrap_indices.npz,284188,284188,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/N_bootstrap_spec.json,data/phase2a_N/N_bootstrap_spec.json,897,897,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/N_metrics_expected.csv,reports/phase2a_N/N_model_metrics.csv,3766,3766,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/N_primary_expected.csv,reports/phase2a_N/N_primary_comparisons.csv,384,384,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/BSEP_predictions.csv,reports/phase2c_BSEP/SI004_predictions.csv,101358,220770,minimal fixed-replay projection,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/E_BSEP_bootstrap_indices.npz,data/phase2c_BSEP/E_BSEP_bootstrap_indices.npz,519683,519683,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/E_no_anyA_bootstrap_indices.npz,data/phase2c_BSEP/E_no_anyA_bootstrap_indices.npz,429443,429443,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/BSEP_intervals_expected.csv,reports/phase2c_BSEP/SI004_nominal95_intervals.csv,1892,1892,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/C_OOF.csv,reports/phase2b_C/C_OOF_predictions.csv,1091652,1991552,minimal fixed-replay projection,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/C_cells_expected.csv,reports/phase2b_C/C_four_cells.csv,9751,9751,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/NAM_predictions.csv,extensions/nam_phase4c/prediction/holdout_predictions_with_targets.csv,156675,176991,minimal fixed-replay projection,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/NAM_indices.csv,extensions/nam_phase4c/statistics/paired_parent_bootstrap_indices.csv,135205,135205,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/NAM_context.json,extensions/nam_phase4c/statistics/bootstrap_context.json,869,869,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/NAM_metrics_expected.csv,extensions/nam_phase4c/statistics/holdout_metrics.csv,949,949,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/NAM_intervals_expected.csv,extensions/nam_phase4c/statistics/paired_comparison_intervals.csv,3019,3019,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/NAM_single_intervals_expected.csv,extensions/nam_phase4c/statistics/model_metric_intervals.csv,3037,3037,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/bridge_membership.csv,data/phase3/bridge_membership.csv,95611,143253,minimal fixed-replay projection,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/bridge_indices_BSEP.npz,data/phase3/bootstrap_SI004_BSEP_indices.npz,322953,322953,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/bridge_indices_DILI.npz,data/phase3/bootstrap_DILI_V2_indices.npz,328972,328972,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/bridge_intervals_expected.csv,reports/phase3/bridge_nominal_intervals.csv,2035,2035,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained
+data/bridge_association_expected.csv,reports/phase3/BSEP_DILI_contingency_and_association.csv,797,797,unchanged original replay input,PROPOSED_INCLUDE; author approval pending; source-specific terms retained

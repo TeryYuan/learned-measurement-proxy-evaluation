@@ -1,0 +1,3 @@
+﻿sigma_multiplier,gamma_star_50,gamma_star_90,status_50,status_90,label
+0.5,0.0,0.07780320366132723,LEFT_BOUNDARY_ALREADY_REACHED,INTERPOLATED_DESCRIPTIVE_ONLY,empirical_selection_crossing; not a detection limit or real ALT confidence bound
+1.0,0.0,0.0769047619047619,LEFT_BOUNDARY_ALREADY_REACHED,INTERPOLATED_DESCRIPTIVE_ONLY,empirical_selection_crossing; not a detection limit or real ALT confidence bound

@@ -1,0 +1,15 @@
+License application notice: Creative Commons Attribution-NonCommercial 4.0 International
+
+Copyright (c) 2026 Yuan Cao, for original contributions only.
+Yuan Cao licenses the original contributions identified with CC-BY-NC-4.0 in
+FILE_LICENSES.json under Creative Commons Attribution-NonCommercial 4.0 International.
+
+License: https://creativecommons.org/licenses/by-nc/4.0/
+Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+This file is a notice applying and linking to the standard license. It is not
+a rewritten or abridged substitute for the standard legal code. The standard
+license governs. The scope is stated in LICENSE_SCOPE.md and FILE_LICENSES.json.
+Source material retains the notices, attribution and conditions listed there.
+The author does not claim copyright over public-domain facts or third-party
+material. No endorsement by the original data providers is implied.

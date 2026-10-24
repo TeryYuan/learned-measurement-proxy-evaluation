@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "task": "NHANES measured CBC proxy evaluation for five-year all-cause mortality",
+  "predictor_columns": {
+    "numeric": [
+      "age_cap80", "income_poverty_ratio", "bmi", "waist_cm",
+      "sbp_mmhg", "dbp_mmhg", "pulse_bpm"
+    ],
+    "categorical": [
+      "sex", "race", "education", "smoking", "general_health",
+      "diabetes", "cvd", "hypertension", "cancer"
+    ]
+  },
+  "measurement_columns": ["rdw_pct", "hemoglobin_g_dl"],
+  "outcome_column": "y_5y",
+  "features": {
+    "age_cap80": {
+      "role": "X", "type": "numeric", "source_component": "DEMO",
+      "source_variables": ["RIDAGEYR"], "unit": "years",
+      "rule": "min(RIDAGEYR, 80); analysis-domain eligibility requires original RIDAGEYR >=40. Values of 80 represent age 80 or older, not exact age 80.",
+      "rationale": "Harmonizes early top-coding at 85 with later top-coding at 80."
+    },
+    "income_poverty_ratio": {
+      "role": "X", "type": "numeric", "source_component": "DEMO",
+      "source_variables": ["INDFMPIR"], "unit": "ratio",
+      "rule": "Keep finite values in [0,5]; zero is valid. Values outside this codebook range and missing values are left missing."
+    },
+    "bmi": {
+      "role": "X", "type": "numeric", "source_component": "BMX",
+      "source_variables": ["BMXBMI"], "unit": "kg/m^2",
+      "rule": "Use the released BMI value when finite and positive; otherwise missing. No outcome-driven trimming."
+    },
+    "waist_cm": {
+      "role": "X", "type": "numeric", "source_component": "BMX",
+      "source_variables": ["BMXWAIST"], "unit": "cm",
+      "rule": "Use the released waist circumference when finite and positive; otherwise missing."
+    },
+    "sbp_mmhg": {
+      "role": "X", "type": "numeric", "source_component": "BPX",
+      "source_variables": ["BPXSY1", "BPXSY2", "BPXSY3", "BPXSY4"], "unit": "mm Hg",
+      "rule": "Arithmetic mean of all available finite positive readings among attempts 1 through 4. Missing if none. The same prespecified aggregation is used in every cycle."
+    },
+    "dbp_mmhg": {
+      "role": "X", "type": "numeric", "source_component": "BPX",
+      "source_variables": ["BPXDI1", "BPXDI2", "BPXDI3", "BPXDI4"], "unit": "mm Hg",
+      "rule": "Arithmetic mean of all available finite positive readings among attempts 1 through 4. Zero readings are excluded from this prespecified analytic average. Missing if none."
+    },
+    "pulse_bpm": {
+      "role": "X", "type": "numeric", "source_component": "BPX",
+      "source_variables": ["BPXPLS"], "unit": "beats/minute",
+      "rule": "Use the released finite positive BPXPLS value. It is already the 60-second pulse rate; do not multiply by two again."
+    },
+    "sex": {
+      "role": "X", "type": "categorical", "source_component": "DEMO",
+      "source_variables": ["RIAGENDR"],
+      "mapping": {"1": "male", "2": "female"},
+      "rule": "Use the recorded NHANES category; missing or other codes remain missing."
+    },
+    "race": {
+      "role": "X", "type": "categorical", "source_component": "DEMO",
+      "source_variables": ["RIDRETH1"],
+      "mapping": {
+        "1": "mexican_american", "2": "other_hispanic",
+        "3": "non_hispanic_white", "4": "non_hispanic_black",
+        "5": "other_including_multiracial"
+      },
+      "rule": "Keep the same five recorded categories in every cycle. Missing or other codes remain missing."
+    },
+    "education": {
+      "role": "X", "type": "categorical", "source_component": "DEMO",
+      "source_variables": ["DMDEDUC2"],
+      "mapping": {
+        "1": "less_than_9th_grade", "2": "9_to_11th_grade_no_diploma",
+        "3": "high_school_or_GED", "4": "some_college_or_AA",
+        "5": "college_graduate_or_above"
+      },
+      "rule": "Use adult DMDEDUC2, not the earlier three-category DMDEDUC. Codes 7 (refused), 9 (unknown), and blanks are missing."
+    },
+    "smoking": {
+      "role": "X", "type": "categorical", "source_component": "SMQ",
+      "source_variables": ["SMQ020", "SMQ040"],
+      "categories": ["never", "former", "current"],
+      "rule": "SMQ020=2 -> never, even when SMQ040 is structurally skipped; SMQ020=1 and SMQ040 in {1,2} -> current; SMQ020=1 and SMQ040=3 -> former; all other combinations -> missing.",
+      "note": "The standard never category refers to not having smoked at least 100 cigarettes in the lifetime."
+    },
+    "general_health": {
+      "role": "X", "type": "categorical", "source_component": "HUQ",
+      "source_variables": ["HUQ010"],
+      "mapping": {"1": "excellent", "2": "very_good", "3": "good", "4": "fair", "5": "poor"},
+      "rule": "Use the household questionnaire HUQ010 consistently; do not mix with MEC HSD010. Codes 7,9 and blanks are missing."
+    },
+    "diabetes": {
+      "role": "X", "type": "categorical", "source_component": "DIQ",
+      "source_variables": ["DIQ010"],
+      "mapping": {"1": "yes", "2": "no", "3": "borderline"},
+      "rule": "Keep borderline as its own category. Codes 7,9 and blanks are missing. Use the baseline questionnaire, never the death-certificate DIABETES flag in the mortality file."
+    },
+    "cvd": {
+      "role": "X", "type": "categorical", "source_component": "MCQ",
+      "source_variables": ["MCQ160B", "MCQ160C", "MCQ160D", "MCQ160E", "MCQ160F"],
+      "source_meanings": ["heart_failure", "coronary_heart_disease", "angina", "heart_attack", "stroke"],
+      "categories": ["yes", "no"],
+      "rule": "Any source variable=1 -> yes; all five=2 -> no; otherwise missing. Unknown answers are not recoded as absence of disease."
+    },
+    "hypertension": {
+      "role": "X", "type": "categorical", "source_component": "BPQ",
+      "source_variables": ["BPQ020"], "mapping": {"1": "yes", "2": "no"},
+      "rule": "Self-reported prior professional diagnosis. Codes 7,9 and blanks are missing. Do not use the mortality-file HYPERTEN flag."
+    },
+    "cancer": {
+      "role": "X", "type": "categorical", "source_component": "MCQ",
+      "source_variables": ["MCQ220"], "mapping": {"1": "yes", "2": "no"},
+      "rule": "Self-reported history of any cancer or malignancy. Codes 7,9 and blanks are missing."
+    },
+    "rdw_pct": {
+      "role": "Z", "type": "numeric", "source_component": "CBC",
+      "source_variables": ["LBXRDW"], "unit": "%",
+      "rule": "Released true laboratory measurement, finite and positive. Required to be observed for analysis-domain eligibility. Do not impute a reference measurement or trim on outcome association."
+    },
+    "hemoglobin_g_dl": {
+      "role": "Z", "type": "numeric", "source_component": "CBC",
+      "source_variables": ["LBXHGB"], "unit": "g/dL",
+      "rule": "Released true laboratory measurement, finite and positive. Required to be observed for analysis-domain eligibility. Do not impute a reference measurement or trim on outcome association."
+    }
+  },
+  "outcome": {
+    "name": "y_5y",
+    "source_component": "public_use_2019_linked_mortality",
+    "source_variables": ["ELIGSTAT", "MORTSTAT", "PERMTH_EXM"],
+    "time_origin": "MEC examination",
+    "horizon_months": 60,
+    "prerequisites": "ELIGSTAT=1 for analysis eligibility; MORTSTAT in {0,1}; finite PERMTH_EXM>=0.",
+    "case": "MORTSTAT=1 and 0<=PERMTH_EXM<=60",
+    "control": "PERMTH_EXM>60, or MORTSTAT=0 and PERMTH_EXM>=60, with valid mortality status and follow-up",
+    "unknown": "Alive with less than 60 months of follow-up, invalid or missing status, or invalid/missing follow-up. Such records are outside the eligible analysis domain.",
+    "boundary_note": "A death at month 0 or month 60 is retained as an event. Do not require PERMTH_EXM>=60 for all subjects.",
+    "public_use_limitation": "NCHS perturbs follow-up time or cause of death for selected records while leaving vital status unperturbed. Five-year boundary labels can be affected; there is no attempted recovery or assumed per-record perturbation bound."
+  },
+  "cohort_and_design": {
+    "cycles": [
+      {"cycle": "2003-2004", "role": "train", "period": "development", "cbc_file": "L25_C.xpt"},
+      {"cycle": "2005-2006", "role": "validation", "period": "development", "cbc_file": "CBC_D.xpt"},
+      {"cycle": "2007-2008", "role": "test", "period": "test", "cbc_file": "CBC_E.xpt"},
+      {"cycle": "2009-2010", "role": "test", "period": "test", "cbc_file": "CBC_F.xpt"}
+    ],
+    "design_frame": "All ages with RIDSTATR=2, finite positive WTMEC2YR and observed positive integer SDMVSTRA and SDMVPSU. Retain domain-ineligible rows to preserve the survey design frame.",
+    "analysis_domain": "Rows in the design frame with RIDAGEYR>=40, ELIGSTAT=1, both real CBC measurements finite and positive, and valid, determinable five-year outcome.",
+    "person_id": "cycle + '_' + integer SEQN",
+    "stratum_id": "cycle + '_' + integer SDMVSTRA",
+    "psu_id": "stratum_id + '_' + integer SDMVPSU",
+    "weight": "WTMEC2YR/2 in both pooled four-year periods. Training code may normalize weights inside its own fitting subset.",
+    "is_eligible": "Boolean indicator of the prespecified analysis domain; false rows receive no model predictions.",
+    "taylor_domain_note": "For later survey-domain Taylor variance estimation, merge eligible predictions back to the full design frame and explicitly set out-of-domain linearized contributions to zero. Do not multiply NaN predictions by zero or manufacture model predictions for ineligible rows.",
+    "design_degrees_of_freedom": "Compute the number of unique PSUs containing eligible observations minus the number of their unique strata in the evaluation subset. Do not hard-code two PSUs per stratum or a fixed degrees of freedom.",
+    "temporal_scope": "Retrospective later-cycle cohort evaluation, not a simulation of deployment before all training outcomes occurred."
+  },
+  "preprocessing_scope": {
+    "current_script": "Only deterministic file linkage, field-specific recoding, cohort assembly and univariate counts/missingness. No model fits, associations, predictor imputation, target transformations or effect estimates.",
+    "later_modeling": "Only the 16 listed X columns are allowed predictors for g(X) and the X-only baseline. Fit imputation, scaling and categorical encoders on the relevant training split. Z truth must remain measured. Use the same X and missingness information consistently across compared routes.",
+    "categorical_missing": "Empty CSV cells represent missing values. Treat every listed categorical column as categorical even when two categories are present.",
+    "forbidden_predictors": [
+      "person_id", "SEQN", "cycle", "period", "role", "SDMVSTRA", "SDMVPSU",
+      "stratum_id", "psu_id", "WTMEC2YR", "weight", "is_eligible", "exclusion_reason",
+      "RIDAGEYR", "ELIGSTAT", "MORTSTAT", "PERMTH_EXM", "PERMTH_INT", "y_5y",
+      "DIABETES_from_mortality_file", "HYPERTEN_from_mortality_file", "UCOD_LEADING"
+    ]
+  },
+  "documentation": {
+    "per_file_urls": "sources/source_manifest.json",
+    "cbc_2003_2004": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/L25_C.htm",
+    "cbc_2009_2010": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/CBC_F.htm",
+    "mortality_dictionary": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+    "mortality_methods": "https://www.cdc.gov/nchs/data/datalinkage/2019NDI-Linkage-Methods-and-Analytic-Considerations-508.pdf",
+    "bp_aggregation_context": "https://www.cdc.gov/nchs/hus/sources-definitions/hypertension.htm",
+    "data_use_agreement": "https://www.cdc.gov/nchs/policy/data-user-agreement.html"
+  }
+}

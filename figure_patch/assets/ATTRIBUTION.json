@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "retrieved_utc_date": "2026-10-23",
+  "scope": "Actual six SVG icons used in polished figures; originals unchanged and adaptations recorded.",
+  "notes": [
+    "Assets are unchanged copies from pinned upstream commits; local file names are aliases.",
+    "Bioicons lists licenses per icon. Its root repository license does not override per-icon licenses.",
+    "The rat asset is CC-BY-3.0 at the pinned Bioicons version. It has not been relabeled CC-BY-4.0.",
+    "The full upstream MIT notice for the two Tabler files is included in assets/LICENSE_TABLER.txt.",
+    "The source art is attributed to its upstream creators, not to the manuscript author.",
+    "Record any subsequent visual modifications and preserve the applicable attribution and license link."
+  ],
+  "assets": [
+    {
+      "file": "assets/icons/liver.svg",
+      "label": "Human liver",
+      "original_name": "healthy_liver",
+      "author": "Jan-Clusmann",
+      "author_url": "https://www.linkedin.com/in/jan-clusmann/",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_repository": "https://github.com/duerrsimon/bioicons",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "source_repository_path": "static/icons/cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg",
+      "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg",
+      "source_metadata_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/icons.json",
+      "source_metadata_record": {
+        "name": "healthy_liver",
+        "category": "Human_physiology",
+        "license": "cc-0",
+        "author": "Jan-Clusmann"
+      },
+      "source_git_blob_sha1": "84a4b88fe36bd65e450b2402dd17d2e144b09d80",
+      "sha256": "ef460961abd03b4cbb72d82299736d0d2696c571f990b2be2b3b1db3a7e9012b",
+      "changes": "File renamed only; SVG bytes unmodified.",
+      "attribution": "healthy_liver by Jan-Clusmann, via Bioicons, CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/). File renamed; artwork unmodified.",
+      "scientific_scope": "Liver-safety context; not observed pathology.",
+      "used_in_figures": [
+        1
+      ],
+      "revision_adaptation": "Scaled only; geometry and source colors unchanged.",
+      "source_file_status": "Byte-identical original SVG; adaptations applied by render_common.py only."
+    },
+    {
+      "file": "assets/icons/rat.svg",
+      "label": "Rat",
+      "original_name": "rat-white",
+      "author": "Servier",
+      "author_url": "https://smart.servier.com/",
+      "license": "CC-BY-3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_repository": "https://github.com/duerrsimon/bioicons",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "source_repository_path": "static/icons/cc-by-3.0/Animals/Servier/rat-white.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-white.svg",
+      "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-white.svg",
+      "source_metadata_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/icons.json",
+      "source_metadata_record": {
+        "name": "rat-white",
+        "category": "Animals",
+        "license": "cc-by-3.0",
+        "author": "Servier"
+      },
+      "source_git_blob_sha1": "c80bdabaec7eba4e61e587ac55215d9425de0abd",
+      "sha256": "dd7d5f29329b8cccd382f5f703243a12b368372745661b353fd9875f315a7453",
+      "changes": "File renamed only; SVG bytes unmodified.",
+      "attribution": "rat-white by Servier, via Bioicons, CC-BY-3.0 (https://creativecommons.org/licenses/by/3.0/). File renamed; artwork unmodified.",
+      "scientific_scope": "Public rat ALT data context; does not depict a new experiment.",
+      "used_in_figures": [
+        4
+      ],
+      "revision_adaptation": "Scaled to 47 × 29 pt; composition-only darker gray fills and outlines; nonwhite existing stroke widths multiplied by 1.65. Source SVG geometry and original file unchanged. See render_common.py recolor map.",
+      "source_file_status": "Byte-identical original SVG; adaptations applied by render_common.py only."
+    },
+    {
+      "file": "assets/icons/cell_culture_dish.svg",
+      "label": "Culture dish",
+      "original_name": "CC_dish",
+      "author": "Marcel Tisch",
+      "author_url": "https://twitter.com/MarcelTisch",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_repository": "https://github.com/duerrsimon/bioicons",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "source_repository_path": "static/icons/cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg",
+      "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg",
+      "source_metadata_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/icons.json",
+      "source_metadata_record": {
+        "name": "CC_dish",
+        "category": "Cell_culture",
+        "license": "cc-0",
+        "author": "Marcel Tisch"
+      },
+      "source_git_blob_sha1": "29f29daebfe28c3f999291a2861977566424d626",
+      "sha256": "934c188015b49dd8bc5d0776033d211b61c44f6aa213f09d4da805e7612d4b9a",
+      "changes": "File renamed only; SVG bytes unmodified.",
+      "attribution": "CC_dish by Marcel Tisch, via Bioicons, CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/). File renamed; artwork unmodified.",
+      "scientific_scope": "Generic cell-culture vessel; label the actual PHH source separately.",
+      "used_in_figures": [
+        1,
+        4
+      ],
+      "revision_adaptation": "Scaled; two medium colors desaturated in the composed figures; geometry unchanged.",
+      "source_file_status": "Byte-identical original SVG; adaptations applied by render_common.py only."
+    },
+    {
+      "file": "assets/icons/blood_sample_tube.svg",
+      "label": "Blood sample tube",
+      "original_name": "blood_sample_tube",
+      "author": "Marcel Tisch",
+      "author_url": "https://twitter.com/MarcelTisch",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_repository": "https://github.com/duerrsimon/bioicons",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "source_repository_path": "static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "download_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "source_metadata_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/icons.json",
+      "source_metadata_record": {
+        "name": "blood_sample_tube",
+        "category": "Blood_Immunology",
+        "license": "cc-0",
+        "author": "Marcel Tisch"
+      },
+      "source_git_blob_sha1": "4c3c4123afd08a162e14e09cb2298609fbdb322e",
+      "sha256": "5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025",
+      "changes": "File renamed only; SVG bytes unmodified.",
+      "attribution": "blood_sample_tube by Marcel Tisch, via Bioicons, CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/). File renamed; artwork unmodified.",
+      "scientific_scope": "Blood measurement context; not a patient record or actual sample.",
+      "used_in_figures": [
+        1,
+        6
+      ],
+      "revision_adaptation": "Scaled; tube and cap colors desaturated in the composed figures; geometry unchanged.",
+      "source_file_status": "Byte-identical original SVG; adaptations applied by render_common.py only."
+    },
+    {
+      "file": "assets/icons/adult_group.svg",
+      "label": "Adult cohort symbol",
+      "original_name": "users-group",
+      "author": "Paweł Kuna / Tabler Icons contributors",
+      "author_url": "https://github.com/tabler/tabler-icons",
+      "license": "MIT",
+      "license_url": "https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/LICENSE",
+      "source_repository": "https://github.com/tabler/tabler-icons",
+      "source_commit": "a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d",
+      "source_repository_path": "icons/outline/users-group.svg",
+      "source_url": "https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/icons/outline/users-group.svg",
+      "download_url": "https://raw.githubusercontent.com/tabler/tabler-icons/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/icons/outline/users-group.svg",
+      "source_metadata_url": "https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/LICENSE",
+      "sha256": "9ae9a4c9dd1d3aa9c7ee85fe7edc3e9ed463a715c14d0591562dd8d148f536b2",
+      "changes": "File renamed only; SVG bytes unmodified.",
+      "attribution": "users-group from Tabler Icons, Copyright (c) 2020-2026 Paweł Kuna, MIT license. File renamed; artwork unmodified.",
+      "scientific_scope": "Generic group symbol; label the actual age range; it does not encode sex or age composition.",
+      "used_in_figures": [
+        1,
+        6
+      ],
+      "revision_adaptation": "Scaled; currentColor resolved to #68727B; neutral group symbol, no sex-composition encoding.",
+      "source_file_status": "Byte-identical original SVG; adaptations applied by render_common.py only."
+    },
+    {
+      "file": "assets/icons/questionnaire.svg",
+      "label": "Questionnaire",
+      "original_name": "clipboard-list",
+      "author": "Paweł Kuna / Tabler Icons contributors",
+      "author_url": "https://github.com/tabler/tabler-icons",
+      "license": "MIT",
+      "license_url": "https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/LICENSE",
+      "source_repository": "https://github.com/tabler/tabler-icons",
+      "source_commit": "a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d",
+      "source_repository_path": "icons/outline/clipboard-list.svg",
+      "source_url": "https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/icons/outline/clipboard-list.svg",
+      "download_url": "https://raw.githubusercontent.com/tabler/tabler-icons/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/icons/outline/clipboard-list.svg",
+      "source_metadata_url": "https://github.com/tabler/tabler-icons/blob/a4ce1404bc6d24d3c365afe7b258d6bf6f48d62d/LICENSE",
+      "sha256": "78d1a4356bcba66c7f87916b4901800e6fc429dbbdae8d309ebd353ca1460068",
+      "changes": "File renamed only; SVG bytes unmodified.",
+      "attribution": "clipboard-list from Tabler Icons, Copyright (c) 2020-2026 Paweł Kuna, MIT license. File renamed; artwork unmodified.",
+      "scientific_scope": "Generic baseline/questionnaire information; not a complete variable list.",
+      "used_in_figures": [
+        6
+      ],
+      "revision_adaptation": "Scaled; currentColor resolved to #68727B.",
+      "source_file_status": "Byte-identical original SVG; adaptations applied by render_common.py only."
+    }
+  ],
+  "path_base": "Paths are relative to this package root (the folder containing assets, source and main_figures)."
+}

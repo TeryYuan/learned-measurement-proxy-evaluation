@@ -1,0 +1,845 @@
+# V2 analysis plan before model fitting
+
+Protocol ID: NHANES_CBC_FIXED_SUBSTITUTION_V2_20261019  
+Prepared at (UTC): 2026-10-19T09:00:41+00:00  
+Status at this preparation: no study proxy or mortality model has been fitted. The remote repository record has not yet been created; no repository URL was supplied.
+
+## Record and prior data access disclosure
+
+This is a fixed version of the proposed secondary-data analysis, to be recorded in the author-designated repository before the first fit on actual study data. The plan's local preparation time is not an independently verifiable public timestamp and is not a claim of formal preregistration. PROTOCOL_RECORD.json will hold the actual repository visibility, remote link, record time, execution start/deadline and first fit time. The repository may be public or private as designated by the author. Record its actual visibility; a private record is verifiable only by permitted readers and must not be called public at model fitting. Provide reviewer access at submission. Preserve this version after its remote record; append deviations rather than silently replacing it.
+
+Already inspected before this version: official documentation and variable mappings; source availability, cohort flow and missingness; role-specific counts and mortality event totals; RDW/Hb univariate distributions by cycle; public follow-up boundary counts fixed at 54–59, exactly 60 and 61–66 months. This includes descriptive information from the later evaluation cycles. No proxy or mortality-model fit, candidate performance, Q1 prediction error, G/D/H/R, or predictor-outcome screening has been performed.
+
+The question, population, whitelist, routes, candidate procedures, interval methods and all outcome-dependent reporting rules are fully specified below. The 7-calendar-day resource limit starts at actual execution and includes analysis and writing; it is unrelated to gain sign or significance. The genuine current descriptive findings must remain disclosed, including the MAXM-to-HMX transition at the development/test boundary. The pre-model diagnostics are not scientific performance results.
+
+## Detailed analysis specification
+
+# DILI–Patterns 新增真实临床测量替代模块
+
+协议编号：NHANES_CBC_FIXED_SUBSTITUTION_V2_20261019  
+设计日期：2026-10-19  
+交付状态：V2已完成官方文档核实、人群清点、逐周期测量分布和公开随访边界描述；未训练任何研究模型，未计算预测增益或保留率。模型前远端版本记录尚待指定仓库，不能写成已经完成预注册。
+
+正式记录文本见 PREMODEL_ANALYSIS_PLAN.md；本文件与 analysis_config.json 为其详细内容来源。远端版本记录后，实质分析改动须追加 DEVIATIONS.md 并保留旧版本，不能静默改写记录。
+
+## 1. 研究问题与边界
+
+在 NHANES 中，用人口、病史、生活方式及非抽血查体信息预测两项血常规指标，然后检验这些代理是否能保留真实血液测量对后续死亡预测的收益。
+
+本模块服务于现稿的三个问题：
+
+1. **Q1：测量预测。** 能否从基础信息 X 预测真实测量 Z？
+2. **Q2：下游增量。** 使用训练内交叉拟合代理独立训练的模型，是否比可信 X 基线改善 Y 预测？
+3. **Q3：固定模型替代。** 先评价真实 Z 是否有收益，再把同一个已拟合模型中的 Z 换成代理，评价收益保留程度。
+
+这是预定真实任务中的方法评价，不以发现新的死亡生物标志物或开发临床筛查系统为目标。只分析一个人群定义、两项测量、一个结局和一个后期周期评价集。不根据结果追加指标、结局或更换数据集。
+
+现有 DILI/BSEP/ALT 结果、图表、公式和科学 SI 保持原样。当前启动包只提供既有稿件的文本上下文。新增结果完成后另交英文小节和插入位置表，不自动覆盖原稿。
+
+## 2. 为什么选择这个任务
+
+三种数据角色清楚：X 是本次 CBC 之外可获得的基础信息；Z 是同一受试者的真实血液读数；Y 来自后续死亡链接。Y 不按 RDW、血红蛋白或其代理的阈值构造。
+
+Z 固定为：
+
+| 指标 | NHANES 字段 | 单位 |
+| --- | --- | --- |
+| 红细胞分布宽度 RDW | LBXRDW | % |
+| 血红蛋白 | LBXHGB | g/dL |
+
+RDW 有独立于本次数据分析的死亡风险关联文献，血红蛋白提供同一次常规 CBC 中的另一类可解释信息。这样的事前依据支持选题，但不能预先证明两项测量在强基础模型之上有增益。该任务应称为真实数据扩展，不能在计算前称为“真实阳性对照”。
+
+**仪器核实修正：2003–2006 使用 Beckman Coulter MAXM；2007–2010 使用 HMX。2007–2008 周期的专门变更说明明确记载 MAXM→HMX，2009–2010 的实验室手册确认 HMX。转换恰好位于开发与评价边界。** 2007、2009 网页的通用方法段存在沿用 MAXM 的文字，不能据此否认专门变更段和实验室手册。见 CBC_INSTRUMENT_AUDIT.md 的逐周期官方来源。
+
+保留时间切分，评价目标明确为后期周期及上述仪器转换条件下的五路线表现；不称同仪器验证。该设计不能分离仪器、人口组成和历时差异，不能把 M/S 的全部差异归为代理误差。逐周期描述不证明校准一致或仪器造成某一分布变化。不得根据 test 分布对齐 Z、重新标定或更换周期。
+
+本轮不扩大到白蛋白、肌酐。现在在模型前扩块本来可以形成有说明的新方案，但文献中的死亡关联不保证本基线上的增量，生化项目还引入额外平台／校准处理。V2选择两项 CBC 是范围和解释复杂度的决定，不是已经知道两项测量有正收益；具体理由及官方生化文档见 INTERPRETATION_zh.md。
+
+癌细胞系 RNA→蛋白→药敏也是可行候选，但它涉及更复杂的缺失、平台、对象关系和药物版本处理；完整 RNA 基线后的蛋白增量也无保证。本轮不启动该候选。
+
+## 3. 数据与已取得的输入
+
+40 个官方数据文件已经放在 `input/raw/`：每周期八类 X 来源、一份 CBC、一份 2019 公共死亡文件，共四周期。36 个 XPT 已实际解析，四个死亡文件已取得，准确下载地址、代码本和文件大小见 `sources/source_manifest.json`。
+
+| 周期 | 开发角色 | 文件后缀 | CBC 文件 |
+| --- | --- | --- | --- |
+| 2003–2004 | train：候选拟合及 g 的训练内选择 | C | L25_C.xpt |
+| 2005–2006 | validation：下游候选选择 | D | CBC_D.xpt |
+| 2007–2008 | 最终后期评价的一部分 | E | CBC_E.xpt |
+| 2009–2010 | 最终后期评价的一部分 | F | CBC_F.xpt |
+
+每周期 X 文件为 DEMO、BMX、BPX、SMQ、DIQ、MCQ、BPQ、HUQ。文件连接以同周期 SEQN 为一对一键；全项目使用 `cycle_SEQN` 作为 person_id。代码本链接、官方下载地址、补下载脚本和官方死亡文件读取示例随包提供。
+
+原始数据为 NCHS public-use data，使用条件见 NCHS Data User Agreement；不自行把数据重新标为 CC0 或 MIT。无需申请受限链接数据。2022 死亡链接是受限版本，本协议使用已公开的 2019 版本。
+
+## 4. 入组与结局
+
+分析对象必须满足：
+
+- RIDAGEYR ≥40；
+- RIDSTATR=2，WTMEC2YR>0，官方调查设计字段有效；
+- ELIGSTAT=1，MORTSTAT 为 0 或 1；
+- RDW 和血红蛋白均真实观测、有限且为正；
+- PERMTH_EXM 有效且不小于 0；
+- 5 年状态按下列规则可判定。
+
+使用 MEC 查体起算时间 PERMTH_EXM，固定 60 个月：
+
+```text
+死亡且 0 <= PERMTH_EXM <= 60：Y=1。
+PERMTH_EXM > 60：Y=0（包括60个月后死亡）。
+活着且 PERMTH_EXM >= 60：Y=0。
+活着且 PERMTH_EXM < 60：5年状态不可判定，排除并记录。
+```
+
+死亡发生在 0 或 60 个月的记录均属于病例。不能先要求所有人随访不少于 60 个月，否则会错误删除早期死亡病例。
+
+公共 LMF 对部分记录的随访时间或死因使用合成替换值，生死状态本身未被扰动。因此，Y 是**按公开 LMF 定义的五年全因死亡**，不是每例精确原始死亡日期的重建。不能假定时间扰动很小或只影响已知个体，也不尝试恢复其隐私处理。公开文件没有逐记录替换标志或未扰动时间，无法计数“随访时间被替换的人数”，也无法确定五年结局被改分的人数。固定描述 54–59、恰60、61–66 月死亡数及 54–66 月存活／五年状态未知记录，按周期和开发／评价池列出。此窗口不是官方扰动范围，这些数目不是受影响人数、误分类人数或上界；不删除边界对象，不改变结局窗口。见 LMF_WEIGHT_AUDIT.md。
+
+`prepare_cohort.py` 保留完整 MEC 正权重及有效设计字段框架，年龄、链接资格、Z 完整和结局可判定共同定义分析域。域外对象不进入训练，也不需要模型预测，但保留其设计框架用于域分析方差。最终分析人数以实际合并清点为准，不能把各原文件记录数当作 n。
+
+## 5. X 的预定信息预算
+
+固定 16 项 X，完整字段与映射见 `feature_dictionary.json`：年龄、性别记录、种族／族裔、教育、家庭收入贫困比、BMI、腰围、收缩压、舒张压、脉搏、吸烟、自评健康、自报糖尿病、心血管病史、高血压史、癌症史。
+
+这个基线可以使用非抽血查体和既往病史，不能描述成零成本、完全无实验信息或全新无诊断信息的输入。代理 g 使用的每一项变量都必须同时进入 X 基线。
+
+给定开发数据及已拟合对象，g(X) 与 S=f_M(X,g(X)) 都是 X 的函数，不提供 X 之外新观测的个体信息。理想 X 基线 b*(X)=E[Y|X] 下，Brier 风险满足 L(S)−L(b*)=E[(S−b*)²]≥0，因此对理想基线的 H*≤0。有限拟合的 B 未必是 b*，本研究 H 可正、可零、可负；不能把理论界直接当作已算出的实际结果。完整推导见 INTERPRETATION_zh.md。
+
+Q1 的整体测量误差不能单独决定 Q3：与 Y 有关的方向、尾部误差、拟合模型及跨周期／仪器条件均有作用。本任务估计具体有限程序的 G/D/H/R，不把“确定性变换不能创造新信息”作为新经验发现。P 的改善也仅表示辅助 Z 监督及有限模型集合中的表示／拟合改善。G 是分别选型程序的预测风险差，不是测量或临床检测的因果效应。
+
+重要规则：
+
+- 所有周期的建模年龄为 min(RIDAGEYR,80)；80 表示80岁及以上。
+- SMQ020=2 是从不吸烟，不能因 SMQ040 结构性跳题而删除；具体 smoking3 映射按字典。
+- 糖尿病 DIQ010 的 yes、no、borderline 三类分开。
+- CVD 五项任一 yes 则有；全部 no 才是无；没有 yes 但有未知则为缺失。
+- 血压统一取预定各次正值读数均值；BPXPLS 已换算为每分钟，不能再乘2。
+- 问卷特殊值按字段处理，不能全局把7、9、77、99当缺失。
+- 所有 X 的插补、缺失指示、编码及缩放只在当前训练子集拟合。
+- Z 必须实测，不使用插补 Z 作为真值；不进行结果驱动的异常值删除或截尾。
+- SEQN、cycle、死亡证明字段、随访时间、ELIGSTAT、调查权重与设计变量都不能进入 X。
+- LMF 中 DIABETES 和 HYPERTEN 是死亡证明信息；自报病史只能来自 DIQ010 和 BPQ020。
+
+建模必须按16项白名单取 X，禁止简单删除 Y 后把其他列全部送入模型。
+
+## 6. 时间安排与数据角色
+
+2003–2004 拟合候选，2005–2006 选择下游配置；然后使用 2003–2006 全开发数据重拟合选定程序。2007–2010 仅用于最终评价。
+
+这是**回顾性的后期调查周期评价**。早期入组者的五年结局有一部分在2007年以后才发生，因此不称为2007年前已经完成训练的前瞻部署模拟。后期参与者与开发参与者不重叠，但都来自 NHANES；它不是独立医院或独立采集体系的外部验证。
+
+在第一次研究数据上的模型拟合（包括 g、下游、试跑或 smoke fit）之前，完成第17节的一次版本化远端版本记录。不得先试跑模型再倒填“模型前”日期。不反复查看最终评价表现后改参数。数据或代码的实际错误可修复，记录原因、发现时间、当时看过的结果及受影响步骤；实质变更保留原方案并追加偏离说明。无需反复哈希或冻结未改变的内容。
+
+## 7. 五条路线
+
+| 代号 | 拟合与最终输入 | 回答的问题 |
+| --- | --- | --- |
+| B | f_B(X) | 可信无本次 CBC 基线 |
+| M | f_M(X,Z) | 真实测量是否改善下游预测 |
+| S | 原封不动的 f_M(X,g(X)) | 固定模型替代后的结果 |
+| MEAN | 原封不动的 f_M(X,开发集Z加权均值) | 简单替代参照 |
+| P | 独立拟合 f_P(X,训练内OOF代理) | 重新训练以使用代理的结果 |
+
+S 与 MEAN 不新增拟合对象。它们必须调用同一个 M 模型及其同一套编码、缩放、样条和概率转换。g 输出先还原成 RDW % 与 Hb g/dL，再交给 M；不能把 g 内部标准化结果直接当作原始测量输入。
+
+五条路线使用同一批可评价参与者。不能让 B 在更大的缺少 CBC 人群中训练，而 M 在完整子样本中训练后把差异全部解释成 Z 的作用。
+
+## 8. 代理 g：两个候选，按测量误差选择
+
+候选只有固定 Ridge（alpha=10）和固定 HistGradientBoostingRegressor（200轮、15叶、最小叶30、L2=10、learning_rate=0.05）。二者均采用训练内输入预处理；Z 按当前训练集均值和标准差变换，预测后逆变换。选择损失是两个测量各自训练尺度标准化加权 MSE 的平均。
+
+Z 的均值为 sum(wZ)/sum(w)，方差为 sum[w(Z−均值)²]/sum(w)，不做自由度校正；每个训练子集独立计算。每个CV验证折先对两项标准化MSE取平均，再按各验证折权重总和合并折分数；不等权平均大小不同的折。X 的 StandardScaler 使用常规未加权训练均值和总体方差，模型拟合损失仍使用调查权重。g 并列时使用 config 中的固定候选顺序。
+
+一个候选类型用于两个测量，不能在看到最终死亡收益后逐项更换代理。HGB 为两项 Z 分别拟合，Ridge 可多输出；不使用下游死亡 Y 来选 g。
+
+3-fold 分割按含 cycle/stratum 的 psu_id 成组；唯一组按记录的种子洗牌后等分，不尝试多种划分挑选更好结果。
+
+开发初期：
+
+1. 仅在2003–2004内部，用3-fold分组CV选择 g。
+2. 仅用2003–2004拟合选择后的 g，为2005–2006生成代理。
+3. 为 P 生成2003–2004的3-fold OOF代理。每个外层训练子集内部重新执行同样的轻量3-fold g选择，确保被留出对象的 Z 不参加其代理的拟合或选择。
+
+最终阶段：在2003–2006重复相同程序，生成一次全开发集 OOF代理和一个全开发 g，再为最终评价集生成代理。OOF缓存每阶段只生成一次，所有下游候选复用。不为每个候选重复计算代理。
+
+## 9. 下游模型：相同的八个候选
+
+B、M、P分别使用同一个候选集合和选择标准，允许各自选出不同配置：
+
+- **样条＋L2 logistic：** 连续 X 及存在时的 Z 使用4个训练分位数结点、三次 B-spline、constant extrapolation；类别独热；缺失指示不做样条。C为0.01、0.1、1、10。
+- **HGB classification：** 200轮、learning_rate=0.05、最小叶30；叶数7或15，L2为1或10，共四种组合。early_stopping=False，避免额外隐式验证划分。
+
+全部 g、B、M、P 及内部CV／OOF拟合都使用 MEC 权重，按当前分析池的周期数构造后，在当前拟合子集归一到均值1；不是只给最终评价加权。g 选型使用加权测量误差，下游选型使用加权 Brier。缺失数值用当前训练中位数，类别缺失为独立标记。代理 Ridge 的输入及样条 logistic 展开特征按训练数据标准化。样条结点和插补中位数采用当前训练样本的常规定义，不使用测试分布。
+
+下游选择仅按2005–2006加权Brier loss。并列误差差异小于1e-12时，按 config 的固定候选顺序选择，不优先选“测量有用”的候选。
+
+不使用SMOTE、类别平衡权重、AutoML、深度网络或最终评价集校准。模型以对数似然训练、Brier选择是允许的：训练目标和选型目标在方法中分别说明。
+
+最终只报告三个已选择程序及其两个固定查询。候选全表报告开发验证表现；不将所有候选逐一放到最终集后再挑“最好的一组”作为主结论。
+
+## 10. Q1：两项测量预测质量
+
+在后期评价集分别报告原单位加权MAE、RMSE和传统R²。R²分母使用评价集Z的加权均值；另明确报告相对**开发集Z均值预测**的MAE改善，二者分母不能混用。
+
+可以用同一Taylor辅助函数对“均值预测绝对误差−代理绝对误差”给出配对区间；R²、散点或分箱校准作为支持性描述。不能为了提高平均准确性而删除较难预测的测量或只保留表现更好的一项。
+
+## 11. 主损失与保留率
+
+主损失为分析域中的调查加权Brier：
+
+L_r = sum_i w_i (Y_i - p_ri)^2 / sum_i w_i。
+
+记：
+
+- G = L_B − L_M：真实测量收益；
+- D = L_S − L_M：固定替换损失；
+- H = L_B − L_S = G−D：替换后仍保有的基线以上收益；
+- A = L_MEAN − L_S：代理相对训练均值替换的优势；
+- G_P = L_B − L_P：独立代理模型相对基线的增益；
+- R_fixed = H/G = 1−D/G。
+
+G、D、H以Brier单位报告，不能混入现有ALT的MAE单位或原有guard。数值guard固定为1e-8 Brier单位，只用于极小分母，不是临床获益阈值。
+
+所有路线的绝对损失和上述有符号差异必须保留。R可以小于0或大于1，不能截成0–100%。P的表现不用于计算R_fixed。
+
+## 12. 不确定性：调查设计下的固定预测比较
+
+使用公开调查分层和PSU，在完整MEC设计框架上对分析域的成对损失作Taylor线性化。每个分层的PSU数从实际数据计算，不能硬编码为2。区间使用设计自由度的t分布；域自由度按实际包含域内观察的PSU数减去相应分层数计算。
+
+按实际预定分析池使用 WTMEC2YR/K：2003–2004 train、2005–2006 validation 和任一单周期描述 K=1；2003–2006 development 和 2007–2010 test 各 K=2；仅在合并四周期描述时 K=4。CV继承所属开发池的K，不根据某个稀疏折重新定义总体。所有拟合再在当前训练子集将这些权重归一到均值1。
+
+现有人群CSV中的 weight=WTMEC2YR/2 仅是四年开发／评价池的便捷列；保留 WTMEC2YR 供按池重建，不把该列称为通用八年权重。统一倍数不会改变归一化均值及本次Taylor比率线性化，也不能因此把错误的总体权重描述保留在Methods。最终评价的方差只基于完整后期MEC框架，不混入开发参与者。官方合并权重规则及说明见 LMF_WEIGHT_AUDIT.md。
+
+这是在已拟合模型、公开Z、公开Y固定时的设计近似区间，不传播模型重训、链接错误、测量误差或隐私时间扰动。完整测量筛选后，称为survey-weighted analytic-cohort benchmark，不声称精确代表所有美国40岁以上人口。
+
+R_fixed使用G和H的同一联合协方差计算**未惩罚的Fieller置信集合**；保留无界、两段或全实数集合。不能删除非正分母的重采样值后给一个看似稳定的百分位区间。数学细节及可运行辅助函数见STATISTICS.md和scripts/evaluate_fixed_predictions.py。
+
+所有区间为95%逐项区间，不宣称同时覆盖全部指标或完成临床非劣效检验。不以替换差异区间跨零来推导“等效”“完全保留”或“可以不做血常规”。
+
+## 13. 必要诊断与两项固定敏感性
+
+模型前已完成并在V2记录中披露：各周期 RDW/Hb 加权均值、总体SD、分位数、范围和ECDF；公开随访边界计数。文件见 diagnostics/，脚本为 scripts/pre_model_descriptives.py。它们是描述性检查，不是特征—结局筛选、漂移显著性检验或模型结果。
+
+模型运行后的必要诊断：
+
+- 五条路线的ID、Y与权重一致；
+- 实测Z原样传回M应产生同一预测，确认固定模型查询实现；
+- M、S、MEAN的预测最大绝对差、RMS差及变化比例；仅据这些记录上的不变性描述观察到的现象，不无依据宣称函数在所有可能输入上不依赖Z；
+- 两项代理误差、范围及非有限输出记录；
+- 原始概率的加权事件率、log loss、AUROC、AP及描述性校准，不重校准测试概率。
+
+固定敏感性只有：
+
+1. **不加权：** 同一预测重算Brier与差异，作为描述性参照。
+2. **40–79岁：** 用同一已拟合模型的同一预测，在后期评价的40–79岁子域重算主比较和区间，不重新训练。它检查80岁以上年龄截顶对解释的影响。
+
+不追加死因结局、其他预测年限、交互亚组、SHAP大面板、特征筛选、处罚路径扫描或多种随机种子。
+
+## 14. 预先确定的结果解释
+
+| 结果 | 允许的解释 |
+| --- | --- |
+| G的区间支持正收益，D支持正损失，H仍为正 | 部分测量收益保留；报告绝对量和Fieller区间 |
+| G支持正收益，H接近0或为负 | 该代理在该已拟合模型中未充分保留测量收益 |
+| P有增益但S较差 | 独立代理训练与固定替换得出不同结果 |
+| G点估计>guard但区间跨0 | 可保留描述性比值与Fieller集合，标为不稳定；主文不以单一百分比作结论 |
+| G<=guard | R为NA，并区分非正与小正分母；其余损失、差异完整报告 |
+| 替换损失区间很宽或跨0 | 替换结果不确定；不能称等效或完整替代 |
+
+测量收益没有建立时，本模块仍完成了预定研究，不自动换任务寻找阳性。报告能否补齐原稿Q3缺口，由真实结果决定。
+
+## 15. 有限计算预算与完成标准
+
+电脑目标：普通CPU、32GB内存；最多8个线程，外层任务顺序执行，不要求GPU。低维表格模型预计只需数GB内存，具体峰值与耗时由实际执行日志给出；设计阶段没有训练计时。
+
+三条下游路线各八个候选，共24次初始候选拟合，再进行三条最终拟合。代理仅两个候选、两项输出、轻量3-fold选择与OOF，缓存复用；不是上千候选搜索。V2设定从实际执行开始计算的7个日历日，总计包括实现、分析、核查及写作；开始和期限写入 PROTOCOL_RECORD.json。这是资源边界，不是结果显著性边界，不能承诺计算半天必然完成。
+
+完成标准是：输入与人群可追溯、五条路线全部完成、预测与公式一致、正负结果全部报告、图表与英文草稿生成。结果阳性不是工程完成条件。
+
+## 16. 论文增量
+
+建议新增一个约400–600英文词的Results小节、一張主图、完整SI表及简洁Methods扩展。新主图暂名Figure6，不提前重排当前五张图。
+
+Figure6建议四个面板：A为三阶段人群与三问映射；B为两项代理的测量误差；C为五条路线的加权Brier；D为G/D/H等配对差异及可解释时的保留率。实际布局依据结果可读性确定，避免把不同指标混在同一坐标轴。
+
+英文结果与讨论必须按实际输出撰写。如果结果不支持测量收益，不能把标题写成“a validated useful measurement was replaced”。如果支持，也只针对公开可用X、两项CBC、指定年龄和周期及选定模型作结论。
+
+本模块采用模型拟合前写定的版本化分析计划，已经查看的可行性和描述统计必须披露；它不改变既有DILI研究包含事后分析的事实。GitHub记录不自动等同于注册平台上的正式预注册。
+
+
+## 17. 一次明确的模型前记录
+
+PREMODEL_ANALYSIS_PLAN.md 固定本版问题、人群、16项X白名单、两项Z、五路线、候选、指标、区间及报告规则；其中含完整config和字段字典快照。PROTOCOL_RECORD.json 记录真实UTC准备时间，repository_url、protocol_commit_url、remote_recorded_utc、first_study_fit_utc 初始均为空。当前没有给定GitHub仓库，不声称已经上传、commit或完成远端版本记录。
+
+先完成可逆代码实现、环境和人工数据接口检查，生成纯代码导出，准备一条可审阅的协议提交。GitHub仓库可按作者指定为公开或私有；记录实际可见性，私有仓库只支持有权限者核查，不能描述为当时已向公众开放，投稿时另提供审稿可访问方式。若用户已经明确指定且授权的GitHub仓库可用，在该仓库保存并推送这一记录，核对可访问提交链接及记录时间，再开始任何真实研究数据上的模型拟合。若缺仓库地址或写入权限，只在其他准备完成后一次说明所缺信息，不能悄悄跳过此步骤。此要求来自用户本轮明确提出的“跑模型前固定协议并留时间戳”。
+
+Git提交作者日期和提交日期本身可设置，不能单靠本地日期证明事前性。保留远端可追溯版本／记录链接、实际远端记录时间与运行日志，诚实描述为 model-fitting-preceding versioned analysis plan。若作者另选OSF，可用适用于二次数据的注册模板；本包没有创建该记录，不要求为完成本研究同时创建多个平台记录。
+
+已查看的信息：官方文档、字段和映射；链接与缺失可行性；各角色样本及事件总数；各周期测量单变量分布；固定公开随访边界计数。尚未查看：任何 g 或 Y 模型拟合、候选性能、Q1误差、G/D/H/R、测量—死亡关系筛选。不得称最终评价数据完全未接触。
+
+## 18. 一周期限及完成／拆除规则
+
+从实际执行开始的7个日历日覆盖分析及新增稿件草稿。按可用时间合理缓存和安排，不为赶期限改变主分析。若到期仍不完整，停止新增计算，保存已完成输出及明确的不完整状态，并交付原DILI稿可以独立使用的版本。已经完成的阴性模块完整报告，不能以期限为理由隐藏、删除或重命名为未做；将其放主文还是SI应按事前范围和稿件结构如实说明。
+
+## 19. 仓库与本地工作包
+
+本地工作包包含已下载公开输入、已整理人群和原稿上下文，供用户直接运行。公开代码仓库采用 allowlist 导出：代码、协议、字段字典、来源及官方下载脚本。仓库不含原始数据、逐人整理表、逐人预测、训练模型／缓存或未发表原稿上下文；.gitignore是补充，不替代实际导出检查。使用 scripts/export_code_only.py 生成待提交目录，之后只暂存明确列出的文件，不在工作包根目录盲目 git add .。
+
+所有官方输入可由 source_manifest.json 和 fetch_inputs.py 重新获取，再由 prepare_cohort.py 整理。保留官方数据使用条件，不为CDC原始数据自行附加MIT/CC0许可；本项目代码许可由作者实际决定。
+
+## 20. 稿件模块化与表述
+
+Patterns版采用方法学前置的标题，扩展到第二个生物医学任务。Summary、Highlights、引言、Discussion、Table3、Box2及数据代码声明按实际结果更新；MANUSCRIPT_INTEGRATION.md给出独立补丁，不覆盖现稿。
+
+保留化学信息学版的独立上下文和生成入口，移除NHANES小节、图、SI与相关概括时应同步恢复相应标题、Summary和框架表。J Cheminformatics偏重化学信息问题，不把跨领域扩展是否适合该刊写成绝对禁令或接收保证。
+
+可用伦理事实句：This study used de-identified, publicly available NHANES and linked mortality data and involved no new participant recruitment. 不擅自宣称作者所在机构已批准豁免；如期刊／机构要求正式判定，填写真实信息。
+
+
+## Machine-readable configuration snapshot
+
+```json
+{
+  "protocol_id": "NHANES_CBC_FIXED_SUBSTITUTION_V2_20261019",
+  "status_at_delivery": "v2_plan_and_descriptive_audits_prepared_no_models_fitted_not_yet_remotely_recorded",
+  "task": "Non-CBC baseline inputs -> RDW and hemoglobin proxies -> public-use five-year all-cause mortality",
+  "population": {
+    "minimum_age": 40,
+    "age_cap_for_modeling": 80,
+    "require_MEC": true,
+    "require_positive_MEC_weight": true,
+    "require_LMF_eligibility": 1,
+    "require_both_measured_Z": true
+  },
+  "cycles": {
+    "train": [
+      "2003-2004"
+    ],
+    "validation": [
+      "2005-2006"
+    ],
+    "development_refit": [
+      "2003-2004",
+      "2005-2006"
+    ],
+    "test": [
+      "2007-2008",
+      "2009-2010"
+    ]
+  },
+  "outcome": {
+    "name": "y_5y",
+    "mortality_release": "2019_PUBLIC",
+    "origin": "MEC examination",
+    "time_variable": "PERMTH_EXM",
+    "horizon_months": 60,
+    "include_death_at_month_zero": true,
+    "include_death_at_month_60": true,
+    "exclude_alive_with_followup_below_60": true
+  },
+  "features": {
+    "numeric_X": [
+      "age_cap80",
+      "income_poverty_ratio",
+      "bmi",
+      "waist_cm",
+      "sbp_mmhg",
+      "dbp_mmhg",
+      "pulse_bpm"
+    ],
+    "categorical_X": [
+      "sex",
+      "race",
+      "education",
+      "smoking",
+      "general_health",
+      "diabetes",
+      "cvd",
+      "hypertension",
+      "cancer"
+    ],
+    "measured_Z": [
+      "rdw_pct",
+      "hemoglobin_g_dl"
+    ],
+    "Z_units": {
+      "rdw_pct": "percent",
+      "hemoglobin_g_dl": "g/dL"
+    },
+    "forbidden_X": [
+      "SEQN",
+      "person_id",
+      "cycle",
+      "role",
+      "period",
+      "y_5y",
+      "MORTSTAT",
+      "PERMTH_EXM",
+      "PERMTH_INT",
+      "UCOD_LEADING",
+      "DIABETES",
+      "HYPERTEN",
+      "ELIGSTAT",
+      "SDMVSTRA",
+      "SDMVPSU",
+      "WTMEC2YR",
+      "weight",
+      "stratum_id",
+      "psu_id",
+      "rdw_pct",
+      "hemoglobin_g_dl"
+    ]
+  },
+  "weights": {
+    "source": "WTMEC2YR",
+    "two_year_train_or_validation": "WTMEC2YR",
+    "four_year_development_or_test": "WTMEC2YR / 2",
+    "single_cycle_descriptive": "WTMEC2YR",
+    "all_four_cycles_descriptive": "WTMEC2YR / 4",
+    "stored_weight_column": "WTMEC2YR / 2; a four-year-period convenience column, not an eight-year population weight",
+    "training": "all g, B, M, P fits and nested fits use current pool weights normalized to current fitting-sample mean 1",
+    "pool_definition_for_cv": "K is the number of planned two-year cycles in the current development pool, not inferred anew from a sparse fold",
+    "proxy_selection": "weighted normalized measurement MSE; aggregate folds by held-out total weight",
+    "validation_selection": "weighted Brier",
+    "primary_evaluation": "weighted Brier in the eligible analytic cohort; full test MEC design frame retained for domain variance",
+    "selection_bias": "weights and domain Taylor variance do not automatically correct CBC missingness or linkage ineligibility"
+  },
+  "preprocessing": {
+    "fit_on_current_training_only": true,
+    "numeric_imputation": "training median",
+    "numeric_missing_indicators": "one fixed indicator for each numeric X, including if all training values are observed",
+    "categorical_missing": "__MISSING__",
+    "categorical_encoding": "one-hot, fit training categories only, handle_unknown=ignore",
+    "outlier_clipping": false,
+    "Z_imputation": false,
+    "X_standard_scaler": "ordinary unweighted training mean and population variance; fitting losses still use survey weights",
+    "proxy_outputs": "inverse-transform to original Z units before any downstream query",
+    "probability_clip_for_log_loss_only": 1e-12
+  },
+  "random_state": 20261019,
+  "proxy": {
+    "selection_metric": "mean of the two weighted MSEs divided by their current-training Z variances",
+    "target_mean": "sum(w*z)/sum(w) in each current fitting subset",
+    "target_variance": "sum(w*(z-weighted_mean)^2)/sum(w); weighted population variance, no ddof correction",
+    "cv_aggregation": "within each fold average the two validation weighted MSE / fold-training target variance values; combine fold scores weighted by each validation fold total weight",
+    "tie_absolute_tolerance": 1e-12,
+    "tie_breaker": "earlier candidate in candidate_order",
+    "inner_cv_folds": 3,
+    "oof_folds": 3,
+    "group": "psu_id including cycle and stratum",
+    "split_rule": "shuffle unique groups with the recorded seed, partition into three folds without outcome-based retries",
+    "nested_selection_inside_each_oof_training_subset": true,
+    "minimum_training_target_variance": 1e-12,
+    "candidate_order": [
+      "ridge_10",
+      "hgb_fixed"
+    ],
+    "candidates": [
+      {
+        "id": "ridge_10",
+        "model": "Ridge",
+        "alpha": 10.0,
+        "solver": "lsqr",
+        "feature_standardization": true,
+        "target_standardization": true
+      },
+      {
+        "id": "hgb_fixed",
+        "model": "HistGradientBoostingRegressor",
+        "per_target_fits": true,
+        "loss": "squared_error",
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 10.0,
+        "early_stopping": false,
+        "target_standardization": true
+      }
+    ]
+  },
+  "downstream": {
+    "routes_fitted": [
+      "B",
+      "M",
+      "P"
+    ],
+    "fixed_queries_from_M": [
+      "S",
+      "MEAN"
+    ],
+    "selection_dataset": "2005-2006 validation, after fitting candidates only in 2003-2004",
+    "selection_metric": "weighted Brier",
+    "class_weight": null,
+    "resampling_to_balance_classes": false,
+    "tie_absolute_tolerance": 1e-12,
+    "tie_breaker": "earlier candidate in this ordered list",
+    "candidates": [
+      {
+        "id": "spline_C001",
+        "family": "spline_logistic",
+        "C": 0.01
+      },
+      {
+        "id": "spline_C01",
+        "family": "spline_logistic",
+        "C": 0.1
+      },
+      {
+        "id": "spline_C1",
+        "family": "spline_logistic",
+        "C": 1.0
+      },
+      {
+        "id": "spline_C10",
+        "family": "spline_logistic",
+        "C": 10.0
+      },
+      {
+        "id": "hgb_L7_R1",
+        "family": "hgb",
+        "max_leaf_nodes": 7,
+        "l2_regularization": 1.0
+      },
+      {
+        "id": "hgb_L7_R10",
+        "family": "hgb",
+        "max_leaf_nodes": 7,
+        "l2_regularization": 10.0
+      },
+      {
+        "id": "hgb_L15_R1",
+        "family": "hgb",
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1.0
+      },
+      {
+        "id": "hgb_L15_R10",
+        "family": "hgb",
+        "max_leaf_nodes": 15,
+        "l2_regularization": 10.0
+      }
+    ],
+    "spline_defaults": {
+      "n_knots": 4,
+      "degree": 3,
+      "knots": "quantile",
+      "include_bias": false,
+      "extrapolation": "constant",
+      "numeric_columns": "all continuous X plus the two measured or proxy Z when present",
+      "numeric_indicators_not_splined": true,
+      "standardize_expanded_features": true,
+      "logistic_solver": "lbfgs",
+      "logistic_max_iter": 3000,
+      "penalty": "L2",
+      "interaction_terms": false
+    },
+    "hgb_defaults": {
+      "loss": "log_loss",
+      "learning_rate": 0.05,
+      "max_iter": 200,
+      "min_samples_leaf": 30,
+      "early_stopping": false,
+      "categorical_features": null
+    },
+    "calibration_refitting": false,
+    "extra_test_fits": "none: report the three selected procedures, not all candidates as competing final-test winners"
+  },
+  "statistics": {
+    "primary_loss": "Brier",
+    "mean_and_contrast_variance": "stratified PSU Taylor linearization with analytic-domain zero contributions",
+    "confidence_level": 0.95,
+    "interval_scope": "pointwise, conditional on fitted models and public-use measurements/outcomes",
+    "df": "number of PSUs containing analytic-domain observations minus number of strata containing analytic-domain observations",
+    "finite_population_correction": null,
+    "ratio_method": "unpenalized Fieller confidence set using the same joint design covariance and t critical value",
+    "ratio_guard_brier_units": 1e-08,
+    "ratio_clip": false,
+    "primary_contrasts": {
+      "G": "L_B - L_M",
+      "D": "L_S - L_M",
+      "H": "L_B - L_S",
+      "A": "L_MEAN - L_S",
+      "G_P": "L_B - L_P"
+    },
+    "fixed_retention": "H / G = 1 - D / G",
+    "secondary_metrics": [
+      "weighted log loss",
+      "weighted AUROC",
+      "weighted average precision",
+      "weighted observed and predicted event rates",
+      "descriptive calibration"
+    ],
+    "endpoint_metrics": [
+      "weighted MAE per measurement",
+      "weighted RMSE per measurement",
+      "weighted R2 with evaluation-mean denominator",
+      "weighted MAE improvement over development-mean prediction"
+    ]
+  },
+  "fixed_sensitivities": [
+    {
+      "id": "unweighted",
+      "refit": false,
+      "description": "unweighted Brier and contrasts on identical final-test predictions; descriptive only"
+    },
+    {
+      "id": "age40_79",
+      "refit": false,
+      "description": "same fitted predictions in the final-test 40-79 subdomain, retaining the full test design frame"
+    }
+  ],
+  "resources": {
+    "CPU_threads_max": 8,
+    "outer_parallel_jobs": 1,
+    "GPU_required": false,
+    "RAM_target_GB": 8,
+    "RAM_soft_limit_GB": 16
+  },
+  "scope": {
+    "new_tasks": 1,
+    "new_measurements": 2,
+    "mortality_horizons": 1,
+    "automatic_dataset_or_endpoint_switching": false,
+    "existing_DILI_retraining": false,
+    "manuscript_integration": "draft a standalone new subsection and exact insertion map; do not overwrite current main manuscript",
+    "scientific_stop_rule": "complete and report all predeclared routes regardless of positive or negative gain",
+    "panel_expansion": "keep RDW and hemoglobin; no albumin or creatinine in V2",
+    "public_repository": "allowlisted source, protocol and official download scripts only; no raw, participant-level data, predictions, trained models, caches, or unpublished manuscript context",
+    "timebox": {
+      "calendar_days": 7,
+      "starts": "actual execution start, recorded in UTC",
+      "includes": "analysis and manuscript drafting",
+      "outcome_independent": true,
+      "on_timeout": "stop new fitting, preserve completed and partial work, mark incomplete module; no claim that completed negative results were absent"
+    }
+  },
+  "measurement_transport": {
+    "2003-2004": "Beckman Coulter MAXM",
+    "2005-2006": "Beckman Coulter MAXM",
+    "2007-2008": "Beckman Coulter HMX",
+    "2009-2010": "Beckman Coulter HMX",
+    "transition_at_development_test_boundary": true,
+    "interpretation": "later-period fixed-model substitution under a documented CBC instrument transition",
+    "no_test_based_harmonization": true,
+    "additional_same_instrument_model_branch": false
+  },
+  "pre_model_diagnostics": {
+    "measurements": "per-cycle weighted ECDF, mean, population SD, min, p05, p25, median, p75, p95, max",
+    "quantiles": "inverse weighted empirical CDF, no interpolation",
+    "followup_windows_months": [
+      [
+        54,
+        59
+      ],
+      [
+        60,
+        60
+      ],
+      [
+        61,
+        66
+      ]
+    ],
+    "additional_followup_counts": "death 54-66 total, alive 54-66, unknown five-year status 54-66; overlapping descriptive categories are labeled",
+    "boundary_population": "otherwise eligible before five-year ascertainability exclusion",
+    "no_boundary_exclusion_or_horizon_change": true,
+    "perturbed_record_count": "not identifiable from the public file",
+    "window_is_not_a_perturbation_bound": true,
+    "observed_before_v2_plan_record": true
+  },
+  "protocol_record": {
+    "plan_file": "protocol/PREMODEL_ANALYSIS_PLAN.md",
+    "record_file": "protocol/PROTOCOL_RECORD.json",
+    "current_remote_status": "not_yet_recorded_no_repository_specified",
+    "first_study_fit_includes": "proxy fits, downstream fits, and pilot or smoke fits on actual study data",
+    "record_description": "versioned analysis plan recorded before model fitting; not automatically a formal preregistration",
+    "remote_record_required_before_first_study_fit": true,
+    "repository_visibility": "public or private as designated by the author; record actual visibility and verification access",
+    "permitted_before_remote_record": "implementation, environment setup, schema checks, artificial-data interface checks, provided descriptive audits, code-only export"
+  }
+}
+```
+
+## Fixed field mapping snapshot
+
+```json
+{
+  "schema_version": "1.0",
+  "task": "NHANES measured CBC proxy evaluation for five-year all-cause mortality",
+  "predictor_columns": {
+    "numeric": [
+      "age_cap80", "income_poverty_ratio", "bmi", "waist_cm",
+      "sbp_mmhg", "dbp_mmhg", "pulse_bpm"
+    ],
+    "categorical": [
+      "sex", "race", "education", "smoking", "general_health",
+      "diabetes", "cvd", "hypertension", "cancer"
+    ]
+  },
+  "measurement_columns": ["rdw_pct", "hemoglobin_g_dl"],
+  "outcome_column": "y_5y",
+  "features": {
+    "age_cap80": {
+      "role": "X", "type": "numeric", "source_component": "DEMO",
+      "source_variables": ["RIDAGEYR"], "unit": "years",
+      "rule": "min(RIDAGEYR, 80); analysis-domain eligibility requires original RIDAGEYR >=40. Values of 80 represent age 80 or older, not exact age 80.",
+      "rationale": "Harmonizes early top-coding at 85 with later top-coding at 80."
+    },
+    "income_poverty_ratio": {
+      "role": "X", "type": "numeric", "source_component": "DEMO",
+      "source_variables": ["INDFMPIR"], "unit": "ratio",
+      "rule": "Keep finite values in [0,5]; zero is valid. Values outside this codebook range and missing values are left missing."
+    },
+    "bmi": {
+      "role": "X", "type": "numeric", "source_component": "BMX",
+      "source_variables": ["BMXBMI"], "unit": "kg/m^2",
+      "rule": "Use the released BMI value when finite and positive; otherwise missing. No outcome-driven trimming."
+    },
+    "waist_cm": {
+      "role": "X", "type": "numeric", "source_component": "BMX",
+      "source_variables": ["BMXWAIST"], "unit": "cm",
+      "rule": "Use the released waist circumference when finite and positive; otherwise missing."
+    },
+    "sbp_mmhg": {
+      "role": "X", "type": "numeric", "source_component": "BPX",
+      "source_variables": ["BPXSY1", "BPXSY2", "BPXSY3", "BPXSY4"], "unit": "mm Hg",
+      "rule": "Arithmetic mean of all available finite positive readings among attempts 1 through 4. Missing if none. The same prespecified aggregation is used in every cycle."
+    },
+    "dbp_mmhg": {
+      "role": "X", "type": "numeric", "source_component": "BPX",
+      "source_variables": ["BPXDI1", "BPXDI2", "BPXDI3", "BPXDI4"], "unit": "mm Hg",
+      "rule": "Arithmetic mean of all available finite positive readings among attempts 1 through 4. Zero readings are excluded from this prespecified analytic average. Missing if none."
+    },
+    "pulse_bpm": {
+      "role": "X", "type": "numeric", "source_component": "BPX",
+      "source_variables": ["BPXPLS"], "unit": "beats/minute",
+      "rule": "Use the released finite positive BPXPLS value. It is already the 60-second pulse rate; do not multiply by two again."
+    },
+    "sex": {
+      "role": "X", "type": "categorical", "source_component": "DEMO",
+      "source_variables": ["RIAGENDR"],
+      "mapping": {"1": "male", "2": "female"},
+      "rule": "Use the recorded NHANES category; missing or other codes remain missing."
+    },
+    "race": {
+      "role": "X", "type": "categorical", "source_component": "DEMO",
+      "source_variables": ["RIDRETH1"],
+      "mapping": {
+        "1": "mexican_american", "2": "other_hispanic",
+        "3": "non_hispanic_white", "4": "non_hispanic_black",
+        "5": "other_including_multiracial"
+      },
+      "rule": "Keep the same five recorded categories in every cycle. Missing or other codes remain missing."
+    },
+    "education": {
+      "role": "X", "type": "categorical", "source_component": "DEMO",
+      "source_variables": ["DMDEDUC2"],
+      "mapping": {
+        "1": "less_than_9th_grade", "2": "9_to_11th_grade_no_diploma",
+        "3": "high_school_or_GED", "4": "some_college_or_AA",
+        "5": "college_graduate_or_above"
+      },
+      "rule": "Use adult DMDEDUC2, not the earlier three-category DMDEDUC. Codes 7 (refused), 9 (unknown), and blanks are missing."
+    },
+    "smoking": {
+      "role": "X", "type": "categorical", "source_component": "SMQ",
+      "source_variables": ["SMQ020", "SMQ040"],
+      "categories": ["never", "former", "current"],
+      "rule": "SMQ020=2 -> never, even when SMQ040 is structurally skipped; SMQ020=1 and SMQ040 in {1,2} -> current; SMQ020=1 and SMQ040=3 -> former; all other combinations -> missing.",
+      "note": "The standard never category refers to not having smoked at least 100 cigarettes in the lifetime."
+    },
+    "general_health": {
+      "role": "X", "type": "categorical", "source_component": "HUQ",
+      "source_variables": ["HUQ010"],
+      "mapping": {"1": "excellent", "2": "very_good", "3": "good", "4": "fair", "5": "poor"},
+      "rule": "Use the household questionnaire HUQ010 consistently; do not mix with MEC HSD010. Codes 7,9 and blanks are missing."
+    },
+    "diabetes": {
+      "role": "X", "type": "categorical", "source_component": "DIQ",
+      "source_variables": ["DIQ010"],
+      "mapping": {"1": "yes", "2": "no", "3": "borderline"},
+      "rule": "Keep borderline as its own category. Codes 7,9 and blanks are missing. Use the baseline questionnaire, never the death-certificate DIABETES flag in the mortality file."
+    },
+    "cvd": {
+      "role": "X", "type": "categorical", "source_component": "MCQ",
+      "source_variables": ["MCQ160B", "MCQ160C", "MCQ160D", "MCQ160E", "MCQ160F"],
+      "source_meanings": ["heart_failure", "coronary_heart_disease", "angina", "heart_attack", "stroke"],
+      "categories": ["yes", "no"],
+      "rule": "Any source variable=1 -> yes; all five=2 -> no; otherwise missing. Unknown answers are not recoded as absence of disease."
+    },
+    "hypertension": {
+      "role": "X", "type": "categorical", "source_component": "BPQ",
+      "source_variables": ["BPQ020"], "mapping": {"1": "yes", "2": "no"},
+      "rule": "Self-reported prior professional diagnosis. Codes 7,9 and blanks are missing. Do not use the mortality-file HYPERTEN flag."
+    },
+    "cancer": {
+      "role": "X", "type": "categorical", "source_component": "MCQ",
+      "source_variables": ["MCQ220"], "mapping": {"1": "yes", "2": "no"},
+      "rule": "Self-reported history of any cancer or malignancy. Codes 7,9 and blanks are missing."
+    },
+    "rdw_pct": {
+      "role": "Z", "type": "numeric", "source_component": "CBC",
+      "source_variables": ["LBXRDW"], "unit": "%",
+      "rule": "Released true laboratory measurement, finite and positive. Required to be observed for analysis-domain eligibility. Do not impute a reference measurement or trim on outcome association."
+    },
+    "hemoglobin_g_dl": {
+      "role": "Z", "type": "numeric", "source_component": "CBC",
+      "source_variables": ["LBXHGB"], "unit": "g/dL",
+      "rule": "Released true laboratory measurement, finite and positive. Required to be observed for analysis-domain eligibility. Do not impute a reference measurement or trim on outcome association."
+    }
+  },
+  "outcome": {
+    "name": "y_5y",
+    "source_component": "public_use_2019_linked_mortality",
+    "source_variables": ["ELIGSTAT", "MORTSTAT", "PERMTH_EXM"],
+    "time_origin": "MEC examination",
+    "horizon_months": 60,
+    "prerequisites": "ELIGSTAT=1 for analysis eligibility; MORTSTAT in {0,1}; finite PERMTH_EXM>=0.",
+    "case": "MORTSTAT=1 and 0<=PERMTH_EXM<=60",
+    "control": "PERMTH_EXM>60, or MORTSTAT=0 and PERMTH_EXM>=60, with valid mortality status and follow-up",
+    "unknown": "Alive with less than 60 months of follow-up, invalid or missing status, or invalid/missing follow-up. Such records are outside the eligible analysis domain.",
+    "boundary_note": "A death at month 0 or month 60 is retained as an event. Do not require PERMTH_EXM>=60 for all subjects.",
+    "public_use_limitation": "NCHS perturbs follow-up time or cause of death for selected records while leaving vital status unperturbed. Five-year boundary labels can be affected; there is no attempted recovery or assumed per-record perturbation bound."
+  },
+  "cohort_and_design": {
+    "cycles": [
+      {"cycle": "2003-2004", "role": "train", "period": "development", "cbc_file": "L25_C.xpt"},
+      {"cycle": "2005-2006", "role": "validation", "period": "development", "cbc_file": "CBC_D.xpt"},
+      {"cycle": "2007-2008", "role": "test", "period": "test", "cbc_file": "CBC_E.xpt"},
+      {"cycle": "2009-2010", "role": "test", "period": "test", "cbc_file": "CBC_F.xpt"}
+    ],
+    "design_frame": "All ages with RIDSTATR=2, finite positive WTMEC2YR and observed positive integer SDMVSTRA and SDMVPSU. Retain domain-ineligible rows to preserve the survey design frame.",
+    "analysis_domain": "Rows in the design frame with RIDAGEYR>=40, ELIGSTAT=1, both real CBC measurements finite and positive, and valid, determinable five-year outcome.",
+    "person_id": "cycle + '_' + integer SEQN",
+    "stratum_id": "cycle + '_' + integer SDMVSTRA",
+    "psu_id": "stratum_id + '_' + integer SDMVPSU",
+    "weight": "WTMEC2YR/2 in both pooled four-year periods. Training code may normalize weights inside its own fitting subset.",
+    "is_eligible": "Boolean indicator of the prespecified analysis domain; false rows receive no model predictions.",
+    "taylor_domain_note": "For later survey-domain Taylor variance estimation, merge eligible predictions back to the full design frame and explicitly set out-of-domain linearized contributions to zero. Do not multiply NaN predictions by zero or manufacture model predictions for ineligible rows.",
+    "design_degrees_of_freedom": "Compute the number of unique PSUs containing eligible observations minus the number of their unique strata in the evaluation subset. Do not hard-code two PSUs per stratum or a fixed degrees of freedom.",
+    "temporal_scope": "Retrospective later-cycle cohort evaluation, not a simulation of deployment before all training outcomes occurred."
+  },
+  "preprocessing_scope": {
+    "current_script": "Only deterministic file linkage, field-specific recoding, cohort assembly and univariate counts/missingness. No model fits, associations, predictor imputation, target transformations or effect estimates.",
+    "later_modeling": "Only the 16 listed X columns are allowed predictors for g(X) and the X-only baseline. Fit imputation, scaling and categorical encoders on the relevant training split. Z truth must remain measured. Use the same X and missingness information consistently across compared routes.",
+    "categorical_missing": "Empty CSV cells represent missing values. Treat every listed categorical column as categorical even when two categories are present.",
+    "forbidden_predictors": [
+      "person_id", "SEQN", "cycle", "period", "role", "SDMVSTRA", "SDMVPSU",
+      "stratum_id", "psu_id", "WTMEC2YR", "weight", "is_eligible", "exclusion_reason",
+      "RIDAGEYR", "ELIGSTAT", "MORTSTAT", "PERMTH_EXM", "PERMTH_INT", "y_5y",
+      "DIABETES_from_mortality_file", "HYPERTEN_from_mortality_file", "UCOD_LEADING"
+    ]
+  },
+  "documentation": {
+    "per_file_urls": "sources/source_manifest.json",
+    "cbc_2003_2004": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2003/DataFiles/L25_C.htm",
+    "cbc_2009_2010": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2009/DataFiles/CBC_F.htm",
+    "mortality_dictionary": "https://www.cdc.gov/nchs/data/datalinkage/public-use-linked-mortality-files-data-dictionary.pdf",
+    "mortality_methods": "https://www.cdc.gov/nchs/data/datalinkage/2019NDI-Linkage-Methods-and-Analytic-Considerations-508.pdf",
+    "bp_aggregation_context": "https://www.cdc.gov/nchs/hus/sources-definitions/hypertension.htm",
+    "data_use_agreement": "https://www.cdc.gov/nchs/policy/data-user-agreement.html"
+  }
+}
+```

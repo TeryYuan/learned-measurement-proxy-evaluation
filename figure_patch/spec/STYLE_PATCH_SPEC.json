@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "Working design choices aligned with verified official Arial and approximately 6–8 pt regular-text guidance; panel-letter size remains a design choice, not a separately verified mandatory size.",
+  "font": {
+    "family": "Arial",
+    "required_faces": [
+      "regular",
+      "bold",
+      "italic"
+    ],
+    "optional_faces": [
+      "bold_italic"
+    ],
+    "allow_silent_substitution": false,
+    "redistribute_font_files": false,
+    "preflight": "source/check_arial.py",
+    "private_font_config": "private/arial_fonts.local.json",
+    "public_summary": "validation/arial_preflight_summary.json",
+    "fallback_behavior": "Arial-compliant export requires a lawful existing Arial installation with the required faces. Missing faces prevent compliant export; silent substitution is disabled."
+  },
+  "font_size_pt": {
+    "body": 7.5,
+    "axis_labels": 7.5,
+    "tick_labels": 7.0,
+    "legend": 7.0,
+    "small_annotations": 7.0,
+    "panel_titles": 8.0,
+    "panel_letters": 9.0,
+    "panel_letter_status": "9 pt bold is a design choice; no independent mandatory panel-letter size was verified.",
+    "question_identifiers_Q1_Q2_Q3": 10.0,
+    "minimum_body_target": 7.0,
+    "mathematical_subscripts": "Natural typesetting scale; do not count as standalone body labels."
+  },
+  "matplotlib_rcparams": {
+    "font.family": "Arial",
+    "font.sans-serif": [
+      "Arial"
+    ],
+    "font.size": 7.5,
+    "axes.titlesize": 8.0,
+    "axes.titleweight": "bold",
+    "axes.labelsize": 7.5,
+    "xtick.labelsize": 7.0,
+    "ytick.labelsize": 7.0,
+    "legend.fontsize": 7.0,
+    "pdf.fonttype": 42,
+    "svg.fonttype": "none",
+    "axes.unicode_minus": true,
+    "mathtext.fontset": "custom",
+    "mathtext.rm": "Arial",
+    "mathtext.it": "Arial:italic",
+    "mathtext.bf": "Arial:bold",
+    "mathtext.sf": "Arial",
+    "mathtext.fallback": null
+  },
+  "layout": {
+    "width_mm": 174,
+    "height_strategy": "Reduce excess margins, caption-like notes inside the figure and inter-panel gaps after font migration. Recompute positions; changing font size alone leaves the hardcoded canvas height unchanged.",
+    "retain_required_information": true,
+    "avoid": "Do not uniformly shrink a finished figure or remove intervals to meet a cosmetic height target.",
+    "final_height": "Choose by legibility and page integration, not a universal hard-coded reduction percentage.",
+    "current_figure5_height_pt": 547,
+    "current_figure5_height_mm": 192.96944444444443,
+    "figure5_change": "12 pt additional bottom margin; original data-panel dimensions and fonts retained."
+  },
+  "important_existing_code_locations": [
+    "source/render_common.py rcParams, txt(), panel(), card()",
+    "source/render_figures.py explicit txt(...size) and fontsize calls throughout; changing rcParams alone will not replace hard-coded sizes.",
+    "source/render_figures.py hardcoded canvas heights and chart coordinates",
+    "source/render_common.py save(): PDF font inspection and SVG text/font-family audit after export"
+  ],
+  "glyphs": {
+    "minus": "U+2212 for negative numeric values and mathematical subtraction",
+    "numeric_formatter": "Use numeric formatting then replace the leading ASCII minus with U+2212; leave compound-word hyphens and filenames intact.",
+    "subscripts": "Render display labels such as R_gate as proper math text or SVG tspan subscripts; preserve machine keys.",
+    "captions": "Convert raw HTML subscript tags through the actual document renderer or replace with supported math markup; do not leave literal tags in final PDF/DOCX."
+  },
+  "export_checks": [
+    "Verify actual embedded PDF font names/families, rather than trusting rcParams.",
+    "Inspect all Greek letters, minus signs, hats and subscripts after custom-font mathtext conversion.",
+    "Keep SVG editable and all source illustrations vector.",
+    "Inspect at 174 mm width and grayscale once after all edits.",
+    "Do not copy local font paths, platform user directories or font binaries into publication_patch."
+  ]
+}

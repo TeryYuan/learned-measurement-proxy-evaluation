@@ -1,0 +1,16 @@
+model_a,model_b,n_conditions,exact_saved_scores_equal,max_absolute_difference
+D_cond,D_struct,72,True,0.0
+D_cond,D_meas_only,72,True,0.0
+D_cond,D_meas,72,True,0.0
+D_cond,D_swap,72,True,0.0
+D_cond,D_meanZ,72,True,0.0
+D_struct,D_meas_only,72,True,0.0
+D_struct,D_meas,72,True,0.0
+D_struct,D_swap,72,True,0.0
+D_struct,D_meanZ,72,True,0.0
+D_meas_only,D_meas,72,True,0.0
+D_meas_only,D_swap,72,True,0.0
+D_meas_only,D_meanZ,72,True,0.0
+D_meas,D_swap,72,True,0.0
+D_meas,D_meanZ,72,True,0.0
+D_swap,D_meanZ,72,True,0.0

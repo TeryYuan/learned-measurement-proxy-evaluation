@@ -1,0 +1,18 @@
+License application notice: Creative Commons Attribution-ShareAlike 2.1 Japan
+
+Copyright (c) 2026 Yuan Cao, for original contributions only.
+Yuan Cao licenses the original contributions identified with CC-BY-SA-2.1-JP in
+FILE_LICENSES.json under Creative Commons Attribution-ShareAlike 2.1 Japan.
+
+License: https://creativecommons.org/licenses/by-sa/2.1/jp/
+Full legal code: https://creativecommons.org/licenses/by-sa/2.1/jp/legalcode
+
+This file is a notice applying and linking to the standard license. It is not
+a rewritten or abridged substitute for the standard legal code. The standard
+license governs. The scope is stated in LICENSE_SCOPE.md and FILE_LICENSES.json.
+Source material retains the notices, attribution and conditions listed there.
+The author does not claim copyright over public-domain facts or third-party
+material. No endorsement by the original data providers is implied.
+
+For covered Open TG-GATEs material, also retain the unchanged
+sources/OPEN_TGGATES_ADDITIONAL_LICENSE.txt and the database attribution.

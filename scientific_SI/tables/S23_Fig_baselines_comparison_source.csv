@@ -1,0 +1,7 @@
+﻿comparison,role,metric,point,low_95,high_95,valid_draws,invalid_draws,estimand
+S_all_real-minus-base,primary,AP,-0.0043768809856476465,-0.012555604241346902,0.004797136069103845,2000,0,mean repeat pooled difference; fixed OOF; no retraining uncertainty
+B1_real-minus-base,secondary,AP,-0.0014238106052049226,-0.00739207077004877,0.004361587565969656,2000,0,mean repeat pooled difference; fixed OOF; no retraining uncertainty
+B3_real-minus-base,secondary,AP,-0.0030559129618690896,-0.01132180106761278,0.0059534183999338615,2000,0,mean repeat pooled difference; fixed OOF; no retraining uncertainty
+B4_real-minus-base,secondary,AP,0.003745074024359063,-0.008610445073459089,0.0167593657588653,2000,0,mean repeat pooled difference; fixed OOF; no retraining uncertainty
+B3_base-minus-B1_base,secondary,AP,-0.032265252150076716,-0.04582958914402947,-0.017123040930260593,2000,0,mean repeat pooled difference; fixed OOF; no retraining uncertainty
+B4_base-minus-B1_base,secondary,AP,-0.07582144888464573,-0.10253559962182004,-0.049100100217359846,2000,0,mean repeat pooled difference; fixed OOF; no retraining uncertainty

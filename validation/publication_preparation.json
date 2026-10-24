@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-23",
+  "status": "PASS_LOCAL_PREPARATION_NOT_PUBLICATION",
+  "prior_evidence_reused": [
+    "34 automatic tests",
+    "385 NHANES aggregate checks",
+    "Figure 6/S12 and report-only",
+    "NHANES original-protocol raw/training reconstruction",
+    "14 reference and 6 figure preservation"
+  ],
+  "executed_this_stage": {
+    "input_preparation": {
+      "status": "PASS",
+      "original_inputs": 22,
+      "unchanged_files": 17,
+      "projected_files": 5,
+      "retained_fields_exact": true,
+      "original_row_order": true,
+      "original_group_relations_preserved": true,
+      "original_indices_unchanged": true,
+      "expected_tables_unchanged": true,
+      "nested_E172_E201": true,
+      "six_ALT_routes_exact": true,
+      "C_original_folds_unchanged": true,
+      "no_new_random_draws": true,
+      "replay_code_unchanged": true,
+      "files": [
+        {
+          "file": "data/N_predictions.csv",
+          "rows": 1500,
+          "kept_columns": 14,
+          "all_retained_field_tokens_exact": true,
+          "round_trip_values_exact": true
+        },
+        {
+          "file": "data/N_bootstrap_indices.npz",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/N_bootstrap_spec.json",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/N_metrics_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/N_primary_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/BSEP_predictions.csv",
+          "rows": 402,
+          "kept_columns": 27,
+          "all_retained_field_tokens_exact": true,
+          "round_trip_values_exact": true
+        },
+        {
+          "file": "data/E_BSEP_bootstrap_indices.npz",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/E_no_anyA_bootstrap_indices.npz",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/BSEP_intervals_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/C_OOF.csv",
+          "rows": 4992,
+          "kept_columns": 25,
+          "all_retained_field_tokens_exact": true,
+          "round_trip_values_exact": true
+        },
+        {
+          "file": "data/C_cells_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/NAM_predictions.csv",
+          "rows": 792,
+          "kept_columns": 15,
+          "all_retained_field_tokens_exact": true,
+          "round_trip_values_exact": true
+        },
+        {
+          "file": "data/NAM_indices.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/NAM_context.json",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/NAM_metrics_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/NAM_intervals_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/NAM_single_intervals_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/bridge_membership.csv",
+          "rows": 136,
+          "kept_columns": 52,
+          "all_retained_field_tokens_exact": true,
+          "round_trip_values_exact": true
+        },
+        {
+          "file": "data/bridge_indices_BSEP.npz",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/bridge_indices_DILI.npz",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/bridge_intervals_expected.csv",
+          "byte_unchanged": true
+        },
+        {
+          "file": "data/bridge_association_expected.csv",
+          "byte_unchanged": true
+        }
+      ]
+    },
+    "minimal_liver_replay": {
+      "status": "entry_execution_pass",
+      "isolation_assessment": "external runner must attest",
+      "entry": "replay.py",
+      "entry_return_code": 0,
+      "checks": 238,
+      "passed": 238,
+      "failed": 0,
+      "new_random_draws": 0,
+      "new_model_queries": 0,
+      "absolute_tolerance": 2e-12,
+      "safe_checks_file": "replay_checks_safe.csv"
+    },
+    "filesystem_isolation": {
+      "scope": "MINIMAL_PROPOSED_PUBLIC_LIVER_REPLAY; author release approval pending",
+      "capabilities_dropped": true,
+      "no_new_privileges": true,
+      "original_paths_unreadable": true,
+      "host_home_absent": true,
+      "host_mounts_absent": true,
+      "proc_not_mounted": true,
+      "candidate_read_only": true,
+      "network_unreachable": true,
+      "syntax_files": 45,
+      "external_data_mounts_absent": true,
+      "no_original_project_or_author_review_inputs": true,
+      "new_acquisition_tests": {
+        "return_code": 0,
+        "elapsed_seconds": 4.068
+      },
+      "minimal_candidate_replay": {
+        "return_code": 0,
+        "elapsed_seconds": 63.502
+      },
+      "status": "PASS"
+    },
+    "new_acquisition_tests": 7,
+    "fresh_official_downloads": [
+      "SI002 v1",
+      "SI004 v1"
+    ],
+    "FDA_historical_endpoint": "unavailable; exact legally held historical workbook successfully validated through local-input mode",
+    "all_three_local_workbooks": "PASS; exact version and XLSX structure",
+    "new_training": false,
+    "FDA_workbook_inspection": {
+      "version 1": {
+        "records": 1036,
+        "unique_keys": true,
+        "headers": [
+          "LTKBID",
+          "Compound Name",
+          "Severity Class",
+          "Label Section",
+          "vDILIConcern",
+          "Version"
+        ]
+      },
+      "version 2": {
+        "records": 1336,
+        "unique_keys": true,
+        "headers": [
+          "LTKBID",
+          "CompoundName",
+          "SeverityClass",
+          "LabelSection",
+          "vDILI-Concern",
+          "Comment",
+          "None"
+        ]
+      }
+    },
+    "NPZ_metadata": {
+      "status": "PASS",
+      "archives": [
+        {
+          "file": "bridge_indices_BSEP.npz",
+          "members": 3,
+          "archive_comment": false,
+          "member_comments": false,
+          "central_extra_fields": false,
+          "local_extra_fields": "ZIP64 numeric size fields only",
+          "NPY_header": "standard three-key literal; no comments",
+          "status": "PASS"
+        },
+        {
+          "file": "bridge_indices_DILI.npz",
+          "members": 3,
+          "archive_comment": false,
+          "member_comments": false,
+          "central_extra_fields": false,
+          "local_extra_fields": "ZIP64 numeric size fields only",
+          "NPY_header": "standard three-key literal; no comments",
+          "status": "PASS"
+        },
+        {
+          "file": "E_BSEP_bootstrap_indices.npz",
+          "members": 3,
+          "archive_comment": false,
+          "member_comments": false,
+          "central_extra_fields": false,
+          "local_extra_fields": "ZIP64 numeric size fields only",
+          "NPY_header": "standard three-key literal; no comments",
+          "status": "PASS"
+        },
+        {
+          "file": "E_no_anyA_bootstrap_indices.npz",
+          "members": 3,
+          "archive_comment": false,
+          "member_comments": false,
+          "central_extra_fields": false,
+          "local_extra_fields": "ZIP64 numeric size fields only",
+          "NPY_header": "standard three-key literal; no comments",
+          "status": "PASS"
+        },
+        {
+          "file": "N_bootstrap_indices.npz",
+          "members": 3,
+          "archive_comment": false,
+          "member_comments": false,
+          "central_extra_fields": false,
+          "local_extra_fields": "ZIP64 numeric size fields only",
+          "NPY_header": "standard three-key literal; no comments",
+          "status": "PASS"
+        }
+      ]
+    },
+    "embedded_font_origins": {
+      "font_programs": 6,
+      "families": [
+        "DejaVuSans",
+        "DejaVuSans-Bold"
+      ],
+      "version": "2.35",
+      "existing_figure_bytes_unchanged": true,
+      "notice_added": "sources/LICENSE_DEJAVU.txt"
+    }
+  },
+  "author_license_and_public_release": "PENDING",
+  "remote_actions": 0,
+  "document_and_file_checks": {
+    "status": "PASS",
+    "python_syntax_files": 45,
+    "broken_relative_links": 0,
+    "official_CFF_schema": "PASS, 1.2.0 with jsonschema 4.26.0 and format checker",
+    "metadata_audit_dependencies": "Private QA only; scientific runtime lock unchanged",
+    "new_tests": 7,
+    "preserved": {
+      "references": 14,
+      "figures": 6,
+      "prior_scientific_code": 44,
+      "locked_dependencies": 6
+    },
+    "original_baseline_changed_files": [
+      "CITATION.cff",
+      "DATA_SOURCES.md",
+      "LICENSE_STATUS.md",
+      "PUBLICATION_PENDING.md",
+      "PUBLIC_EXPORT_INVENTORY.json",
+      "README.md",
+      "RELEASE_NOTES.md",
+      "REPRODUCTION_SCOPE.md",
+      "VALIDATION.md",
+      "release_candidate/legacy_fixed_replay/README.md",
+      "release_candidate/legacy_fixed_replay/data_dictionary.md",
+      "release_candidate/legacy_fixed_replay/field_inventory.csv",
+      "release_candidate/legacy_fixed_replay/provenance.csv",
+      "sources/DATA_LICENSES.md",
+      "sources/DILI_SOURCE_REGISTRY.md",
+      "validation/privacy_dispositions.json",
+      "validation/release_review.json",
+      "validation/run_status.json"
+    ],
+    "new_files": 41,
+    "gitignore_probes": 15,
+    "tested_science_bytes_match_final_tree": true,
+    "additional_credential_findings": 0,
+    "unknown_metadata_not_fabricated": true
+  },
+  "license_and_scope_decisions": {
+    "original_code": "MIT_PROPOSED_PENDING_OWNER",
+    "input_files": "22 proposed INCLUDE (17 unchanged, 5 projections)",
+    "excluded_annotation_groups": "4 UNRESOLVED chemical groups, 1 METADATA_ONLY model-path group",
+    "public_release": "NOT_AUTHORIZED_OR_PERFORMED"
+  }
+}

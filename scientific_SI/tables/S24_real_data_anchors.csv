@@ -1,0 +1,7 @@
+﻿statistic,value,source_stage,source_file,population,training_context,what_it_calibrates,what_it_does_not_identify
+compound_equal_target_SD,0.34576726540128594,4B1,diagnostics/target_support_and_variance.csv,NAM_dev97,97 observed dev; no model,scale; not regression residual SD,"real gamma, biological mechanism, holdout behavior"
+condition_SE_median,0.1285102623147526,6P2,phase6/simulation/protocol.json,NAM_dev97,97 dev; historical exact sigma,simulation noise scale; not residual distribution,"real gamma, biological mechanism, holdout behavior"
+PHH_source_repeat_correlation_median,0.8824252680239042,4B1,diagnostics/summary.json,NAM_dev97,dev source repeats,repeat stability; not predictive utility,"real gamma, biological mechanism, holdout behavior"
+proxy_positive_R2_sets,23.0,4B1,diagnostics/summary.json,NAM_dev97,dev 50-set OOF,23/50; not explained ALT variance,"real gamma, biological mechanism, holdout behavior"
+additive_meas_minus_struct_MAE,0.0017400340312849205,4B0,extensions/nam_phase4b0/pilot/compound_equal_weight_metrics.csv,NAM_dev97,original alpha10 dev OOF,downstream increment in that context,"real gamma, biological mechanism, holdout behavior"
+block_meas_minus_struct_MAE,9.657562559275967e-05,4B1,modeling/comparisons.csv,NAM_dev97,original three outer refits,context-specific dev increment,"real gamma, biological mechanism, holdout behavior"

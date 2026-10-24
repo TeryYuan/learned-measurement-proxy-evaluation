@@ -1,0 +1,23 @@
+{
+  "scope": "MINIMAL_PROPOSED_PUBLIC_LIVER_REPLAY; author release approval pending",
+  "capabilities_dropped": true,
+  "no_new_privileges": true,
+  "original_paths_unreadable": true,
+  "host_home_absent": true,
+  "host_mounts_absent": true,
+  "proc_not_mounted": true,
+  "candidate_read_only": true,
+  "network_unreachable": true,
+  "syntax_files": 45,
+  "external_data_mounts_absent": true,
+  "no_original_project_or_author_review_inputs": true,
+  "new_acquisition_tests": {
+    "return_code": 0,
+    "elapsed_seconds": 4.068
+  },
+  "minimal_candidate_replay": {
+    "return_code": 0,
+    "elapsed_seconds": 63.502
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,29 @@
+{
+  "mechanism": "WSL unprivileged user/mount/network/PID/UTS namespaces plus chroot",
+  "source_project_mounted": false,
+  "host_HOME_credentials_or_socket_mounted": false,
+  "candidate": "Copied public candidate in a read-only root; no private liver-safety inputs",
+  "runtime": "Read-only dedicated CPython 3.14.3 and locked site-packages; new environment variables and working directory",
+  "core_inputs": "Candidate aggregate reference files only; no additional scientific data mount",
+  "full_NHANES_inputs": "Exactly 40 official source files, read-only in a separate run; byte-equal to fresh official downloads",
+  "core_proc": "absent",
+  "full_proc": "read-only proc for the new PID namespace",
+  "system_mounts": [
+    "read-only shared system libraries",
+    "null device",
+    "kernel entropy devices"
+  ],
+  "writable_mounts": [
+    "new tmpfs",
+    "new result directory per scope"
+  ],
+  "network": "External network disabled during scientific runs; downloads performed separately before byte comparison",
+  "privilege_checks": "Namespace capabilities dropped; no_new_privs enabled before executing candidate",
+  "probes": [
+    "original source and host-only sentinel absent",
+    "host home and mount tree absent",
+    "candidate write denied",
+    "external network connection denied"
+  ],
+  "private_replay_filesystem_isolation_claimed": false
+}

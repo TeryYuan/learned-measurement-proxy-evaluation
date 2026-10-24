@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "key": "SI002",
+      "filename": "tx4c00453_si_002.xlsx",
+      "url": "https://ndownloader.figshare.com/files/52909410",
+      "bytes": 1517413,
+      "sha256": "500293386b2e909f342a50d553d23933e8a2bd0a4673f3a826fad8d0c9529981",
+      "version": "ACS supplementary dataset v1"
+    },
+    {
+      "key": "SI004",
+      "filename": "tx4c00453_si_004.xlsx",
+      "url": "https://ndownloader.figshare.com/files/52909416",
+      "bytes": 23425,
+      "sha256": "d628859a943e624a5c38e8226908ab7af5fae2fb5e42ca67eec24becc790471b",
+      "version": "ACS supplementary dataset v1"
+    },
+    {
+      "key": "FDA_DILIrank",
+      "filename": "dilirank_fda_current.xlsx",
+      "url": "https://www.fda.gov/media/113052/download?attachment",
+      "bytes": 110076,
+      "sha256": "1ca1352ff727af68e68e250eae2ed775bca8492335140ac0afd2233248694993",
+      "version": "preserved 2026-10-07 workbook, separate version 1 and version 2 sheets"
+    }
+  ],
+  "purpose": "Optional historical source acquisition and audit; does not regenerate saved predictions or random arrays."
+}

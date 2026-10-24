@@ -1,0 +1,11 @@
+kind,estimand,estimate
+route_Brier,B,0.0655807763825362
+route_Brier,M,0.0633387725473185
+route_Brier,S,0.06544249358727357
+route_Brier,MEAN,0.06594987473472569
+route_Brier,P,0.06571194833816198
+contrasts,G_measured_gain,0.002242003835217707
+contrasts,D_substitution_loss,0.00210372103995507
+contrasts,H_remaining_gain,0.00013828279526263698
+contrasts,A_proxy_over_mean,0.0005073811474521212
+contrasts,G_P_retrained_proxy_gain,-0.00013117195562577233

@@ -1,0 +1,8 @@
+﻿family,status,n,reason
+B1,SAVED_SCORES_AVAILABLE,750,reuse P6 full mixed OOF; threshold adaptation from saved inner OOF
+B2,NEEDS_AUTHOR_INPUT,0,no locally qualified adult human oral maintenance dose table; dose threshold not met
+B1_dose,NOT_RUN_DATA_GATE,0,B2 cohort unavailable
+B2_missing,NOT_RUN_DATA_GATE,0,requires B2 dose gate first
+B3,PENDING_ISOLATED_INSTALL_AND_TIMING,750,structural data supported; no installed engine
+B4,PENDING_ISOLATED_INSTALL_AND_TIMING,750,graph input supported; no installed Chemprop
+B5,NEEDS_AUTHOR_INPUT,0,UNCERTAIN_PROVENANCE; no confirmed unseen identities or suitable local Python3.10/3.11

@@ -1,0 +1,25 @@
+{
+  "content_review": "PASS",
+  "date": "2026-10-23",
+  "files": 157,
+  "unresolved_findings": 0,
+  "unknown_binary_files": 0,
+  "formats": [
+    "text/source/config/CSV/JSON/CFF/SVG",
+    "five NPZ archives: ZIP member metadata, NPY dtypes/shapes/strings/numerics with allow_pickle=False",
+    "unchanged PDF/PNG: prior full format/visual checks carried forward; font origins separately read this stage",
+    "UTF-8 pending-license marker"
+  ],
+  "notebooks_included": 0,
+  "raw_workbooks_included": false,
+  "liver_replay_inputs_included": 22,
+  "liver_input_projections": 5,
+  "original_liver_inputs_unchanged": 17,
+  "author_review_included": false,
+  "code_license": "PENDING_OWNER_CONFIRMATION",
+  "privacy_policy": "Semantic dispositions preserve scientific numeric coincidences, formulas and genuine relative references; no sensitive matched text published.",
+  "archive": "At this historical stage, ZIP CRC, extraction and scanned-member equality were checked; the original detailed acceptance record is retained by the author.",
+  "remote_actions": 0,
+  "limitations": "Bounded checks; not an absolute guarantee against arbitrary hidden information.",
+  "public_projection_note": "Non-scientific author-handoff/debug details omitted for the public copy; original scientific results, scope, chronology and historical status remain unchanged."
+}

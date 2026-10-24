@@ -1,0 +1,4 @@
+﻿stage,role,parents,conditions,measured_MAE,structure_MAE,measured_minus_structure
+Phase4B0,fixed development pilot,97,298,0.235098816822064,0.2333587827907791,0.0017400340312848928
+Phase4B1,posthoc finite nested development,97,298,0.2166254193183566,0.2165288436927638,9.657562559281518e-05
+Phase4C,fixed same-source identity holdout,24,72,0.1805123560384828,0.1805123560384828,0.0

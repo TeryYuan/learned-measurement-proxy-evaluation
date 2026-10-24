@@ -1,0 +1,30 @@
+{
+  "scope": "Display references only; no new statistical estimation.",
+  "prevalence": [
+    {
+      "cohort": "E201",
+      "positive": 37,
+      "total": 201,
+      "fraction": 0.18407960199004975
+    },
+    {
+      "cohort": "E172",
+      "positive": 34,
+      "total": 172,
+      "fraction": 0.19767441860465115
+    }
+  ],
+  "sources": [
+    {
+      "description": "Source-defined BSEP cohort counts retained in the figure and corresponding manuscript caption.",
+      "cohort": "E201",
+      "calculation": "37 positive + 164 negative = 201; reference position = 37 / 201; label rounded to three decimal places."
+    },
+    {
+      "description": "Nested sensitivity cohort counts retained in the figure and corresponding manuscript caption.",
+      "cohort": "E172",
+      "calculation": "34 positive + 138 negative = 172; reference position = 34 / 172; label rounded to three decimal places."
+    }
+  ],
+  "interpretation": "Class-prevalence reference; not exact finite-sample random-ranking expected AP or a significance threshold."
+}

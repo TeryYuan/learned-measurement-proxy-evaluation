@@ -1,0 +1,323 @@
+{
+  "created_date": "2026-10-24",
+  "scope": "Read-only saved-result inspection. No model fitting, prediction query or resampling.",
+  "figure4_collapsed_routes": {
+    "status": "VERIFIED",
+    "routes": [
+      {
+        "code": "D_cond",
+        "description": "Condition-only fit; X and Z absent by design."
+      },
+      {
+        "code": "D_struct",
+        "description": "Condition plus candidate direct structure block; selected X=DROP, Z absent by design."
+      },
+      {
+        "code": "D_meas_only",
+        "description": "Condition plus candidate measured PHH block; selected Z=DROP, direct X absent by design."
+      },
+      {
+        "code": "D_meas",
+        "description": "Condition plus candidate direct structure and measured PHH blocks; selected X=DROP and Z=DROP."
+      },
+      {
+        "code": "D_swap",
+        "description": "Query the same fitted D_meas with proxy Z substituted; no additional fit."
+      },
+      {
+        "code": "D_meanZ",
+        "description": "Query the same fitted D_meas with development/training-mean Z substituted; no additional fit."
+      }
+    ],
+    "not_in_collapsed_group": [
+      "D_pred",
+      "D_perm"
+    ],
+    "actual_fits_in_collapsed_group": 4,
+    "additional_queries_in_collapsed_group": 2,
+    "equality_evidence": "NAM_saved_identity_checks.csv: 15 pairwise comparisons, each 72 conditions, exact equality, max absolute difference 0.",
+    "suggested_label": "Condition-only (6 identical routes)",
+    "suggested_caption": "The condition-only point combines four selected specifications (D_cond, D_struct, D_meas_only and D_meas) and two substitution queries of D_meas (D_swap and D_meanZ), which produce identical predictions. D_pred and D_perm are shown separately.",
+    "sources": [
+      "source_tables/NAM_final_selected_parameters.csv",
+      "source_tables/NAM_saved_identity_checks.csv",
+      "supplementary_patterns_en.md: S1 ALT finite family and S19 retained-input paragraph"
+    ]
+  },
+  "figure5A_original_fit": {
+    "status": "ORIGINAL_FIT_IS_NOT_ONE_OF_30_REFITS",
+    "original_RF_random_state": 4109,
+    "root_seed_range": [
+      2026101401,
+      2026101430
+    ],
+    "seed_rule": "Auxiliary SeedSequence([root,1,task]); downstream inner SeedSequence([root,2,candidate,inner]); final SeedSequence([root,2,99]).",
+    "original_delta_AP": -0.009321459581089597,
+    "original_M0_AP": 0.41985535567539223,
+    "original_M1_AP": 0.41053389609430263,
+    "prediction_comparison": {
+      "members_per_model": 125,
+      "models": [
+        "M0",
+        "M1"
+      ],
+      "all_member_model_keys_match": true,
+      "any_identical_pair_among_30": false,
+      "details": [
+        {
+          "root_seed": 2026101401,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08799999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101402,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08999999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101403,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.16330864782190124,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101404,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08199999999999996,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101405,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.09199999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101406,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.12,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101407,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.09799999999999998,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101408,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08799999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101409,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.06999999999999995,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101410,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.07800000000000007,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101411,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08199999999999996,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101412,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.09399999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101413,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.14215663262436784,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101414,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.10799999999999998,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101415,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.1384744026590663,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101416,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.09599999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101417,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.07999999999999996,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101418,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.10199999999999998,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101419,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.07599999999999996,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101420,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08400000000000007,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101421,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.09399999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101422,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.09199999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101423,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08400000000000007,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101424,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.10999999999999999,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101425,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.07399999999999995,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101426,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.11399999999999999,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101427,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.07599999999999996,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101428,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.10199999999999998,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101429,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.08999999999999997,
+          "all_250_predictions_exactly_identical": false
+        },
+        {
+          "root_seed": 2026101430,
+          "max_abs_raw_prediction_difference_vs_original_M0_M1": 0.17007646958842548,
+          "all_250_predictions_exactly_identical": false
+        }
+      ]
+    },
+    "recommended_display": "Add a separately labelled thin reference line for the original fixed fit (Fig. 3A), at saved delta_AP. Do not highlight an existing seed as the primary model. Keep n=30 and the original mean; do not add a 31st seed to the calculation.",
+    "sources": [
+      "source_tables/N_primary_expected.csv",
+      "source_tables/S26_seed_paired_results.csv",
+      "scientific_SI/tables/S26_seed_all_N_predictions.csv",
+      "release_candidate/legacy_fixed_replay/data/N_predictions.csv",
+      "supplementary_patterns_en.md: S2/S4 original random_state and S15 root seeds",
+      "release_candidate/historical_implementation/extensions/targeted_revision_20261013/run_seeds.py"
+    ]
+  },
+  "figure5C_inset": {
+    "status": "EXISTING_R_CURVE_AND_MCSE_AVAILABLE",
+    "preferred": "R inset from existing saved ratio_fixed mean and MCSE; no new uncertainty calculation needed.",
+    "filter": {
+      "metric": "ratio_fixed",
+      "sigma_multiplier": 1.0
+    },
+    "x": "gamma",
+    "y": "100 * saved mean",
+    "errorbar": "100 * saved MCSE, explicitly Monte Carlo SE; not a confidence interval",
+    "aggregation": "Mean of repeat-level fixed-model retention ratios over eligible repeats; not ratio of means.",
+    "denominator_rule": "G > epsilon; epsilon=0.0001285102623147526; retain saved eligibility and reasons.",
+    "gamma_zero": "All 20 ratios undefined; retain NA and valid_repeats=0, not a point at zero. Do not connect a line through a fabricated gamma=0 value.",
+    "gamma_one": {
+      "mean_ratio": 0.006215247994253275,
+      "MCSE_ratio": 0.0021597206378437105,
+      "mean_percent": 0.6215247994253275,
+      "MCSE_percentage_points": 0.21597206378437106,
+      "valid_repeats": 20
+    },
+    "negative_point": "gamma=0.25, original noise: mean ratio=-0.0033386977055028743. Preserve negative values and the full errorbar range.",
+    "saved_rows": [
+      {
+        "gamma": "0.0",
+        "sigma_multiplier": "1.0",
+        "metric": "ratio_fixed",
+        "mean": "",
+        "MCSE": "",
+        "valid_repeats": "0",
+        "undefined_fraction": "1.0",
+        "MC_unit": "noise repeat after outer weighting"
+      },
+      {
+        "gamma": "0.1",
+        "sigma_multiplier": "1.0",
+        "metric": "ratio_fixed",
+        "mean": "0.07253025767842605",
+        "MCSE": "0.013497696396997697",
+        "valid_repeats": "20",
+        "undefined_fraction": "0.0",
+        "MC_unit": "noise repeat after outer weighting"
+      },
+      {
+        "gamma": "0.25",
+        "sigma_multiplier": "1.0",
+        "metric": "ratio_fixed",
+        "mean": "-0.0033386977055028743",
+        "MCSE": "0.012375373110147119",
+        "valid_repeats": "20",
+        "undefined_fraction": "0.0",
+        "MC_unit": "noise repeat after outer weighting"
+      },
+      {
+        "gamma": "0.5",
+        "sigma_multiplier": "1.0",
+        "metric": "ratio_fixed",
+        "mean": "0.005181495804191161",
+        "MCSE": "0.00431612913909243",
+        "valid_repeats": "20",
+        "undefined_fraction": "0.0",
+        "MC_unit": "noise repeat after outer weighting"
+      },
+      {
+        "gamma": "1.0",
+        "sigma_multiplier": "1.0",
+        "metric": "ratio_fixed",
+        "mean": "0.006215247994253275",
+        "MCSE": "0.0021597206378437105",
+        "valid_repeats": "20",
+        "undefined_fraction": "0.0",
+        "MC_unit": "noise repeat after outer weighting"
+      }
+    ],
+    "H_alternative": "H_repeat=measured_gain-substitution_loss can be calculated on matched repeat records; MCSE=sample SD(H_repeat)/sqrt(20). Do not infer paired uncertainty from separate G and D MCSEs. R is preferred because its existing saved summary directly addresses the manuscript percentage.",
+    "sources": [
+      "source_tables/S24_curves_and_MCSE.csv",
+      "source_tables/S24_repeat_gains_ratios_selection.csv",
+      "source_tables/S24_repeat_losses.csv",
+      "source_tables/S24_ratio_aggregation_and_NA.csv",
+      "source_tables/S24_definition_source_map.csv"
+    ]
+  },
+  "copied_source_files": [
+    "source_tables/S24_repeat_gains_ratios_selection.csv",
+    "source_tables/S24_repeat_losses.csv",
+    "source_tables/S24_curves_and_MCSE.csv",
+    "source_tables/S24_ratio_aggregation_and_NA.csv",
+    "source_tables/S24_definition_source_map.csv",
+    "source_tables/S26_seed_paired_results.csv",
+    "source_tables/NAM_final_selected_parameters.csv",
+    "source_tables/NAM_saved_identity_checks.csv",
+    "source_tables/N_primary_expected.csv"
+  ],
+  "license_note": "Copied existing source-result files retain source-specific licensing; consult the public release FILE_LICENSES and notices. These copies do not create a new blanket MIT grant."
+}
