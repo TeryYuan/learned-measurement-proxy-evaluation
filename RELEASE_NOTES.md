@@ -1,6 +1,6 @@
 # Release preparation notes
 
-This prepared collection records Yuan Cao, Independent Researcher, as author and original rightsholder. The research received no funding and the author declares no competing interests. Original software uses MIT; original content and source-related contributions follow the exact file-level license map. Upstream attribution and conditions are preserved.
+This prepared collection records Yuan Cao (Independent Researcher, Beijing, China) as author and original rightsholder. The research received no funding. The author is currently enrolled at the Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, China. This work was conducted independently of the author’s degree program, using personal resources and public data, without institutional support. The author declares no competing interests. Original software uses MIT; original content and source-related contributions follow the exact file-level license map. Upstream attribution and conditions are preserved.
 
 The collection includes 140 saved scientific tables, seven chemical-coverage attachments, three scaffold-stratified attachments, all 22 inputs for the existing minimal fixed-prediction replay, the NHANES workflow and aggregate references, figures, source notices and bounded validation evidence. Original numerical tables, scores, labels, indices, grouping anchors, model candidates, seeds and statistical tolerances are preserved. No model training, new model query or bootstrap was performed for this release preparation.
 
@@ -8,4 +8,4 @@ Changes concern license installation, current publication metadata, synchronized
 
 Fourteen tables still contain unresolved grouping relationships. The 238-check minimal replay does not cover every extended attachment. The prior NHANES full reconstruction and other prior checks retain their own recorded scopes. See VALIDATION.md and REPRODUCTION_SCOPE.md.
 
-This is a preparation record. No repository URL, release tag, DOI or publication date is asserted before the corresponding action occurs.
+The preparation history above retains its original execution scope. The distribution is now publicly accessible at https://github.com/TeryYuan/learned-measurement-proxy-evaluation. A read-only check on 2026-10-25 found no public GitHub Release or tag; no Zenodo archive is confirmed. This documentation update changes current access descriptions only and performs no scientific computation or remote write. The verified input commit is recorded as an input baseline in RELEASE_STATUS.json; the final publication commit and any archive identifiers must be recorded independently after the corresponding author actions.

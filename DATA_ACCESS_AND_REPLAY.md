@@ -1,8 +1,8 @@
 # Data access and fixed-prediction replay
 
-## Minimal candidate: complete inputs, pending release approval
+## Public distribution with complete fixed-prediction replay inputs
 
-The local candidate now supplies all 22 files used by the unchanged `release_candidate/legacy_fixed_replay/replay.py`. The [22-file decisions](sources/REPLAY_INPUT_DECISIONS.csv) mark these exact proposed files INCLUDE. That is not approval to publish. Existing source terms and the proposed author licenses are in [LICENSE_STATUS.md](LICENSE_STATUS.md). Read [VALIDATION.md](VALIDATION.md) for actual current execution evidence and its limits.
+The public repository at https://github.com/TeryYuan/learned-measurement-proxy-evaluation supplies all 22 files used by the unchanged `release_candidate/legacy_fixed_replay/replay.py`. The [22-file decisions](sources/REPLAY_INPUT_DECISIONS.csv) retain the original file-level inclusion decisions. Current author grants and retained source conditions are documented in [LICENSE_STATUS.md](LICENSE_STATUS.md). Read [VALIDATION.md](VALIDATION.md) for actual current execution evidence and its limits.
 
 From the repository root:
 

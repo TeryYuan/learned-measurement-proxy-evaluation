@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the actual released version and acknowledge the applicable upstream data sources."
 type: software
-title: "Evaluating learned measurement proxies across liver safety and clinical risk prediction"
+title: "Predicting a measurement is not replacing it: a matched evaluation of learned measurement proxies"
 authors:
   - family-names: Cao
     given-names: Yuan
-    affiliation: "Independent Researcher"
+    affiliation: "Independent Researcher, Beijing, China"
     email: "18281658226@163.com"
 abstract: "Code and reproduction materials for evaluation of learned measurement proxies: the NHANES acquisition and numerical workflow, saved aggregate and figure reconstruction, and a minimal liver-safety fixed-prediction replay collection with source-specific conditions. Complete historical liver-model training is outside the validated scope."
 keywords:
@@ -16,4 +16,5 @@ keywords:
   - liver safety
   - NHANES
 # License scopes are file-specific; see FILE_LICENSES.json and LICENSE_SCOPE.md.
-# Add repository, release version/date and DOI only when the corresponding record exists.
+repository-code: "https://github.com/TeryYuan/learned-measurement-proxy-evaluation"
+# Add release version/date and DOI only when the corresponding record exists.

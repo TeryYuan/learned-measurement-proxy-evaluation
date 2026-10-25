@@ -4,6 +4,6 @@ The author has confirmed that the original code and original materials belong to
 
 Third-party conditions remain in force. The collection has no single blanket data license. Author ownership does not transfer rights in upstream labels, measurements, fonts, source workbooks or installed dependencies.
 
-Licensing and publication are separate states. This copy is prepared for publication; it does not claim an already-created GitHub repository, release or Zenodo record. See [RELEASE_STATUS.json](RELEASE_STATUS.json).
+Licensing and publication are separate states. This distribution is publicly available at https://github.com/TeryYuan/learned-measurement-proxy-evaluation. The public GitHub repository, GitHub Release and Zenodo archive are distinct publication states; no Release or Zenodo record is asserted here. See [RELEASE_STATUS.json](RELEASE_STATUS.json).
 
 Older records under `validation/` describe the status at their own execution stage, including then-pending licenses. They are retained as dated history, not as the current license decision.

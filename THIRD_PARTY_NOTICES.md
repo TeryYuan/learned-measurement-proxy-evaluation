@@ -1,6 +1,6 @@
 # Third-party notices and attribution
 
-The following notices cover material actually retained in this candidate. Original author contributions use the grants specified in [FILE_LICENSES.json](FILE_LICENSES.json) and [LICENSE_SCOPE.md](LICENSE_SCOPE.md). This repository is a collection of separately scoped materials; different licenses alone do not make the collection incompatible. No blanket license is applied to all files.
+The following notices cover material actually retained in this distribution. Original author contributions use the grants specified in [FILE_LICENSES.json](FILE_LICENSES.json) and [LICENSE_SCOPE.md](LICENSE_SCOPE.md). This repository is a collection of separately scoped materials; different licenses alone do not make the collection incompatible. No blanket license is applied to all files.
 
 ## FDA DILIrank
 

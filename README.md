@@ -1,10 +1,10 @@
-# Evaluating learned measurement proxies across liver safety and clinical risk prediction
+# Predicting a measurement is not replacing it: a matched evaluation of learned measurement proxies
 
-This repository evaluates learned measurement proxies in liver safety and clinical risk prediction. It provides NHANES saved-summary checks, saved Figure 6/S12 reconstruction and the NHANES numerical pipeline. The minimal liver-safety input collection now contains all 22 inputs required by the existing fixed-prediction replay, including the original scores, labels, sampling arrays and expected results. It does not provide a complete liver-safety training environment. Full historical liver-safety model training remains NOT_EVALUATED. Earlier isolated NHANES reconstruction completed the full 24-candidate workflow; current publication preparation reuses that evidence without retraining. See [validation scope](VALIDATION.md) and [current release status](RELEASE_STATUS.json).
+This repository accompanies the study titled “Predicting a measurement is not replacing it: a matched evaluation of learned measurement proxies”. It evaluates measurement prediction, downstream increment, and fixed-model retention through matched comparisons in liver-safety and clinical-risk tasks. It provides NHANES saved-summary checks, saved Figure 6/S12 reconstruction and the NHANES numerical pipeline. The minimal liver-safety input collection now contains all 22 inputs required by the existing fixed-prediction replay, including the original scores, labels, sampling arrays and expected results. It does not provide a complete liver-safety training environment. Full historical liver-safety model training remains NOT_EVALUATED. Earlier isolated NHANES reconstruction completed the full 24-candidate workflow; current publication preparation reuses that evidence without retraining. See [validation scope](VALIDATION.md) and [current release status](RELEASE_STATUS.json).
 
-Author: Yuan Cao, Independent Researcher.
+Author: Yuan Cao, Independent Researcher, Beijing, China.
 
-**Prepared for publication.** Original software is licensed under MIT; original documentation, clinical aggregates and artwork use CC BY 4.0 where listed. Source-related files retain their specific conditions, including the listed NC and SA author grants. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md), [FILE_LICENSES.json](FILE_LICENSES.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Actual repository and archive identifiers are recorded in [RELEASE_STATUS.json](RELEASE_STATUS.json) only after publication.
+**Publicly available on GitHub.** The repository is available at https://github.com/TeryYuan/learned-measurement-proxy-evaluation. Original software is licensed under MIT; original documentation, clinical aggregates and artwork use CC BY 4.0 where listed. Source-related files retain their specific conditions, including the listed NC and SA author grants. See [LICENSE_SCOPE.md](LICENSE_SCOPE.md), [FILE_LICENSES.json](FILE_LICENSES.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The repository is public; no GitHub Release or Zenodo archive is asserted. Their separate current states are recorded in [RELEASE_STATUS.json](RELEASE_STATUS.json).
 
 ## Quick start
 
@@ -44,15 +44,21 @@ python tools/fetch_liver_sources.py --sources SI002 SI004 --output-dir liver_sou
 
 The optional source downloader validates exact historical workbooks; it does not recover historical predictions or replace the saved draws. FDA acquisition currently requires an exact legally obtained local copy when its historical URL is unavailable. TG-GATEs and Hallmark access for historical training are described separately; no complete automated training reconstruction is claimed.
 
-Read [reproduction scope](REPRODUCTION_SCOPE.md), [current versus prior validation](VALIDATION.md), [source decisions](sources/REPLAY_INPUT_DECISIONS.csv), and [data access](DATA_ACCESS_AND_REPLAY.md). Cite this work using [CITATION.cff](CITATION.cff) and acknowledge the applicable upstream sources. Repository identity, version, DOI and actual release date are intentionally absent until they exist. The full manuscript, Supplementary Information and private author-review records are distributed separately from this repository.
+Read [reproduction scope](REPRODUCTION_SCOPE.md), [current versus prior validation](VALIDATION.md), [source decisions](sources/REPLAY_INPUT_DECISIONS.csv), and [data access](DATA_ACCESS_AND_REPLAY.md). Cite this work using [CITATION.cff](CITATION.cff) and acknowledge the applicable upstream sources. The public repository URL is recorded in CITATION.cff. Release version, DOI and archival publication date remain unset until the corresponding records exist. The full manuscript, Supplementary Information and private author-review records are distributed separately from this repository.
+
+## Author information
+
+Author: Yuan Cao (曹源), Independent Researcher, Beijing, China. Correspondence: 18281658226@163.com. This research received no funding.
+
+## Declaration of interests
+
+The author is currently enrolled at the Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, China. This work was conducted independently of the author’s degree program, using personal resources and public data, without institutional support. The author declares no competing interests.
 
 ## Scientific result attachments
 
-Author: Yuan Cao (曹源), Independent Researcher. Correspondence: 18281658226@163.com. This research received no funding. The author declares no competing interests.
+The [reader index](source_index.tsv) maps every distributed file to its evidence role, manuscript location, delivery and rights status. [Scientific attachments](scientific_SI/README.md) add 140 saved table files, seven chemical-coverage and three scaffold-stratified files; [naming_map.csv](naming_map.csv) retains original model labels. These additions were checked against original saved files, not generated by new training or bootstrap. Fourteen table files retain unresolved grouping cells; extended group-dependent replay remains limited. The historical 438-row author index is not the current public inventory.
 
-The [reader index](source_index.tsv) maps every candidate file to its evidence role, manuscript location, delivery and rights status. [Scientific attachments](scientific_SI/README.md) add 140 saved table files, seven chemical-coverage and three scaffold-stratified files; [naming_map.csv](naming_map.csv) retains original model labels. These additions were checked against original saved files, not generated by new training or bootstrap. Fourteen table files retain unresolved grouping cells; extended group-dependent replay remains limited. The historical 438-row author index is not the current public inventory.
-
-See [release-preparation checks](validation/release_preparation.json), [prior scientific validation](VALIDATION.md) and [license scope](LICENSE_SCOPE.md). The exact delivered file set is listed in [PUBLIC_EXPORT_INVENTORY.json](PUBLIC_EXPORT_INVENTORY.json); [SHA256SUMS](SHA256SUMS) covers all files except itself. Private author material and development Git history are excluded. Publication identifiers remain unset until real records exist.
+See [release-preparation checks](validation/release_preparation.json), [prior scientific validation](VALIDATION.md) and [license scope](LICENSE_SCOPE.md). The exact delivered file set is listed in [PUBLIC_EXPORT_INVENTORY.json](PUBLIC_EXPORT_INVENTORY.json); [SHA256SUMS](SHA256SUMS) covers all files except itself. Private author material and development Git history are excluded. The GitHub repository is public; archive identifiers remain unset until real records exist.
 
 ## Current publication figures
 
